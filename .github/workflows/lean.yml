@@ -1,0 +1,92 @@
+name: Lean verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Build and audit proofs
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Restore Lean build cache
+        uses: actions/cache@v5
+        with:
+          path: .lake
+          key: lean-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.run_id }}
+          restore-keys: |
+            lean-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+
+      - name: Install pinned Lean and fetch mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+          use-github-cache: 'false'
+
+      - name: Connect the project toolchain wrapper
+        shell: bash
+        run: |
+          mkdir -p .tooling
+          ln -s "$HOME/.elan" .tooling/elan
+          scripts/lake.sh env lean --version
+
+      - name: Build the checked proof closure sequentially
+        run: python3 scripts/build_serial.py
+
+      - name: Audit proof dependencies
+        run: python3 scripts/audit.py
+
+      - name: Summarize verification
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          report = Path('build/audit.json')
+          with Path(os.environ['GITHUB_STEP_SUMMARY']).open('a') as out:
+              if report.exists():
+                  data = json.loads(report.read_text())
+                  out.write('### Lean verification\n\n')
+                  out.write(f"Build and axiom audit passed for {data['theorem_declarations_audited']:,} theorem declarations.\n\n")
+                  out.write('Allowed axioms: `propext`, `Classical.choice`, `Quot.sound`.\n\n')
+                  out.write('See `docs/coverage.md` for manuscript coverage and any remaining proof work.\n')
+              else:
+                  out.write('Verification did not produce a successful audit report. See the failed step and attached logs.\n')
+          PY
+
+      - name: Retain verification logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: lean-verification-logs
+          path: |
+            build/audit.json
+            build/axioms.log
+            build/build.log
+            build/serial/*.log
+            build/serial/plan.json
+          if-no-files-found: ignore
+          retention-days: 14

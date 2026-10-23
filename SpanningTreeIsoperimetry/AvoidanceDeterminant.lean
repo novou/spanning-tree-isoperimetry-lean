@@ -1,5 +1,9 @@
-import SquareMaximality.Multigraph.TransferCurrentConstruction
-import SquareMaximality.Inputs.MatrixTreeTheorem
+module
+
+public import SquareMaximality.Multigraph.TransferCurrentConstruction
+public import SquareMaximality.Inputs.MatrixTreeTheorem
+
+@[expose] public section
 
 /-! Actual spanning-tree avoidance events and their complementary
 transfer-current determinants. Edge deletion is represented by replacing

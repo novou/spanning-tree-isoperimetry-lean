@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.ProjectionEquality
+module
+
+public import SpanningTreeIsoperimetry.ProjectionEquality
+
+@[expose] public section
 
 /-!
 # Geometry of convex lattice domains

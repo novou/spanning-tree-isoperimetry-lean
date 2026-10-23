@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CanonicalCountExpansion
-import SpanningTreeIsoperimetry.FluxBounds
+module
+
+public import SpanningTreeIsoperimetry.CanonicalCountExpansion
+public import SpanningTreeIsoperimetry.FluxBounds
+
+@[expose] public section
 
 /-! Actual canonical-selector bounds at the scale needed for the extremal
 asymptotic. No rate for a hypothetical hull is assumed. -/

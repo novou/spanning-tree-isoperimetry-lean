@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallCases
-import SpanningTreeIsoperimetry.StripPolarization
-import SpanningTreeIsoperimetry.DomainIsometries
+module
+
+public import SpanningTreeIsoperimetry.SmallCases
+public import SpanningTreeIsoperimetry.StripPolarization
+public import SpanningTreeIsoperimetry.DomainIsometries
+
+@[expose] public section
 
 /-! The checked small coordinate-matrix polynomials are the actual face
 determinants used in primal tree-count comparisons. -/

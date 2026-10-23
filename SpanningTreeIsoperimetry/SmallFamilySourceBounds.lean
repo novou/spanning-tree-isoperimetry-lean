@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.SmallFamilyStripCorrections
-import SpanningTreeIsoperimetry.MulticornerEnergyMinimum
-import SpanningTreeIsoperimetry.MulticornerEndpointChecks
-import SpanningTreeIsoperimetry.SmallCornerProfiles
-import SpanningTreeIsoperimetry.RefinedSmallEnergyUpper
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyStripCorrections
+public import SpanningTreeIsoperimetry.MulticornerEnergyMinimum
+public import SpanningTreeIsoperimetry.MulticornerEndpointChecks
+public import SpanningTreeIsoperimetry.SmallCornerProfiles
+public import SpanningTreeIsoperimetry.RefinedSmallEnergyUpper
+
+@[expose] public section
 
 /-! Actual finite source energies for the small-family comparisons.
 The common bound keeps quadrant energies and finite corrections separate. -/

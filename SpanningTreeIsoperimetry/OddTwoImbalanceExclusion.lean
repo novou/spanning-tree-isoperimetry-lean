@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.OddTwoImbalanceTest
-import SpanningTreeIsoperimetry.NormalizedRectangleError
-import SpanningTreeIsoperimetry.CanonicalStrips
+module
+
+public import SpanningTreeIsoperimetry.OddTwoImbalanceTest
+public import SpanningTreeIsoperimetry.NormalizedRectangleError
+public import SpanningTreeIsoperimetry.CanonicalStrips
+
+@[expose] public section
 
 /-! Actual multicorner exclusion for the entire odd canonical-index-two
 regime. No rectangle-error or scalar-comparison premise is supplied. -/

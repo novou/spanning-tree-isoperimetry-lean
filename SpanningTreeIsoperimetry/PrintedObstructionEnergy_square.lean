@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_square
-import SpanningTreeIsoperimetry.NarrowLogCertificates
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_square
+public import SpanningTreeIsoperimetry.NarrowLogCertificates
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Literal printed energy interval for square; every rational certificate is checked. -/
 namespace SpanningTreeIsoperimetry.PrintedEnergyBounds.square

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryGreenBounds
-import SpanningTreeIsoperimetry.DeterminantComparison
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenBounds
+public import SpanningTreeIsoperimetry.DeterminantComparison
+
+@[expose] public section
 
 /-! Actual finite Green matrices at every spectral parameter z≥4.
 The coefficients count actual finite face walks. Their comparison with the

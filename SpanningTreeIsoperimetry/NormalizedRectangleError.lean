@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.NormalizedSourceError
-import SpanningTreeIsoperimetry.CoupledRectangleBounds
+module
+
+public import SpanningTreeIsoperimetry.NormalizedSourceError
+public import SpanningTreeIsoperimetry.CoupledRectangleBounds
+
+@[expose] public section
 
 /-! Actual normalized rectangle-error absorption for all canonical short
 sides at least four, using the fully checked coupled-error estimate. -/

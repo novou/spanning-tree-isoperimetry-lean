@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.HankelDegreeJump
+module
+
+public import SpanningTreeIsoperimetry.HankelDegreeJump
+
+@[expose] public section
 
 /-! Finite convolution identities underlying the generalized Hankel step.
 The Toeplitz congruence and repeated Euclidean normalization are developed

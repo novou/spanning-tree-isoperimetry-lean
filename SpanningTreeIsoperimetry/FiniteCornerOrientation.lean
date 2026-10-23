@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.FiniteCornerCharges
-import SpanningTreeIsoperimetry.CornerProfileNormalization
+module
+
+public import SpanningTreeIsoperimetry.FiniteCornerCharges
+public import SpanningTreeIsoperimetry.CornerProfileNormalization
+
+@[expose] public section
 
 /-! Finite strip-energy orientation, derived from the actual primal count
 comparison. It transports the correction bounds to every strip orientation. -/

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.QuadrantMinorEnergy
+module
+
+public import SpanningTreeIsoperimetry.QuadrantMinorEnergy
+
+@[expose] public section
 
 /-! Determinant reduction by the interior Dirichlet rows. The hypotheses are
 explicit matrix-product certificates, proved from the actual kernel for each

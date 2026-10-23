@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.GreenStripLimits
+module
+
+public import SpanningTreeIsoperimetry.GreenStripLimits
+
+@[expose] public section
 
 /-! Coordinate exchange for actual finite, strip and quadrant Green kernels. -/
 namespace SpanningTreeIsoperimetry.GreenStripLimits

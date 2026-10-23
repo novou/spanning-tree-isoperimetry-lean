@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.WeightedExponentialRemainder
-import SpanningTreeIsoperimetry.BoundedKernelProduct
-import SpanningTreeIsoperimetry.TriangularCompression
-import SpanningTreeIsoperimetry.ToeplitzHankelKernels
+module
+
+public import SpanningTreeIsoperimetry.WeightedExponentialRemainder
+public import SpanningTreeIsoperimetry.BoundedKernelProduct
+public import SpanningTreeIsoperimetry.TriangularCompression
+public import SpanningTreeIsoperimetry.ToeplitzHankelKernels
+
+@[expose] public section
 
 /-! One-sided formal coefficients give actual triangular kernels. Their
 multiplication is finite at every entry; weighted bounds control all rows

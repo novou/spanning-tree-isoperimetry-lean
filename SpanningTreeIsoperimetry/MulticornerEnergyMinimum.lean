@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.StripSupportingLines
-import SpanningTreeIsoperimetry.CanonicalSmallBaseline
+module
+
+public import SpanningTreeIsoperimetry.StripSupportingLines
+public import SpanningTreeIsoperimetry.CanonicalSmallBaseline
+
+@[expose] public section
 
 /-! Actual quadrant lower bounds for families with at least two or three
 nonempty corners, using strip minimality and discrete concavity. -/

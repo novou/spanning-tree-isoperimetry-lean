@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.StripFourierMoments
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.Basic
-import Mathlib.Data.Fin.VecNotation
+module
+
+public import SpanningTreeIsoperimetry.StripFourierMoments
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.Basic
+public import Mathlib.Data.Fin.VecNotation
+
+@[expose] public section
 
 /-! Exact evaluation of the first five actual cosine coefficients. -/
 namespace SpanningTreeIsoperimetry.StripFourierFive

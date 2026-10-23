@@ -1,5 +1,9 @@
-import SquareMaximality.Multigraph.All
-import Mathlib.Data.Real.Basic
+module
+
+public import SquareMaximality.Multigraph.All
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 set_option autoImplicit false
 

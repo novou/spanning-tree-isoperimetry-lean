@@ -1,9 +1,13 @@
-import Mathlib.Order.Interval.Finset.Nat
-import Mathlib.Data.Finset.Card
-import Mathlib.Data.Finset.Union
-import Mathlib.Tactic.Tauto
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Data.Finset.Max
+module
+
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Data.Finset.Union
+public import Mathlib.Tactic.Tauto
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Data.Finset.Max
+
+@[expose] public section
 
 set_option autoImplicit false
 

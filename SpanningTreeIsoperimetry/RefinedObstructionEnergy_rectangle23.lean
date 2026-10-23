@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RefinedObstruction_rectangle23
-import SpanningTreeIsoperimetry.RefinedPiBounds
-import SpanningTreeIsoperimetry.RefinedEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstruction_rectangle23
+public import SpanningTreeIsoperimetry.RefinedPiBounds
+public import SpanningTreeIsoperimetry.RefinedEntropyBounds
+
+@[expose] public section
 
 /-! Actual rectangle23 energy threshold for the refined corner envelope. -/
 namespace SpanningTreeIsoperimetry.RefinedObstructionEnergy

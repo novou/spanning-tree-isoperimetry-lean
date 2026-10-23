@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.SingleCornerSmallReduction
-import SpanningTreeIsoperimetry.SingleCornerSmallEnergyBounds
-import SpanningTreeIsoperimetry.RectangularNotchComparison
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerSmallReduction
+public import SpanningTreeIsoperimetry.SingleCornerSmallEnergyBounds
+public import SpanningTreeIsoperimetry.RectangularNotchComparison
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The shallow odd-index-two single-corner alternatives: a strict actual
 improvement or the exact strong quadrant-energy bound needed by its cost. -/

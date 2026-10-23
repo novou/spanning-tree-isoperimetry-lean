@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.NormalizedExponentialPath
+module
+
+public import SpanningTreeIsoperimetry.NormalizedExponentialPath
+
+@[expose] public section
 
 /-! The actual determinant deformation starts at the identity. -/
 namespace SpanningTreeIsoperimetry.NormalizedDeterminantInitialValue

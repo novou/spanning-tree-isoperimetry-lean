@@ -1,8 +1,14 @@
-import SpanningTreeIsoperimetry.SingleCornerSmallOrientation
-import SpanningTreeIsoperimetry.SmallFamilyCountComparison
-import SpanningTreeIsoperimetry.SmallFamilySourceBounds
-import SpanningTreeIsoperimetry.SmallCornerCorrections
-import SpanningTreeIsoperimetry.FluxBounds
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerSmallOrientation
+public import SpanningTreeIsoperimetry.SmallFamilyCountComparison
+public import SpanningTreeIsoperimetry.SmallFamilySourceBounds
+public import SpanningTreeIsoperimetry.SmallCornerCorrections
+public import SpanningTreeIsoperimetry.FluxBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual spanning-tree improvements for the two rectangular notch families,
 using checked finite corrections, coupled errors and scalar endpoint profiles. -/

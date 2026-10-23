@@ -1,8 +1,14 @@
-import SquareMaximality.Boundary.DeterminantReduction
-import SquareMaximality.Boundary.SpectralBound
-import SquareMaximality.Dual.PlanarComplement
-import SquareMaximality.ClosedWalk.EntropySeries
-import SquareMaximality.Inputs.MatrixTreeTheorem
+module
+
+public import SquareMaximality.Boundary.DeterminantReduction
+public import SquareMaximality.Boundary.SpectralBound
+public import SquareMaximality.Dual.PlanarComplement
+public import SquareMaximality.ClosedWalk.EntropySeries
+public import SquareMaximality.Inputs.MatrixTreeTheorem
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Boundary deletion with the full gap cost

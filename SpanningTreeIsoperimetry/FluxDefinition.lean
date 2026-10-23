@@ -1,4 +1,8 @@
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 
 /-! Stable exact boundary-flux data. Scalar estimates are in FluxBounds. -/
 namespace SpanningTreeIsoperimetry.FluxBounds

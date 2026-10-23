@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryBoseTail
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import SpanningTreeIsoperimetry.BoundaryBoseTail
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 
 /-! Scaling reduces every singleton cubic tail, for real r≥4, to a single
 explicit tail at 5. No monotonicity assumption or integer induction is used. -/

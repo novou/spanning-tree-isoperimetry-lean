@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.EnergyConvergence
-import Mathlib.Analysis.Real.Pi.Wallis
+module
+
+public import SpanningTreeIsoperimetry.EnergyConvergence
+public import Mathlib.Analysis.Real.Pi.Wallis
+
+@[expose] public section
 
 /-!
 # Boundary return coefficients

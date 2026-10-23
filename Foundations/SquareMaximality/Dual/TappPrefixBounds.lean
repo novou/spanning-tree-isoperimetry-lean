@@ -1,4 +1,10 @@
-import SquareMaximality.Dual.TappBulk
+module
+
+public import SquareMaximality.Dual.TappBulk
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Boundary prefix bounds for the square scan

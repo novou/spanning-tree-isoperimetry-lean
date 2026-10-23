@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangularRemainder
-import Mathlib.Analysis.Calculus.Deriv.Polynomial
+module
+
+public import SpanningTreeIsoperimetry.RectangularRemainder
+public import Mathlib.Analysis.Calculus.Deriv.Polynomial
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! A local polynomial recurrence for the angular lattice-kernel derivatives.
 Every derivative is obtained from actual differentiation of the smooth kernel. -/

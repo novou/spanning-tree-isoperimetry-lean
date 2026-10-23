@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
-import SpanningTreeIsoperimetry.WeightedConvolutionPath
+module
+
+public import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
+public import SpanningTreeIsoperimetry.WeightedConvolutionPath
+
+@[expose] public section
 
 /-! Signed positive-frequency exponential paths and the actual reflected
 factor used in the conjugation difference. This is coefficient calculus only;

@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.SmallMaximizerProfiles
-import SpanningTreeIsoperimetry.OrderedNormalization
-import SpanningTreeIsoperimetry.SingletonPairComparisons
-import SpanningTreeIsoperimetry.ThirteenCandidateExclusions
-import SpanningTreeIsoperimetry.ProposedMaximumBounds
+module
+
+public import SpanningTreeIsoperimetry.SmallMaximizerProfiles
+public import SpanningTreeIsoperimetry.OrderedNormalization
+public import SpanningTreeIsoperimetry.SingletonPairComparisons
+public import SpanningTreeIsoperimetry.ThirteenCandidateExclusions
+public import SpanningTreeIsoperimetry.ProposedMaximumBounds
+
+@[expose] public section
 
 /-! The complete maximum-value formula for cardinalities one through seventeen.
 The bounds apply to arbitrary connected induced lattice domains. -/

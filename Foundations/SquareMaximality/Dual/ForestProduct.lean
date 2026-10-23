@@ -1,6 +1,12 @@
-import SquareMaximality.Dual.Components
-import SquareMaximality.Multigraph.ContractionTrees
-import SquareMaximality.Boundary.Assembly
+module
+
+public import SquareMaximality.Dual.Components
+public import SquareMaximality.Multigraph.ContractionTrees
+public import SquareMaximality.Boundary.Assembly
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Canonical forest events and the component product

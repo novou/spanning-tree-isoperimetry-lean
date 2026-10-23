@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FiniteSectionPadding
-import Mathlib.Analysis.Normed.Group.Tannery
-import Mathlib.Topology.MetricSpace.Cauchy
+module
+
+public import SpanningTreeIsoperimetry.FiniteSectionPadding
+public import Mathlib.Analysis.Normed.Group.Tannery
+public import Mathlib.Topology.MetricSpace.Cauchy
+
+@[expose] public section
 
 /-! Existence of the determinant limit for an absolutely summable real
 matrix kernel. This is only the finite-section continuity ingredient. -/

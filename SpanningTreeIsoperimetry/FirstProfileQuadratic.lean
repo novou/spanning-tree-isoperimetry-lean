@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FirstProfileModular
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.Analysis.Calculus.MeanValue
+module
+
+public import SpanningTreeIsoperimetry.FirstProfileModular
+public import Mathlib.Analysis.Calculus.ContDiff.Deriv
+public import Mathlib.Analysis.Calculus.MeanValue
+
+@[expose] public section
 
 /-! Local quadratic control of the actual first aspect profile at the
 square, sufficient for the extremal O(N^(-1/2)) remainder. -/

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerProfileNormalization
-import SpanningTreeIsoperimetry.FerrersFoldTree
-import SpanningTreeIsoperimetry.StripRigidity
+module
+
+public import SpanningTreeIsoperimetry.CornerProfileNormalization
+public import SpanningTreeIsoperimetry.FerrersFoldTree
+public import SpanningTreeIsoperimetry.StripRigidity
+
+@[expose] public section
 
 /-! Literal diagonal polarization of a shallow Ferrers corner, with actual
 primal tree counts and every corner placement. -/

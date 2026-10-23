@@ -1,0 +1,227 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Spanning-Tree Maximization Forces Isoperimetry in the Square Lattice"
+  description: >-
+    Lean formalization of spanning-tree maximization over finite connected induced
+    subgraphs of the square lattice. The development establishes edge isoperimetry
+    of every maximizer, the maximum count and all maximizing lattice-isometry
+    classes at every positive cardinality, and uniqueness of the canonical
+    corner-strip domain for N >= 18. Nonuniqueness occurs exactly at N = 3, 8, 10,
+    13; the canonical count has exceptions at N = 7, 14, 17. It also establishes
+    the sharp square-cardinality stability inequality, an exact scalar product
+    formula and rational recurrence for corner-strip counts, the global extremal
+    asymptotic expansion
+    with O(N^(-1/2)) remainder, and the appendix's exact strip-energy Fourier
+    identity, rectangular remainders, Green estimates, and explicit bounds.
+  authors:
+    - "Jiechen Zhang"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Jiechen Zhang"
+
+classification:
+  arxiv: ["math.CO", "cs.DM"]
+  msc2020: ["05C05", "05C35", "05C50", "05A16"]
+
+sources:
+  - title: "Spanning-Tree Maximization Forces Isoperimetry in the Square Lattice"
+    authors:
+      - "Jiechen Zhang"
+    id: "https://arxiv.org/abs/2605.23773v3"
+    type: "paper"
+    location: "Sections 1-8 and Appendices A-B; arXiv v3, 14 October 2026"
+    relationship: "formalizes"
+    note: >-
+      Statement and proof correspondence is indexed in docs/coverage.md and
+      docs/proof-route-correspondence.md.
+    license: "CC-BY-4.0"
+    author_endorsement: "participated"
+  - title: "Determinant computations for some classes of Toeplitz-Hankel matrices"
+    authors:
+      - "Estelle L. Basor"
+      - "Torsten Ehrhardt"
+    id: "https://arxiv.org/abs/0804.3073v1"
+    type: "paper"
+    location: "Propositions 2.3 and 4.1; Operators and Matrices 3 (2009), 167-186"
+    relationship: "adapts"
+    note: >-
+      The local even-symbol determinant argument develops the specialization
+      needed for the exact strip Fourier identity. Its analytic and matrix
+      dependencies have implementations in this repository; the paper supplies
+      the proof route. See docs/proof-route-correspondence.md.
+
+related_formalizations:
+  - id: "https://github.com/novou/square-maximality-palomar/tree/b1d30cdb3334aa7bff7834b22b342393cdc97df8"
+    relationship: "builds-on"
+    note: >-
+      The square-maximality preliminary development, registered as
+      PALOMAR-2026-08-23-000003 v1, is included as complete implementation source
+      under Foundations/SquareMaximality, with its Apache-2.0 notice preserved.
+      FoundationsBridge identifies its graph, count, rectangle, and entropy
+      definitions with the current development. See docs/third-party.md.
+  - id: "https://github.com/boonsuan/FerrersBound/tree/49bdf47cc096f37a4abe3eebf09a327a590fba81"
+    relationship: "adapts"
+    note: >-
+      Ho Boon Suan's finite-graph matrix-tree proof is included and ported in
+      SpanningTreeIsoperimetry/External/KirchhoffMatrixTree.lean. The MIT copyright
+      and permission notice is retained in LICENSE-FerrersBound beside that
+      source. See docs/third-party.md.
+
+status:
+  scope: >-
+    The source development implements the complete all-cardinality classification,
+    sharp stability and coefficient optimality, exact scalar corner-strip product
+    and rational recurrence,
+    extremal asymptotic expansion, and the independent appendix identities and
+    estimates indexed in docs/coverage.md. All mathematical dependencies beyond
+    Lean and mathlib are included as proof source. The Palomar interface selects
+    the principal results; its standalone definitions expose their mathematical
+    objects.
+  verification:
+    toolchain: "Lean v4.35.0-rc2 and mathlib v4.35.0-rc2"
+    build: "passed"
+    axiom_audit: "passed"
+    comparator: "passed"
+    exported_proof_kernels: ["leanchecker", "NanoDa"]
+    local_comparator_mode: "macOS; process sandbox omitted"
+    local_modules_built: 567
+    proof_modules_audited: 566
+    theorem_declarations_audited: 16051
+    solution_theorems_checked: 16
+    solution_proof_holes: 0
+    challenge_statement_holes: 16
+    permitted_axioms: ["propext", "Classical.choice", "Quot.sound"]
+
+automation:
+  methods:
+    - method: "manual"
+      tool_setup: >-
+        Jiechen Zhang supplied mathematical and writing direction, selected the
+        intended statements and scope, and is responsible for the development.
+    - method: "agent"
+      models: ["GPT-6 Astra"]
+      framework: "Codex"
+      tool_setup: >-
+        Codex GPT-6 Astra performed substantial Lean proof implementation,
+        dependency development, porting, and documentation work under the
+        author's mathematical and writing direction, using Lean, mathlib,
+        kernel-checked tactics, and local build and axiom-audit scripts.
+
+fidelity:
+  divergences: >-
+    The principal statements use the manuscript's lattice domains, combinatorial
+    spanning-tree counts, equality classes, and normalizations. The formal proof
+    route uses exact finite Dirichlet solves for the boundary minors,
+    Bernoulli-kernel quadrature for rectangular remainders, and checked rational
+    series for numerical enclosures. Its determinant argument first obtains a
+    finite-Green strip bound and then proves the exact Fourier identity locally.
+    The Jacobi basis has alternating signs, preserving the scalar resolvent and
+    leading minors. Fourier coefficients use minus gamma; face coordinates are
+    zero-based. These correspondences and the detailed numerical derivations are
+    explained in docs/proof-route-correspondence.md.
+
+review:
+  status: "agent-reviewed"
+  reviewers:
+    - "Codex agent: independent statement correspondence review"
+  notes: >-
+    A separate agent checked all sixteen statement interfaces and their
+    definitions against the manuscript and implementation, including the
+    exceptional counts, scalar formulas, and Fourier normalization.
+
+alignment:
+  namespace: "SpanningTreeChallenge"
+  implementation_namespace: "SpanningTreeIsoperimetry"
+  index: "docs/coverage.md"
+  proof_correspondence: "docs/proof-route-correspondence.md"
+  comparator_config: "comparator.json"
+  challenge_module: "Challenge"
+  solution_module: "Solution"
+  verification_status: "v4.35.0-rc2 build, axiom audit, and Comparator passed"
+  statements:
+    - source: "thm:intro-isoperimetric and thm:isoperimetric-rigidity; edge isoperimetry"
+      lean: "SpanningTreeChallenge.maximizer_isoperimetric"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.maximizer_isoperimetric"
+    - source: "thm:all-N-classification; maximum at every positive cardinality"
+      lean: "SpanningTreeChallenge.maximum_value"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.AllCardinalityClassification.maximumValueTarget"
+    - source: "thm:all-N-classification; complete equality classes"
+      lean: "SpanningTreeChallenge.maximizer_iff"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.AllCardinalityClassification.maximizer_iff"
+    - source: "thm:all-N-classification; exceptional nonuniqueness"
+      lean: "SpanningTreeChallenge.nonuniqueness_iff"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.AllCardinalityClassification.nonuniquenessTarget"
+    - source: "thm:intro-classification and thm:all-N-classification; canonical uniqueness for N >= 18"
+      lean: "SpanningTreeChallenge.unique_large"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.LargeClassification.uniqueClassificationTarget"
+    - source: "thm:sharp-stability; sharp stability inequality"
+      lean: "SpanningTreeChallenge.sharp_stability"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.sharp_stability_inequality"
+    - source: "thm:sharp-stability; optimal coefficient"
+      lean: "SpanningTreeChallenge.coefficient_optimal"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.StabilitySharpness.coefficient_optimal"
+    - source: "prop:scalar-resolvent; rational scalar resolvent"
+      lean: "SpanningTreeChallenge.scalar_resolvent"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.ScalarModular.boundaryGreen_rational_scalar_resolvent"
+      note: >-
+        The resolvent of 4I-A is expressed by the rational continuants and
+        modular numerator. The identity is stated for every real z using Lean's
+        total inverse and division conventions; away from the spectrum it is
+        the ordinary scalar resolvent.
+    - source: "Section 8.2; convergent scalar moment series"
+      lean: "SpanningTreeChallenge.scalar_series"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.ScalarSeries.rational_scalar_resolvent_hasSum"
+      note: "HasSum of the boundary-Green moments divided by z^(n+1), for |z| > 6, equals q(z)/P(z)."
+    - source: "prop:hankel-representation; leading Green and Hankel determinants"
+      lean: "SpanningTreeChallenge.hankel_minor"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.ScalarResolvent.hankel_determinant_of_commute"
+    - source: "Section 8.3; the signed Euclidean chain"
+      lean: "SpanningTreeChallenge.scalar_chain"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.ScalarProduct.scalarRemainder_natDegree"
+      note: >-
+        Includes coprimality of the path polynomial and layer continuant, proper
+        modular numerator, exact successive remainder degrees w-n, and linear
+        quotients with positive leading coefficients through the chain.
+    - source: "thm:scalar-product; exact corner-strip product"
+      lean: "SpanningTreeChallenge.cornerStrip_product"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.ScalarProduct.cornerStrip_product"
+    - source: "thm:scalar-product; exact corner-strip recurrence"
+      lean: "SpanningTreeChallenge.cornerStrip_recurrence"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.CountingAlgorithm.countRecurrence_treeCount"
+      note: >-
+        Starting from the rectangle count, p_0=1, p_(n+1)=b_n*p_n and
+        T_(n+1)=T_n/(b_n*p_n^2) yield the actual corner-strip count at every
+        strip length 0 <= k <= w, using exact rational arithmetic.
+    - source: "prop:extremal-asymptotic; extremal asymptotic expansion"
+      lean: "SpanningTreeChallenge.extremal_count_asymptotic"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.ExtremalAsymptotic.extremal_count_asymptotic"
+    - source: "Appendix B.3; exact strip-energy Fourier identity"
+      lean: "SpanningTreeChallenge.strip_fourier_identity"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.StripFourierIdentity.strip_limit_identity"
+    - source: "Appendix B.3; uniform strip-energy bound"
+      lean: "SpanningTreeChallenge.strip_energy_bound"
+      module: "Solution"
+      implementation: "SpanningTreeIsoperimetry.UniformStripEnergy.stripEnergyLimit_lt"
+      note: "The compared bound is C_strip < 13/200."
+
+acknowledgements: >-
+  Lean and mathlib; Ho Boon Suan's FerrersBound matrix-tree proof; the included
+  square-maximality development; and the mathematical sources recorded above.
+  Third-party source notices are retained as described in docs/third-party.md.

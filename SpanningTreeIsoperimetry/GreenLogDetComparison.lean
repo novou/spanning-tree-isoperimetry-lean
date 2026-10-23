@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.LogDetTangent
-import SpanningTreeIsoperimetry.BoundaryGreenBounds
-import Mathlib.LinearAlgebra.Matrix.Block
+module
+
+public import SpanningTreeIsoperimetry.LogDetTangent
+public import SpanningTreeIsoperimetry.BoundaryGreenBounds
+public import Mathlib.LinearAlgebra.Matrix.Block
+
+@[expose] public section
 
 /-! The finite Green-minor log-determinant is controlled by the Dirichlet
 boundary trace. The Schur correction is entrywise nonnegative. -/

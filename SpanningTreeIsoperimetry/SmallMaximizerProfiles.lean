@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallCornerProfiles
-import SpanningTreeIsoperimetry.AdjacentPairExclusion
-import SpanningTreeIsoperimetry.CanonicalCornerPrimal
+module
+
+public import SpanningTreeIsoperimetry.SmallCornerProfiles
+public import SpanningTreeIsoperimetry.AdjacentPairExclusion
+public import SpanningTreeIsoperimetry.CanonicalCornerPrimal
+
+@[expose] public section
 
 /-! Every normalized maximizer with at most seventeen vertices is in the
 explicit strip/L/opposite-pair/three-singleton list. Adjacent pairs are excluded

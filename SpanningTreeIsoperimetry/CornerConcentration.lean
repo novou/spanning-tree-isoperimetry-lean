@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.StripRigidity
-import SpanningTreeIsoperimetry.StripStrictness
+module
+
+public import SpanningTreeIsoperimetry.StripRigidity
+public import SpanningTreeIsoperimetry.StripStrictness
+
+@[expose] public section
 
 /-! Any finite family of Ferrers defects concentrates in one straight strip.
 The equality case and a uniform gap follow from the closed shape and merge gaps. -/

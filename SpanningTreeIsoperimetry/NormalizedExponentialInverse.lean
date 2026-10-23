@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
-import SpanningTreeIsoperimetry.NormalizedToeplitzFactorization
+module
+
+public import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
+public import SpanningTreeIsoperimetry.NormalizedToeplitzFactorization
+
+@[expose] public section
 
 /-! Explicit bounded two-sided inverse of the actual normalized even
 exponential kernel. All factors and cancellations use their actual sums. -/

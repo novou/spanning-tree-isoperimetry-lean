@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.Grid
-import SquareMaximality.Boundary.SpectralBound
-import Mathlib.LinearAlgebra.Matrix.Reindex
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import SquareMaximality.Boundary.SpectralBound
+public import Mathlib.LinearAlgebra.Matrix.Reindex
+
+@[expose] public section
 
 /-! Strict adjacency and holding-kernel spectral bounds for arbitrary finite
 integer-lattice domains, including disconnected and empty domains. -/

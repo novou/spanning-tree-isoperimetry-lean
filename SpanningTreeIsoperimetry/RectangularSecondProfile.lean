@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.CoupledRectangleError
-import Mathlib.NumberTheory.TsumDivisorsAntidiagonal
+module
+
+public import SpanningTreeIsoperimetry.CoupledRectangleError
+public import Mathlib.NumberTheory.TsumDivisorsAntidiagonal
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The genuine convergent second rectangular profile. Its modular symmetry
 and curvature bounds are separate proof obligations, not inputs to a claimed

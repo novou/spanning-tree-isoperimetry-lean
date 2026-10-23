@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.EnhancedBoundary
+module
+
+public import SpanningTreeIsoperimetry.EnhancedBoundary
+
+@[expose] public section
 
 /-! Empty-vacancy endpoints of the enhanced hull estimate. -/
 namespace SpanningTreeIsoperimetry

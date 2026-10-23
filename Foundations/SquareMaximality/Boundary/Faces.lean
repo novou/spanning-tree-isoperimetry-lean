@@ -1,6 +1,10 @@
-import SquareMaximality.Boundary.Encoding
-import Mathlib.Combinatorics.SimpleGraph.AdjMatrix
-import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+module
+
+public import SquareMaximality.Boundary.Encoding
+public import Mathlib.Combinatorics.SimpleGraph.AdjMatrix
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+
+@[expose] public section
 
 set_option autoImplicit false
 

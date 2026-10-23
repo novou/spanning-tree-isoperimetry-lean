@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallCases
+module
+
+public import SpanningTreeIsoperimetry.SmallCases
+
+@[expose] public section
 
 /-! Division-free binary continuant construction over any commutative ring. -/
 namespace SpanningTreeIsoperimetry.ContinuantDoubling

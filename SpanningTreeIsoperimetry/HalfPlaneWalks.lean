@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FaceWalkWords
-import SpanningTreeIsoperimetry.HalfPlaneWords
-import SquareMaximality.ClosedWalk.Symmetry
+module
+
+public import SpanningTreeIsoperimetry.FaceWalkWords
+public import SpanningTreeIsoperimetry.HalfPlaneWords
+public import SquareMaximality.ClosedWalk.Symmetry
+
+@[expose] public section
 
 /-! Exact finite-window walks and half-plane words. Every fixed-length path
 fits in the chosen window once its radius is at least that length. -/

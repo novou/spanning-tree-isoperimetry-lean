@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.NormalizedExponentialNonzero
-import SpanningTreeIsoperimetry.RegularizedMatrixNormalization
-import SpanningTreeIsoperimetry.RegularizedStripMonotonicity
+module
+
+public import SpanningTreeIsoperimetry.NormalizedExponentialNonzero
+public import SpanningTreeIsoperimetry.RegularizedMatrixNormalization
+public import SpanningTreeIsoperimetry.RegularizedStripMonotonicity
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual finite-section normalization, independently of the value of the
 Toeplitz--Hankel constant. The nonzero determinant limit identifies the bulk

@@ -1,5 +1,9 @@
-import SquareMaximality.Multigraph.Contraction
-import SquareMaximality.Multigraph.Events
+module
+
+public import SquareMaximality.Multigraph.Contraction
+public import SquareMaximality.Multigraph.Events
+
+@[expose] public section
 
 /-!
 # Spanning trees and finite edge contraction

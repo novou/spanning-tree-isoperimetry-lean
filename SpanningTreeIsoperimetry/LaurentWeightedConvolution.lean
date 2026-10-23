@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ToeplitzHankelConvolution
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
+module
+
+public import SpanningTreeIsoperimetry.ToeplitzHankelConvolution
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+
+@[expose] public section
 
 /-! Concrete weighted absolute estimates for Laurent convolution. The weight
 is `1 + |n|`; no ambient Banach algebra is postulated. -/

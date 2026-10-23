@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RectangularRemainder
-import Mathlib.Analysis.Convex.SpecificFunctions.Deriv
+module
+
+public import SpanningTreeIsoperimetry.RectangularRemainder
+public import Mathlib.Analysis.Convex.SpecificFunctions.Deriv
+
+@[expose] public section
 
 /-! Pointwise sine/hyperbolic bounds for the separated boundary-loss kernel. -/
 namespace SpanningTreeIsoperimetry.BoundaryKernelBounds

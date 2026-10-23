@@ -1,11 +1,15 @@
-import SpanningTreeIsoperimetry.InteriorCost
-import SpanningTreeIsoperimetry.ComparisonDomain
-import SpanningTreeIsoperimetry.IsoperimetryArithmetic
-import SpanningTreeIsoperimetry.RectangularComparison
-import SpanningTreeIsoperimetry.GapConvexity
-import SpanningTreeIsoperimetry.Targets
-import SpanningTreeIsoperimetry.MaximizerGeometry
-import SpanningTreeIsoperimetry.BoundaryGap
+module
+
+public import SpanningTreeIsoperimetry.InteriorCost
+public import SpanningTreeIsoperimetry.ComparisonDomain
+public import SpanningTreeIsoperimetry.IsoperimetryArithmetic
+public import SpanningTreeIsoperimetry.RectangularComparison
+public import SpanningTreeIsoperimetry.GapConvexity
+public import SpanningTreeIsoperimetry.Targets
+public import SpanningTreeIsoperimetry.MaximizerGeometry
+public import SpanningTreeIsoperimetry.BoundaryGap
+
+@[expose] public section
 
 /-! Integer defect elimination for actual spanning-tree maximizers.
 Every quantitative comparison used below is supplied by a proved component. -/

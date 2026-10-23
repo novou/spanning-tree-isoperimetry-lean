@@ -1,4 +1,8 @@
-import SquareMaximality.Boundary.TraceWalks
+module
+
+public import SquareMaximality.Boundary.TraceWalks
+
+@[expose] public section
 
 /-! Open finite face walks and their actual step words. -/
 namespace SpanningTreeIsoperimetry.FaceWalkWords

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RegularizedCornerLimit
-import SpanningTreeIsoperimetry.RegularizedBoundaryKernel
+module
+
+public import SpanningTreeIsoperimetry.RegularizedCornerLimit
+public import SpanningTreeIsoperimetry.RegularizedBoundaryKernel
+
+@[expose] public section
 
 /-! Actual strip-minor normalization and its leading determinant limit.
 The final uniqueness lemma is an intermediate bridge: it explicitly requires

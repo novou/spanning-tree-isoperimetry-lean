@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.Grid
-import SpanningTreeIsoperimetry.External.KirchhoffMatrixTree
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import SpanningTreeIsoperimetry.External.KirchhoffMatrixTree
+
+@[expose] public section
 
 /-! Kirchhoff's theorem for the actual combinatorial lattice tree count. -/
 namespace SpanningTreeIsoperimetry

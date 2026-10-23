@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.MassiveQuadrantUniqueness
-import SpanningTreeIsoperimetry.RegularizedStripSymbol
-import SpanningTreeIsoperimetry.PotentialKernelImages
-import SpanningTreeIsoperimetry.BoundarySineModes
+module
+
+public import SpanningTreeIsoperimetry.MassiveQuadrantUniqueness
+public import SpanningTreeIsoperimetry.RegularizedStripSymbol
+public import SpanningTreeIsoperimetry.PotentialKernelImages
+public import SpanningTreeIsoperimetry.BoundarySineModes
+
+@[expose] public section
 
 /-! Boundary-source sine separation for the actual z>4 quadrant resolvent,
 followed by its Toeplitz-minus-Hankel symbol identity. Determinant and

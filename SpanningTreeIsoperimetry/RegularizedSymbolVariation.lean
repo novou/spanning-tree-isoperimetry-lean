@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.RegularizedStripSymbol
-import Mathlib.Analysis.SpecialFunctions.Sqrt
-import Mathlib.Topology.Order.IntermediateValue
+module
+
+public import SpanningTreeIsoperimetry.RegularizedStripSymbol
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+public import Mathlib.Topology.Order.IntermediateValue
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Uniform total variation of the first derivative of the regularized
 strip symbol. Its curvature numerator crosses zero once on[0,pi]. -/

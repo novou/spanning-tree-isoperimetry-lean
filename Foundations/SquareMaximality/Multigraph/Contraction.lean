@@ -1,5 +1,9 @@
-import SquareMaximality.Multigraph.All
-import Mathlib.Combinatorics.SimpleGraph.Connectivity.Finite
+module
+
+public import SquareMaximality.Multigraph.All
+public import Mathlib.Combinatorics.SimpleGraph.Connectivity.Finite
+
+@[expose] public section
 
 set_option autoImplicit false
 

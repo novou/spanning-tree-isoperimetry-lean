@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.EvenFourierReconstruction
-import SpanningTreeIsoperimetry.RegularizedFourierQuadraticLimit
+module
+
+public import SpanningTreeIsoperimetry.EvenFourierReconstruction
+public import SpanningTreeIsoperimetry.RegularizedFourierQuadraticLimit
+
+@[expose] public section
 
 /-! Actual even-mode normalization for the critical strip symbol. The
 periodic function is -gammaZ, including its correct values outside[0,pi]. -/

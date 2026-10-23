@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RefinedStripEnclosures
-import SpanningTreeIsoperimetry.RefinedEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.RefinedStripEnclosures
+public import SpanningTreeIsoperimetry.RefinedEntropyBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual short-strip energy bounds from checked determinant and logarithm
 certificates. These supply the supporting line through the fifth strip. -/

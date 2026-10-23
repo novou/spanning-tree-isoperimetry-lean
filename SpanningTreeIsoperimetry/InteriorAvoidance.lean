@@ -1,7 +1,13 @@
-import SpanningTreeIsoperimetry.InteriorSquareGain
-import SpanningTreeIsoperimetry.AvoidanceDeterminant
-import SquareMaximality.Dual.ForestEventsConstruction
-import SquareMaximality.Dual.RectangleTransferCurrent
+module
+
+public import SpanningTreeIsoperimetry.InteriorSquareGain
+public import SpanningTreeIsoperimetry.AvoidanceDeterminant
+public import SquareMaximality.Dual.ForestEventsConstruction
+public import SquareMaximality.Dual.RectangleTransferCurrent
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Extremal edge pairs and the finite event combination in the interior surcharge. -/
 namespace SpanningTreeIsoperimetry.InteriorAvoidance

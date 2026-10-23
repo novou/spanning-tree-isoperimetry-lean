@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.WiredRayleigh
-import SpanningTreeIsoperimetry.FreePatchBridge
+module
+
+public import SpanningTreeIsoperimetry.WiredRayleigh
+public import SpanningTreeIsoperimetry.FreePatchBridge
+
+@[expose] public section
 
 /-! Exact clipping of a translated free patch into the wired rectangle.
 Every surviving source edge retains a distinct target label, including

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RegularizedStripSymbol
-import SquareMaximality.Rectangle.SharpTrapezoid
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import SpanningTreeIsoperimetry.RegularizedStripSymbol
+public import SquareMaximality.Rectangle.SharpTrapezoid
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 
 /-! The symmetric logarithmic potential whose one-variable average is the
 actual regularized angular kernel. This allows the Fourier--Laplace identity

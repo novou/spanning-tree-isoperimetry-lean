@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.EnergyConvergence
+module
+
+public import SpanningTreeIsoperimetry.EnergyConvergence
+
+@[expose] public section
 
 /-!
 # Finite-rectangle corrections to the closed-word corner energy

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PolarizationDeterminant
-import Mathlib.Data.Fin.Tuple.Basic
+module
+
+public import SpanningTreeIsoperimetry.PolarizationDeterminant
+public import Mathlib.Data.Fin.Tuple.Basic
+
+@[expose] public section
 
 /-!
 # Strict polarization

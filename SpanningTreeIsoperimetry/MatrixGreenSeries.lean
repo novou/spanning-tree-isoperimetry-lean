@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.DomainSpectral
-import SquareMaximality.Boundary.DeterminantSeries
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.Topology.Instances.Matrix
+module
+
+public import SpanningTreeIsoperimetry.DomainSpectral
+public import SquareMaximality.Boundary.DeterminantSeries
+public import Mathlib.Analysis.SpecificLimits.Normed
+public import Mathlib.Topology.Instances.Matrix
+
+@[expose] public section
 
 /-! Finite Dirichlet Green matrices as convergent adjacency-walk series.
 Strict spectral control is used; the maximum row sum may equal four. -/

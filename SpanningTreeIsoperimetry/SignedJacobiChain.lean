@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.JacobiPolynomials
+module
+
+public import SpanningTreeIsoperimetry.JacobiPolynomials
+
+@[expose] public section
 
 /-! The signed Euclidean chain of a positive Jacobi fraction, proved from
 local polynomial division and finite products. -/

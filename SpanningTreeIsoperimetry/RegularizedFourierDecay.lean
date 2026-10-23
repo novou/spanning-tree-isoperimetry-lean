@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RegularizedSymbolVariation
-import SpanningTreeIsoperimetry.StripFourierDecay
+module
+
+public import SpanningTreeIsoperimetry.RegularizedSymbolVariation
+public import SpanningTreeIsoperimetry.StripFourierDecay
+
+@[expose] public section
 
 /-! Uniform inverse-square decay of the actual regularized strip-symbol
 coefficients, including the critical parameter. -/

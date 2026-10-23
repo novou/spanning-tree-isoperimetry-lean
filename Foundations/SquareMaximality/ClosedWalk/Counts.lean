@@ -1,7 +1,11 @@
-import SquareMaximality.ClosedWalk.Basic
-import Mathlib.Algebra.BigOperators.Pi
-import Mathlib.Logic.Equiv.Prod
-import Mathlib.Tactic.NormNum
+module
+
+public import SquareMaximality.ClosedWalk.Basic
+public import Mathlib.Algebra.BigOperators.Pi
+public import Mathlib.Logic.Equiv.Prod
+public import Mathlib.Tactic.NormNum
+
+@[expose] public section
 
 set_option autoImplicit false
 

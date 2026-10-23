@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SmallFamilyCosts
-import SpanningTreeIsoperimetry.MulticornerEndpointChecks
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyCosts
+public import SpanningTreeIsoperimetry.MulticornerEndpointChecks
+
+@[expose] public section
 
 /-! Uniform cost bounds from the checked finite profile endpoints. -/
 namespace SpanningTreeIsoperimetry.SmallFamilyCostBounds

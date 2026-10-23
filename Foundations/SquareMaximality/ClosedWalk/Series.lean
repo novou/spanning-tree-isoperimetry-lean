@@ -1,9 +1,15 @@
-import Mathlib.Analysis.Analytic.Binomial
-import Mathlib.Analysis.Complex.AbelLimit
-import Mathlib.Analysis.Calculus.SmoothSeries
-import Mathlib.Analysis.PSeries
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
-import Mathlib.Analysis.SpecialFunctions.Sqrt
+module
+
+public import Mathlib.Analysis.Analytic.Binomial
+public import Mathlib.Analysis.Complex.AbelLimit
+public import Mathlib.Analysis.Calculus.SmoothSeries
+public import Mathlib.Analysis.PSeries
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # The scalar closed-walk series

@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.ScalarResolvent
-import Mathlib.Algebra.Polynomial.FieldDivision
+module
+
+public import SpanningTreeIsoperimetry.ScalarResolvent
+public import Mathlib.Algebra.Polynomial.FieldDivision
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Local tridiagonal determinant and Euclidean-division identities. -/
 namespace SpanningTreeIsoperimetry.JacobiPolynomials

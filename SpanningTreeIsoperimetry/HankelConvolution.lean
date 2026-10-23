@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.OneSidedLaurentKernels
+module
+
+public import SpanningTreeIsoperimetry.OneSidedLaurentKernels
+
+@[expose] public section
 
 /-! The exact Hankel convolution identity and the resulting intertwining
 relation for one-sided Laurent coefficients. Every infinite product comes

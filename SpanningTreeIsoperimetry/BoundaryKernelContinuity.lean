@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryKernelMajorant
+module
+
+public import SpanningTreeIsoperimetry.BoundaryKernelMajorant
+
+@[expose] public section
 
 /-! The separated loss density has its correct continuous zero endpoint.
 The proof uses positive domination, rather than assuming removability. -/

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RefinedStripPolynomials
-import SpanningTreeIsoperimetry.RefinedPiBounds
+module
+
+public import SpanningTreeIsoperimetry.RefinedStripPolynomials
+public import SpanningTreeIsoperimetry.RefinedPiBounds
+
+@[expose] public section
 
 /-! Rational enclosures around a common reciprocal-pi center. All centered
 polynomial identities and all interval inequalities are kernel checked. -/

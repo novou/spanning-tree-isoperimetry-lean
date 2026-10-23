@@ -1,6 +1,10 @@
-import SquareMaximality.Rectangle.SharpTrapezoid
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import SquareMaximality.Rectangle.SharpTrapezoid
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 
 /-! A closed lower bound for the concrete rectangular trapezoidal error.
 The proof uses a finite logarithmic sum, avoiding an unevaluated integral or

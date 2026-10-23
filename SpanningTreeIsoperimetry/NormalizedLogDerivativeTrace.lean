@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.NormalizedExponentialDerivativeAlgebra
-import SpanningTreeIsoperimetry.ConjugationTrace
-import SpanningTreeIsoperimetry.SummableTraceConjugation
-import SpanningTreeIsoperimetry.SummableTracePath
-import SpanningTreeIsoperimetry.ToeplitzHankelTraceConstants
+module
+
+public import SpanningTreeIsoperimetry.NormalizedExponentialDerivativeAlgebra
+public import SpanningTreeIsoperimetry.ConjugationTrace
+public import SpanningTreeIsoperimetry.SummableTraceConjugation
+public import SpanningTreeIsoperimetry.SummableTracePath
+public import SpanningTreeIsoperimetry.ToeplitzHankelTraceConstants
+
+@[expose] public section
 
 /-! Reduction of the actual normalized log-determinant derivative to two
 summable traces. All inverse/factor identities are actual kernel identities;

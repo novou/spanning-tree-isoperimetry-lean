@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.MaximizerGeometry
+module
+
+public import SpanningTreeIsoperimetry.MaximizerGeometry
+
+@[expose] public section
 
 /-! One-dimensional rectangular endpoint cases. -/
 namespace SpanningTreeIsoperimetry

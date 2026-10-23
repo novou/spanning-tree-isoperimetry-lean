@@ -1,7 +1,13 @@
-import SpanningTreeIsoperimetry.FiniteCornerCharges
-import SpanningTreeIsoperimetry.CanonicalConcentrationArithmetic
-import SpanningTreeIsoperimetry.CanonicalFluxBounds
-import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+module
+
+public import SpanningTreeIsoperimetry.FiniteCornerCharges
+public import SpanningTreeIsoperimetry.CanonicalConcentrationArithmetic
+public import SpanningTreeIsoperimetry.CanonicalFluxBounds
+public import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual canonical-hull concentration at every deficit at least five. -/
 namespace SpanningTreeIsoperimetry.CanonicalCornerLong

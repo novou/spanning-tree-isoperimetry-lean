@@ -1,11 +1,17 @@
-import SquareMaximality.Windows
-import Mathlib.Data.Finset.Prod
-import Mathlib.Data.Fintype.Card
-import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
-import Mathlib.Tactic.Ring
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Data.Nat.Dist
-import Mathlib.Combinatorics.SimpleGraph.Basic
+module
+
+public import SquareMaximality.Windows
+public import Mathlib.Data.Finset.Prod
+public import Mathlib.Data.Fintype.Card
+public import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
+public import Mathlib.Tactic.Ring
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Dist
+public import Mathlib.Combinatorics.SimpleGraph.Basic
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

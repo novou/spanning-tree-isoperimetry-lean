@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PowerSeriesCircleExponential
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import SpanningTreeIsoperimetry.PowerSeriesCircleExponential
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 /-! Fourier coefficients of the actual circle evaluation, including the
 vanishing negative frequencies. Termwise integration is justified by the

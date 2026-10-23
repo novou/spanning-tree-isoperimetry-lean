@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerEnergy
-import Mathlib.Data.Nat.Choose.Central
-import Mathlib.Analysis.PSeries
+module
+
+public import SpanningTreeIsoperimetry.CornerEnergy
+public import Mathlib.Data.Nat.Choose.Central
+public import Mathlib.Analysis.PSeries
+
+@[expose] public section
 
 /-!
 # Finiteness of the critical corner-energy series

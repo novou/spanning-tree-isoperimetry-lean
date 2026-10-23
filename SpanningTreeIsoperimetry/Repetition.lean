@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.Ferrers
+module
+
+public import SpanningTreeIsoperimetry.Ferrers
+
+@[expose] public section
 
 /-!
 # Row and column repetition for Ferrers defects

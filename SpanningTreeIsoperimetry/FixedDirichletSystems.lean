@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.ScalarResolvent
+module
+
+public import SpanningTreeIsoperimetry.ScalarResolvent
+
+@[expose] public section
 
 /-! Exact integer Dirichlet systems determine actual finite Green entries.
 Concrete integer potentials are checked separately in Lean's kernel. -/

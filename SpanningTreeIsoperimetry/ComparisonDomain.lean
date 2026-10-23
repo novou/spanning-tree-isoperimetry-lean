@@ -1,7 +1,13 @@
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SquareMaximality.Dual.TappRayleigh
-import SquareMaximality.Inputs.MatrixTreeTheorem
-import Mathlib.Combinatorics.SimpleGraph.Connectivity.Subgraph
+module
+
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SquareMaximality.Dual.TappRayleigh
+public import SquareMaximality.Inputs.MatrixTreeTheorem
+public import Mathlib.Combinatorics.SimpleGraph.Connectivity.Subgraph
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Explicit comparison domains obtained by adjoining partial boundary rows.
 The forest-prefix bridge keeps isolated unused vertices from changing the

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.StripSpectralRegularization
-import SpanningTreeIsoperimetry.CriticalEvenFourierSum
+module
+
+public import SpanningTreeIsoperimetry.StripSpectralRegularization
+public import SpanningTreeIsoperimetry.CriticalEvenFourierSum
+
+@[expose] public section
 
 /-! The actual regularized strip supremum tends to the critical strip energy.
 This conclusion uses only fixed-strip continuity and the uniform word-energy

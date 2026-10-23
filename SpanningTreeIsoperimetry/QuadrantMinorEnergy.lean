@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryGreenBounds
-import SpanningTreeIsoperimetry.CornerLimit
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenBounds
+public import SpanningTreeIsoperimetry.CornerLimit
+
+@[expose] public section
 
 /-! Every actual finite Ferrers energy is the log determinant of its actual
 quadrant Green minor, with no fixed-size restriction on the diagram. -/

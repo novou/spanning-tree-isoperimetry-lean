@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ThreeImbalanceTest
-import SpanningTreeIsoperimetry.MulticornerEndpointChecks
+module
+
+public import SpanningTreeIsoperimetry.ThreeImbalanceTest
+public import SpanningTreeIsoperimetry.MulticornerEndpointChecks
+
+@[expose] public section
 
 /-! Actual multicorner scalar comparison in the odd selector-two regime. -/
 namespace SpanningTreeIsoperimetry.OddTwoImbalanceTest

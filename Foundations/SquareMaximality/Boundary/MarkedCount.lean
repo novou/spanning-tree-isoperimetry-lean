@@ -1,6 +1,12 @@
-import SquareMaximality.Boundary.Faces
-import SquareMaximality.Boundary.King
-import SquareMaximality.Multigraph.Trees
+module
+
+public import SquareMaximality.Boundary.Faces
+public import SquareMaximality.Boundary.King
+public import SquareMaximality.Multigraph.Trees
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

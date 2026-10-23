@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.ShortDefectDensities
-import SpanningTreeIsoperimetry.BoundaryShortPolynomial
-import SpanningTreeIsoperimetry.BoundaryShortMoments
+module
+
+public import SpanningTreeIsoperimetry.ShortDefectDensities
+public import SpanningTreeIsoperimetry.BoundaryShortPolynomial
+public import SpanningTreeIsoperimetry.BoundaryShortMoments
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual fourth-order finite correction lower bounds for the two-cell
 vertical strip and the 2×2 corner square. -/

@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.StripFourierDecay
-import Mathlib.Algebra.BigOperators.NatAntidiagonal
-import Mathlib.Topology.Algebra.InfiniteSum.Ring
-import Mathlib.Analysis.Normed.Group.Tannery
-import Mathlib.LinearAlgebra.Matrix.Trace
+module
+
+public import SpanningTreeIsoperimetry.StripFourierDecay
+public import Mathlib.Algebra.BigOperators.NatAntidiagonal
+public import Mathlib.Topology.Algebra.InfiniteSum.Ring
+public import Mathlib.Analysis.Normed.Group.Tannery
+public import Mathlib.LinearAlgebra.Matrix.Trace
+
+@[expose] public section
 
 /-! Finite Hankel traces and the actual quadratic Fourier constant.
 This establishes the trace limit needed by a determinant-limit argument;

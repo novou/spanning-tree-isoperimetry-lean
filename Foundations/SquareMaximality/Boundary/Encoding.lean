@@ -1,5 +1,9 @@
-import SquareMaximality.Boundary.Windows2D
-import SquareMaximality.Boundary.Degenerate
+module
+
+public import SquareMaximality.Boundary.Windows2D
+public import SquareMaximality.Boundary.Degenerate
+
+@[expose] public section
 
 set_option autoImplicit false
 

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundedKernelAlgebra
-import SpanningTreeIsoperimetry.SummableKernelTrace
-import SpanningTreeIsoperimetry.OneSidedLaurentKernels
+module
+
+public import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+public import SpanningTreeIsoperimetry.SummableKernelTrace
+public import SpanningTreeIsoperimetry.OneSidedLaurentKernels
+
+@[expose] public section
 
 /-! Trace invariance under an actual bounded kernel inverse pair, with an
 entrywise-summable middle factor. No trace of a bounded nonsummable factor

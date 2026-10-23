@@ -2,8 +2,8 @@
 
 [![Lean verification](https://github.com/novou/spanning-tree-isoperimetry-lean/actions/workflows/lean.yml/badge.svg?branch=main&event=push)](https://github.com/novou/spanning-tree-isoperimetry-lean/actions/workflows/lean.yml)
 
-Lean formalization of *Spanning-Tree Maximization Forces Isoperimetry in the
-Square Lattice*.
+Lean formalization of [*Spanning-Tree Maximization Forces Isoperimetry in the
+Square Lattice*](https://arxiv.org/abs/2605.23773v3).
 
 The project proves edge isoperimetry of spanning-tree maximizers, their maximum
 values and classification up to lattice isometry for every positive cardinality,
@@ -38,12 +38,25 @@ The three declarations whose names end in `Target` prove propositions defined in
 [SpanningTreeIsoperimetry.lean](SpanningTreeIsoperimetry.lean) imports the full
 development.
 
+## Statement and proof interface
+
+[Challenge.lean](Challenge.lean) independently defines the mathematical objects
+and states sixteen principal results. Its theorem bodies are deliberate
+Comparator holes. [Solution.lean](Solution.lean) supplies the corresponding
+proofs from the formalization library.
+
+[comparator.json](comparator.json) selects the compared theorems;
+[formalization.yaml](formalization.yaml) records the mathematical sources,
+provenance, and verification status. The
+[statement interface](docs/statement-interface.md) describes the definitions,
+compared results, and verification commands.
+
 ## Build and verification
 
 ### First build
 
 Prerequisites: Python 3 and [elan](https://github.com/leanprover/elan).
-The project pins Lean 4.34.1 and mathlib v4.34.1. From the repository root, run:
+The project pins Lean 4.35.0-rc2 and mathlib v4.35.0-rc2. From the repository root, run:
 
 ```sh
 ELAN_HOME="$PWD/.tooling/elan" elan toolchain install "$(cat lean-toolchain)"
@@ -70,9 +83,18 @@ a time, keeping source files fixed until it finishes.
 ### What the audit checks
 
 The audit builds the project, checks that the required public theorems are
-present, and inspects the axiom dependencies of all project theorem declarations,
-including those in `Foundations/`. It permits `propext`, `Classical.choice`, and
-`Quot.sound`.
+present, and inspects the axiom dependencies of the proof-library and Solution
+theorems, including those in `Foundations/`. It permits `propext`, `Classical.choice`, and
+`Quot.sound`. The independent Challenge holes are recorded separately.
+Comparator compares the Challenge and Solution statements and checks the exported
+proofs with the kernel. On Linux with Bubblewrap installed, run:
+
+```sh
+scripts/lake.sh env lake comparator --config comparator.json
+```
+
+The [statement interface](docs/statement-interface.md#verification) includes
+the macOS command and explains the kernel checks.
 
 | Output | Contents |
 | --- | --- |
@@ -85,8 +107,9 @@ including those in `Foundations/`. It permits `propext`, `Classical.choice`, and
 
 [The GitHub Actions workflow](.github/workflows/lean.yml) runs on pushes, pull
 requests, and manual dispatch. It installs the pinned toolchain, fetches
-mathlib's cache, builds the project, and runs the same audit. Build artifacts
-are cached between runs, and verification logs are retained with each run.
+mathlib's cache, builds the project, runs the same audit, and checks the
+Challenge and Solution with Comparator. Build artifacts are cached between
+runs, and verification logs are retained with each run.
 
 The badge reports the verification status of push runs on `main` in
 [`novou/spanning-tree-isoperimetry-lean`](https://github.com/novou/spanning-tree-isoperimetry-lean).
@@ -94,7 +117,9 @@ The badge reports the verification status of push runs on `main` in
 ## Source guide
 
 ```text
-SpanningTreeIsoperimetry.lean   Aggregate import
+Challenge.lean                Independent statements
+Solution.lean                 Proved statement interfaces
+SpanningTreeIsoperimetry.lean   Aggregate proof-library import
 SpanningTreeIsoperimetry/      Main proofs and supporting lemmas
 Foundations/                  Included square-maximality proofs and license
 docs/                         Coverage, proof correspondence, and attribution

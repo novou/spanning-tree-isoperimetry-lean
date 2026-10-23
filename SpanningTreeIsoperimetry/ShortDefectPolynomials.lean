@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangleEnergyBounds
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import SpanningTreeIsoperimetry.RectangleEnergyBounds
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Exact inverse quadratic forms and strict polynomial bounds for the
 two-cell strip and square quadrant minors. -/

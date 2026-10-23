@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PositiveFrequencyExponential
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
+module
+
+public import SpanningTreeIsoperimetry.PositiveFrequencyExponential
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+
+@[expose] public section
 
 /-! Direct weighted coefficient estimates needed for the triangular
 exponential. There is no new Banach algebra instance. -/

@@ -1,4 +1,8 @@
-import SquareMaximality.Penalties
+module
+
+public import SquareMaximality.Penalties
+
+@[expose] public section
 
 set_option autoImplicit false
 

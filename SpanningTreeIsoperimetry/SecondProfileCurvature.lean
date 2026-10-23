@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.SecondProfileCalculus
+module
+
+public import SpanningTreeIsoperimetry.SecondProfileCalculus
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Explicit curvature bounds for the genuine second rectangular profile. -/
 namespace SpanningTreeIsoperimetry.SecondProfileCurvature

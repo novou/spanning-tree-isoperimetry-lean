@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundedKernelProduct
-import Mathlib.Algebra.BigOperators.NatAntidiagonal
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+module
+
+public import SpanningTreeIsoperimetry.BoundedKernelProduct
+public import Mathlib.Algebra.BigOperators.NatAntidiagonal
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+
+@[expose] public section
 
 /-! Actual Toeplitz and Hankel kernels of weighted absolutely summable
 real Laurent coefficients. Integer differences are never truncated. -/

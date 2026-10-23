@@ -1,5 +1,9 @@
-import SquareMaximality.Dual.Rayleigh
-import SquareMaximality.Dual.TappBulkGeometry
+module
+
+public import SquareMaximality.Dual.Rayleigh
+public import SquareMaximality.Dual.TappBulkGeometry
+
+@[expose] public section
 
 /-!
 # Embedding half-plane windows into square prefixes

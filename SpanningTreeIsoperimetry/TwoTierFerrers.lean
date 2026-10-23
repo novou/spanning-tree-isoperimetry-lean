@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.EnergyConvergence
-import SpanningTreeIsoperimetry.CornerEnergySymmetry
+module
+
+public import SpanningTreeIsoperimetry.EnergyConvergence
+public import SpanningTreeIsoperimetry.CornerEnergySymmetry
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Two maximal cells give exactly the two-tier diagrams used in the refined
 corner envelope. Increasing a tier parameter is row or column repetition. -/

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SmallFamilyDerivativeChecks
-import SpanningTreeIsoperimetry.SmallFamilyCostData
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyDerivativeChecks
+public import SpanningTreeIsoperimetry.SmallFamilyCostData
+
+@[expose] public section
 
 /-! Exact aspect-cost simplification and monotone rational remainder
 majorants used to reduce small noncanonical families to finite endpoints. -/

@@ -1,5 +1,11 @@
-import SquareMaximality.Dual.TappResistance
-import SquareMaximality.Boundary.TraceWalks
+module
+
+public import SquareMaximality.Dual.TappResistance
+public import SquareMaximality.Boundary.TraceWalks
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # The two-forest series-extension identity

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryShortWeight
+module
+
+public import SpanningTreeIsoperimetry.BoundaryShortWeight
+
+@[expose] public section
 
 /-! Algebraic lower profiles after multiplying the inverse-minor polynomial
 by the proved transformed boundary weight. -/

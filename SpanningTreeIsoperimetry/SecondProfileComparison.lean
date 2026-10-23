@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.SecondProfileCurvature
-import SpanningTreeIsoperimetry.SecondProfileModular
+module
+
+public import SpanningTreeIsoperimetry.SecondProfileCurvature
+public import SpanningTreeIsoperimetry.SecondProfileModular
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual second-profile symmetry and curvature imply the coupled hull cost. -/
 namespace SpanningTreeIsoperimetry.SecondProfileComparison

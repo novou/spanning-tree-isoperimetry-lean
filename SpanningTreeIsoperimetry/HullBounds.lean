@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SpanningTreeIsoperimetry.StabilityGeometry
-import SquareMaximality.Theorem
+module
+
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SpanningTreeIsoperimetry.StabilityGeometry
+public import SquareMaximality.Theorem
+
+@[expose] public section
 
 /-! Closed bulk hull bound, with the actual current spanning-tree count.
 The complete planar, correlation, and entropy proofs are included locally.

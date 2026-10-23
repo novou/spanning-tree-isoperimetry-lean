@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CornerSeparationTree
-import SpanningTreeIsoperimetry.CornerPrimalSymmetry
+module
+
+public import SpanningTreeIsoperimetry.CornerSeparationTree
+public import SpanningTreeIsoperimetry.CornerPrimalSymmetry
+
+@[expose] public section
 
 /-! Two nonempty Ferrers corners of a maximizer must be opposite. Reflections
 and coordinate exchange discharge all placements of the adjacent pair. -/

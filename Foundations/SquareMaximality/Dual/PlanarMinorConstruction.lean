@@ -1,4 +1,8 @@
-import SquareMaximality.Dual.ForestEventsConstruction
+module
+
+public import SquareMaximality.Dual.ForestEventsConstruction
+
+@[expose] public section
 
 /-!
 # Deletion/contraction tree complements from full basis duality

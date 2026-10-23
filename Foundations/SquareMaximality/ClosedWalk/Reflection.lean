@@ -1,6 +1,10 @@
-import SquareMaximality.ClosedWalk.OneDim
-import Mathlib.Tactic.Ring
-import Mathlib.Algebra.BigOperators.Intervals
+module
+
+public import SquareMaximality.ClosedWalk.OneDim
+public import Mathlib.Tactic.Ring
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 set_option autoImplicit false
 

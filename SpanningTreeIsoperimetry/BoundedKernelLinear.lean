@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+module
+
+public import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+
+@[expose] public section
 
 /-! Distribution of actual kernel products with absolute convergence
 justified by explicit row bounds. -/

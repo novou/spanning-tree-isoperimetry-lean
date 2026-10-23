@@ -1,6 +1,10 @@
-import SquareMaximality.ClosedWalk.Counts
-import Mathlib.Basic.Real.Basic
-import Mathlib.Tactic.Positivity
+module
+
+public import SquareMaximality.ClosedWalk.Counts
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Tactic.Positivity
+
+@[expose] public section
 
 /-! Stable open-word interface for half-plane Green coefficients. -/
 namespace SpanningTreeIsoperimetry.BoundaryGreen

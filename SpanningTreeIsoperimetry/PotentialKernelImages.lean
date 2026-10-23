@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PotentialKernelImageEquation
-import SpanningTreeIsoperimetry.QuadrantBoundedUniqueness
+module
+
+public import SpanningTreeIsoperimetry.PotentialKernelImageEquation
+public import SpanningTreeIsoperimetry.QuadrantBoundedUniqueness
+
+@[expose] public section
 
 /-! The unrestricted four-image formula for the actual quadrant Green
 kernel. Its uniform bound follows directly from the bounded sine numerator;

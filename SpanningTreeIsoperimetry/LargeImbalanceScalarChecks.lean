@@ -1,7 +1,13 @@
-import SpanningTreeIsoperimetry.StripSupportingLines
-import SpanningTreeIsoperimetry.FluxBounds
-import SpanningTreeIsoperimetry.AspectCost
-import SpanningTreeIsoperimetry.UniformStripEnergy
+module
+
+public import SpanningTreeIsoperimetry.StripSupportingLines
+public import SpanningTreeIsoperimetry.FluxBounds
+public import SpanningTreeIsoperimetry.AspectCost
+public import SpanningTreeIsoperimetry.UniformStripEnergy
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Checked scalar majorants for the large-imbalance comparison. These use
 actual strip energies and the actual rational flux definition. The hull and

@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.ToeplitzHankelTraceConstants
-import SpanningTreeIsoperimetry.RegularizedCircleFactorization
-import SpanningTreeIsoperimetry.EvenExponentialPath
-import SpanningTreeIsoperimetry.RegularizedFourierQuadraticLimit
+module
+
+public import SpanningTreeIsoperimetry.ToeplitzHankelTraceConstants
+public import SpanningTreeIsoperimetry.RegularizedCircleFactorization
+public import SpanningTreeIsoperimetry.EvenExponentialPath
+public import SpanningTreeIsoperimetry.RegularizedFourierQuadraticLimit
+
+@[expose] public section
 
 /-! The actual logarithmic strip coefficients evaluate the linear and
 quadratic trace constants in the determinant deformation. -/

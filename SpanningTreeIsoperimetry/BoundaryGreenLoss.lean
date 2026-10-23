@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.MatrixGreenSeries
-import SpanningTreeIsoperimetry.FaceWalkWords
-import SpanningTreeIsoperimetry.CornerDeterminant
-import SpanningTreeIsoperimetry.FiniteGreenMonotonicity
+module
+
+public import SpanningTreeIsoperimetry.MatrixGreenSeries
+public import SpanningTreeIsoperimetry.FaceWalkWords
+public import SpanningTreeIsoperimetry.CornerDeterminant
+public import SpanningTreeIsoperimetry.FiniteGreenMonotonicity
+
+@[expose] public section
 
 /-! Actual finite Green entries, extended by zero, and their boundary equations.
 The loss considered here is the difference of two actual finite inverses. -/

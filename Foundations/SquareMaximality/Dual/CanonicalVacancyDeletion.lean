@@ -1,4 +1,10 @@
-import SquareMaximality.Dual.PlanarMinorConstruction
+module
+
+public import SquareMaximality.Dual.PlanarMinorConstruction
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Canonical instances of vacancy deletion

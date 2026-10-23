@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallCornerEnergies
-import SpanningTreeIsoperimetry.SmallGreenEnclosures
-import SpanningTreeIsoperimetry.CornerNumericBounds
+module
+
+public import SpanningTreeIsoperimetry.SmallCornerEnergies
+public import SpanningTreeIsoperimetry.SmallGreenEnclosures
+public import SpanningTreeIsoperimetry.CornerNumericBounds
+
+@[expose] public section
 
 /-! The two fixed rectangular obstructions needed for strip rigidity. -/
 namespace SpanningTreeIsoperimetry.RectangleEnergyBounds

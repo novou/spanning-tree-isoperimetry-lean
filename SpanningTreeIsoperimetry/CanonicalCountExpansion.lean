@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.CrossHullCountComparison
-import SpanningTreeIsoperimetry.CanonicalConcentrationArithmetic
-import SpanningTreeIsoperimetry.StabilitySharpness
+module
+
+public import SpanningTreeIsoperimetry.CrossHullCountComparison
+public import SpanningTreeIsoperimetry.CanonicalConcentrationArithmetic
+public import SpanningTreeIsoperimetry.StabilitySharpness
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Exact actual canonical-count decomposition underlying the extremal
 asymptotic, and the actual square limit defining its constant. -/

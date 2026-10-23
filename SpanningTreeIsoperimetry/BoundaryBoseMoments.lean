@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryLossIntegral
+module
+
+public import SpanningTreeIsoperimetry.BoundaryLossIntegral
+
+@[expose] public section
 
 /-! Exact Bose moments used in the finite singleton and short-defect lower
 corrections. All sums are derived from the positive geometric expansion. -/

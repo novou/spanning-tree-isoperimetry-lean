@@ -1,7 +1,13 @@
-import SpanningTreeIsoperimetry.ScalarModular
-import SpanningTreeIsoperimetry.LayerDeterminant
-import Mathlib.Analysis.Matrix.Spectrum
-import Mathlib.RingTheory.Polynomial.Resultant.Basic
+module
+
+public import SpanningTreeIsoperimetry.ScalarModular
+public import SpanningTreeIsoperimetry.LayerDeterminant
+public import Mathlib.Analysis.Matrix.Spectrum
+public import Mathlib.RingTheory.Polynomial.Resultant.Basic
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The rectangle factor is the exact polynomial resultant used by the
 counting algorithm. -/

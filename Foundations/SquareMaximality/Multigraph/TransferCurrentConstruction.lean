@@ -1,7 +1,13 @@
-import SquareMaximality.Multigraph.TransferCurrent
-import SquareMaximality.Multigraph.ContractionTrees
-import SquareMaximality.Inputs.MatrixTree
-import Mathlib.Analysis.Matrix.Order
+module
+
+public import SquareMaximality.Multigraph.TransferCurrent
+public import SquareMaximality.Multigraph.ContractionTrees
+public import SquareMaximality.Inputs.MatrixTree
+public import Mathlib.Analysis.Matrix.Order
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

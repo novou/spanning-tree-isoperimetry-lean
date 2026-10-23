@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.EvenTwoLastRow
-import SpanningTreeIsoperimetry.SourceHullArithmetic
+module
+
+public import SpanningTreeIsoperimetry.EvenTwoLastRow
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+
+@[expose] public section
 
 /-! Actual selector-two even multicorner exclusions for target deficits3/4. -/
 namespace SpanningTreeIsoperimetry.EvenTwoImbalanceExclusion

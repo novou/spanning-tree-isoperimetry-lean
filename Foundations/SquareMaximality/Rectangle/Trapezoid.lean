@@ -1,8 +1,12 @@
-import SquareMaximality.Rectangle.Kernel
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.SpecialFunctions.Integrability.LogMeromorphic
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.TrapezoidalRule
+module
+
+public import SquareMaximality.Rectangle.Kernel
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.SpecialFunctions.Integrability.LogMeromorphic
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.TrapezoidalRule
+
+@[expose] public section
 
 set_option autoImplicit false
 

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CornerPrimalFaces
+module
+
+public import SpanningTreeIsoperimetry.CornerPrimalFaces
+
+@[expose] public section
 
 /-! Strict separation of two adjacent actual primal Ferrers defects. -/
 namespace SpanningTreeIsoperimetry.CornerPrimalDomains

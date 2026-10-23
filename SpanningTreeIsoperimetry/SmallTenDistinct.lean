@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallMaximizerClassification
+module
+
+public import SpanningTreeIsoperimetry.SmallMaximizerClassification
+
+@[expose] public section
 
 /-! The three maximizing isometry classes at ten vertices are distinct.
 The two nonrectangular classes have different lattice-distance distributions. -/

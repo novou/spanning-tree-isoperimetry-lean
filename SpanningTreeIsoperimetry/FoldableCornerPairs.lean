@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerProfileNormalization
-import SpanningTreeIsoperimetry.TwoCornerStripTree
-import SpanningTreeIsoperimetry.CanonicalStrips
+module
+
+public import SpanningTreeIsoperimetry.CornerProfileNormalization
+public import SpanningTreeIsoperimetry.TwoCornerStripTree
+public import SpanningTreeIsoperimetry.CanonicalStrips
+
+@[expose] public section
 
 /-! Actual strict canonical improvements for every two-strip family having
 one strip of length equal to the hull gap plus two, in every placement. -/

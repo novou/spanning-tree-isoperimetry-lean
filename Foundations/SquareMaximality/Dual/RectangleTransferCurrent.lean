@@ -1,5 +1,9 @@
-import SquareMaximality.Dual.Rectangle
-import SquareMaximality.Multigraph.TransferCurrentConstruction
+module
+
+public import SquareMaximality.Dual.Rectangle
+public import SquareMaximality.Multigraph.TransferCurrentConstruction
+
+@[expose] public section
 
 set_option autoImplicit false
 

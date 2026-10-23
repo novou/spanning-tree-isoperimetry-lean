@@ -1,4 +1,8 @@
-import SquareMaximality.Dual.Rayleigh
+module
+
+public import SquareMaximality.Dual.Rayleigh
+
+@[expose] public section
 
 /-!
 # One Matrix--Tree input suffices

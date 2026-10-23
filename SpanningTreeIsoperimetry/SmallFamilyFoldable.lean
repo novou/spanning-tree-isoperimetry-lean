@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SmallFamilyPatternData
-import SpanningTreeIsoperimetry.FoldableCornerPairs
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyPatternData
+public import SpanningTreeIsoperimetry.FoldableCornerPairs
+
+@[expose] public section
 
 /-! A placement-independent description of the strip pairs removed by the
 strict fold, together with its actual count consequence. -/

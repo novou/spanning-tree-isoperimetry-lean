@@ -1,4 +1,8 @@
-import SquareMaximality.Paper
+module
+
+public import SquareMaximality.Paper
+
+@[expose] public section
 
 /-!
 # Main theorems

@@ -1,6 +1,12 @@
-import SquareMaximality.Dual.BoundaryDeterminants
-import SquareMaximality.Multigraph.ContractionTrees
-import SquareMaximality.Boundary.Euler
+module
+
+public import SquareMaximality.Dual.BoundaryDeterminants
+public import SquareMaximality.Multigraph.ContractionTrees
+public import SquareMaximality.Boundary.Euler
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Explicit planar complement for rectangular grids

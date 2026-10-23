@@ -1,5 +1,9 @@
-import SquareMaximality.Rectangle.Concrete
-import Mathlib.Analysis.Convex.SpecificFunctions.Deriv
+module
+
+public import SquareMaximality.Rectangle.Concrete
+public import Mathlib.Analysis.Convex.SpecificFunctions.Deriv
+
+@[expose] public section
 
 set_option autoImplicit false
 

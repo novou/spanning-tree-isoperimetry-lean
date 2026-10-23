@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.WeightedPowerSeries
-import Mathlib.Analysis.SpecialFunctions.Exponential
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Tactic.IntervalCases
+module
+
+public import SpanningTreeIsoperimetry.WeightedPowerSeries
+public import Mathlib.Analysis.SpecialFunctions.Exponential
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Tactic.IntervalCases
+
+@[expose] public section
 
 /-! True weighted coefficient control of the positive-frequency
 exponential and its remainder. All bounds concern actual coefficient sums. -/

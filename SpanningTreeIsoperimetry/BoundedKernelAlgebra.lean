@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundedKernelProduct
+module
+
+public import SpanningTreeIsoperimetry.BoundedKernelProduct
+
+@[expose] public section
 
 /-! Concrete product bounds and associativity for uniformly row-summable
 kernels. All rearrangements are justified by absolute double summability. -/

@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.FiniteBoundaryMinors
-import SpanningTreeIsoperimetry.FiniteGreenMonotonicity
-import SpanningTreeIsoperimetry.CornerStripBridge
-import SpanningTreeIsoperimetry.ThreeCellEnergy
-import SpanningTreeIsoperimetry.SmallGreenEnclosures
+module
+
+public import SpanningTreeIsoperimetry.FiniteBoundaryMinors
+public import SpanningTreeIsoperimetry.FiniteGreenMonotonicity
+public import SpanningTreeIsoperimetry.CornerStripBridge
+public import SpanningTreeIsoperimetry.ThreeCellEnergy
+public import SpanningTreeIsoperimetry.SmallGreenEnclosures
+
+@[expose] public section
 
 /-! The exact finite boundary blocks are the actual corner-strip Green
 minors. Their monotonicity and the five terminal comparisons follow. -/

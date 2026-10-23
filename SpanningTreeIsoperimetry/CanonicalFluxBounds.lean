@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CanonicalRectangleBounds
-import SpanningTreeIsoperimetry.LargeImbalanceBounds
+module
+
+public import SpanningTreeIsoperimetry.CanonicalRectangleBounds
+public import SpanningTreeIsoperimetry.LargeImbalanceBounds
+
+@[expose] public section
 
 /-! Flux estimates for the actual canonical selector, with its integer
 arithmetic discharged by CanonicalRectangleBounds. -/

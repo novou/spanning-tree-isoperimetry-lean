@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CornerDeterminant
+module
+
+public import SpanningTreeIsoperimetry.CornerDeterminant
+
+@[expose] public section
 
 /-! Enlargement of the actual finite face domain decreases the lost-walk
 correction and increases every containing Ferrers Green-minor determinant. -/

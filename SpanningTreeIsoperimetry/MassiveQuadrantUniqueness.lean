@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.RegularizedQuadrantGreen
+module
+
+public import SpanningTreeIsoperimetry.RegularizedQuadrantGreen
+
+@[expose] public section
 
 /-! Bounded uniqueness for z>4 by the strict factor 4/z.
 The final endpoint identifies bounded Poisson solutions with the actual

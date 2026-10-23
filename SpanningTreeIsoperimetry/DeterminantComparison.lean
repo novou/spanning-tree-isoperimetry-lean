@@ -1,4 +1,10 @@
-import SquareMaximality.Boundary.DeterminantSeries
+module
+
+public import SquareMaximality.Boundary.DeterminantSeries
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Trace-moment comparison implies determinant comparison at every
 positive spectral parameter. This generalizes the included finite

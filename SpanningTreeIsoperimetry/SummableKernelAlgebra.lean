@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SummableKernelProduct
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelProduct
+
+@[expose] public section
 
 /-! Direct-sum algebra for entrywise summable real kernels. No general
 operator or Banach algebra instance is introduced. -/

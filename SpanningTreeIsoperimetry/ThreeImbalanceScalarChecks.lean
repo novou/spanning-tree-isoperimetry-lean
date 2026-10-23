@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.MulticornerEnergyMinimum
-import SpanningTreeIsoperimetry.LargeImbalanceScalarChecks
+module
+
+public import SpanningTreeIsoperimetry.MulticornerEnergyMinimum
+public import SpanningTreeIsoperimetry.LargeImbalanceScalarChecks
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The four checked endpoint comparisons covering all multicorner
 families with canonical imbalance three. -/

@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.ThreeImbalanceScalarChecks
-import SpanningTreeIsoperimetry.LargeImbalanceGeometry
-import SpanningTreeIsoperimetry.SourceHullArithmetic
-import SpanningTreeIsoperimetry.CrossHullCountComparison
+module
+
+public import SpanningTreeIsoperimetry.ThreeImbalanceScalarChecks
+public import SpanningTreeIsoperimetry.LargeImbalanceGeometry
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+public import SpanningTreeIsoperimetry.CrossHullCountComparison
+
+@[expose] public section
 
 /-! Parameter-level multicorner comparison for every canonical imbalance
 T=3, with exact actual strip energies and flux envelopes. -/

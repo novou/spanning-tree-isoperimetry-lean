@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerSeparationTree
-import SpanningTreeIsoperimetry.TwoCornerStrips
-import SpanningTreeIsoperimetry.StripTreeComparisons
+module
+
+public import SpanningTreeIsoperimetry.CornerSeparationTree
+public import SpanningTreeIsoperimetry.TwoCornerStrips
+public import SpanningTreeIsoperimetry.StripTreeComparisons
+
+@[expose] public section
 
 /-! All four two-strip orientations and their exact equality case for actual
 primal spanning-tree counts. -/

@@ -1,6 +1,10 @@
-import SquareMaximality.Multigraph.Basic
-import Mathlib.Combinatorics.SimpleGraph.Acyclic
-import Mathlib.SetTheory.Cardinal.Finite
+module
+
+public import SquareMaximality.Multigraph.Basic
+public import Mathlib.Combinatorics.SimpleGraph.Acyclic
+public import Mathlib.SetTheory.Cardinal.Finite
+
+@[expose] public section
 
 /-!
 # Spanning trees of an edge-labelled multigraph

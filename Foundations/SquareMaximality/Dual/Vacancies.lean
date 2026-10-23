@@ -1,5 +1,9 @@
-import SquareMaximality.Dual.Rectangle
-import SquareMaximality.Boundary.King
+module
+
+public import SquareMaximality.Dual.Rectangle
+public import SquareMaximality.Boundary.King
+
+@[expose] public section
 
 set_option autoImplicit false
 

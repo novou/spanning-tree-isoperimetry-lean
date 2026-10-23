@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CatalanEulerBounds
+module
+
+public import SpanningTreeIsoperimetry.CatalanEulerBounds
+
+@[expose] public section
 
 /-! Narrow entropy bounds from one Euler correction of checked blocks. -/
 namespace SpanningTreeIsoperimetry.NarrowEntropyBounds

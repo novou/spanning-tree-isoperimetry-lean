@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CanonicalRectangleBounds
-import SpanningTreeIsoperimetry.CanonicalStrips
+module
+
+public import SpanningTreeIsoperimetry.CanonicalRectangleBounds
+public import SpanningTreeIsoperimetry.CanonicalStrips
+
+@[expose] public section
 
 /-! Actual canonical-selector geometry at the short deficits used by the
 finite concentration comparison. Side lengths here are primal lengths. -/

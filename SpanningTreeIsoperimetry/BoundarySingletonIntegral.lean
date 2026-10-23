@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundarySingletonWeight
-import SpanningTreeIsoperimetry.BoundarySingletonTail
-import SpanningTreeIsoperimetry.BoundaryLossKernel
+module
+
+public import SpanningTreeIsoperimetry.BoundarySingletonWeight
+public import SpanningTreeIsoperimetry.BoundarySingletonTail
+public import SpanningTreeIsoperimetry.BoundaryLossKernel
+
+@[expose] public section
 
 /-! Quantitative lower bound for the actual singleton quadrant-to-strip loss. -/
 namespace SpanningTreeIsoperimetry.BoundarySingletonIntegral

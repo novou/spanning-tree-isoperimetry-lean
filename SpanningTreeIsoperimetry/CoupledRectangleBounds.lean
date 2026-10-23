@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.FourthOrderRectangleError
-import SpanningTreeIsoperimetry.SecondProfileComparison
+module
+
+public import SpanningTreeIsoperimetry.FourthOrderRectangleError
+public import SpanningTreeIsoperimetry.SecondProfileComparison
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual refined and coarse coupled rectangle errors at equal perimeter. -/
 namespace SpanningTreeIsoperimetry.CoupledRectangleBounds

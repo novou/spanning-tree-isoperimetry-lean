@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangleEnergyBounds
-import SpanningTreeIsoperimetry.ThreeCellEnergy
+module
+
+public import SpanningTreeIsoperimetry.RectangleEnergyBounds
+public import SpanningTreeIsoperimetry.ThreeCellEnergy
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Straight strips uniquely minimize the energy of every Ferrers defect,
 with a common positive gap for every other shape. -/

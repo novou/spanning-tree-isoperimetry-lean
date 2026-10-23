@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.StripFourierCoefficients
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
+module
+
+public import SpanningTreeIsoperimetry.StripFourierCoefficients
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Elementary primitives for the actual first strip-symbol coefficients.
 The recurrence integrates x^(2m)/sqrt(2-x²) on [-1,1]. -/

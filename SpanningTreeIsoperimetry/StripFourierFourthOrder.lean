@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.StripFourierDecay
-import SpanningTreeIsoperimetry.KernelDerivativeVariation
+module
+
+public import SpanningTreeIsoperimetry.StripFourierDecay
+public import SpanningTreeIsoperimetry.KernelDerivativeVariation
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The displayed fourth-order asymptotic bound for the actual critical
 Fourier coefficients. Our coefficient is that of minus gamma, so its

@@ -1,10 +1,14 @@
-import SquareMaximality.Main
-import SquareMaximality.Rectangle.Kernel
-import SquareMaximality.Rectangle.Entropy
-import SquareMaximality.Rectangle.SharpTrapezoid
-import SquareMaximality.Rectangle.Spectral
-import SquareMaximality.ClosedWalk.EntropySeries
-import SquareMaximality.Boundary.Completion
+module
+
+public import SquareMaximality.Main
+public import SquareMaximality.Rectangle.Kernel
+public import SquareMaximality.Rectangle.Entropy
+public import SquareMaximality.Rectangle.SharpTrapezoid
+public import SquareMaximality.Rectangle.Spectral
+public import SquareMaximality.ClosedWalk.EntropySeries
+public import SquareMaximality.Boundary.Completion
+
+@[expose] public section
 
 set_option autoImplicit false
 

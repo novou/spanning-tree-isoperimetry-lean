@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.SecondProfileModes
-import Mathlib.Analysis.Calculus.SmoothSeries
+module
+
+public import SpanningTreeIsoperimetry.SecondProfileModes
+public import Mathlib.Analysis.Calculus.SmoothSeries
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Locally uniformly summable actual derivatives of the second profile. -/
 namespace SpanningTreeIsoperimetry.SecondProfileCalculus

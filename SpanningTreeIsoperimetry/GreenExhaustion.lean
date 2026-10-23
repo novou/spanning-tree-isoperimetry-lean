@@ -1,9 +1,13 @@
-import SpanningTreeIsoperimetry.MatrixGreenSeries
-import SpanningTreeIsoperimetry.HalfPlaneWalks
-import SpanningTreeIsoperimetry.BoundaryHalfPlane
-import SpanningTreeIsoperimetry.StripEnergyBound
-import Mathlib.Analysis.Normed.Group.Tannery
-import Mathlib.Topology.Instances.Matrix
+module
+
+public import SpanningTreeIsoperimetry.MatrixGreenSeries
+public import SpanningTreeIsoperimetry.HalfPlaneWalks
+public import SpanningTreeIsoperimetry.BoundaryHalfPlane
+public import SpanningTreeIsoperimetry.StripEnergyBound
+public import Mathlib.Analysis.Normed.Group.Tannery
+public import Mathlib.Topology.Instances.Matrix
+
+@[expose] public section
 
 /-! Finite face-window inverse entries converge to the explicitly evaluated
 half-plane boundary Green matrices. -/

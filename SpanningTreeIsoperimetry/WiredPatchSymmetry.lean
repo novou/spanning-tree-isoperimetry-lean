@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.WiredRayleigh
-import SpanningTreeIsoperimetry.FreePatchBridge
+module
+
+public import SpanningTreeIsoperimetry.WiredRayleigh
+public import SpanningTreeIsoperimetry.FreePatchBridge
+
+@[expose] public section
 
 /-! The south/west free-patch margin follows by a finite half-turn wiring. -/
 set_option backward.isDefEq.respectTransparency false

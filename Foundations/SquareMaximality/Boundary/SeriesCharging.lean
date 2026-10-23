@@ -1,5 +1,11 @@
-import SquareMaximality.Boundary.WalkCharging
-import SquareMaximality.ClosedWalk.Symmetry
+module
+
+public import SquareMaximality.Boundary.WalkCharging
+public import SquareMaximality.ClosedWalk.Symmetry
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Summing the walk-charging inequality

@@ -1,4 +1,8 @@
-import SquareMaximality.ClosedWalk.Span
+module
+
+public import SquareMaximality.ClosedWalk.Span
+
+@[expose] public section
 
 set_option autoImplicit false
 

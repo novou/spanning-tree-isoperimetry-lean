@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RegularizedStripSymbol
-import Mathlib.Analysis.PSeries
-import Mathlib.Analysis.Normed.Group.Tannery
+module
+
+public import SpanningTreeIsoperimetry.RegularizedStripSymbol
+public import Mathlib.Analysis.PSeries
+public import Mathlib.Analysis.Normed.Group.Tannery
+
+@[expose] public section
 
 /-! Dominated passage to the critical quadratic Fourier sum. The uniform
 coefficient estimate is an explicit input of this analytic bridge; this file

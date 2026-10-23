@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.Repetition
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+module
+
+public import SpanningTreeIsoperimetry.Repetition
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+
+@[expose] public section
 
 /-!
 # Closed lattice words and nonnegative corner-energy series

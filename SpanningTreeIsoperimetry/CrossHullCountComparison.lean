@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FiniteCornerCharges
-import SpanningTreeIsoperimetry.RectangleProfileContinuity
-import SpanningTreeIsoperimetry.AspectCost
+module
+
+public import SpanningTreeIsoperimetry.FiniteCornerCharges
+public import SpanningTreeIsoperimetry.RectangleProfileContinuity
+public import SpanningTreeIsoperimetry.AspectCost
+
+@[expose] public section
 
 /-! Actual cross-hull count criteria. The analytic remainder bounds are
 explicit inputs to these reusable criteria; final exclusions instantiate

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryGreenBounds
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenBounds
+
+@[expose] public section
 
 /-! Bounded uniqueness for the killed quadrant Laplacian. The proof compares
 on finite boxes with an explicit affine supersolution and lets its slope tend

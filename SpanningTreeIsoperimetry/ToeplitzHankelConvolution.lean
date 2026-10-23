@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.ToeplitzHankelKernels
+module
+
+public import SpanningTreeIsoperimetry.ToeplitzHankelKernels
+
+@[expose] public section
 
 /-! Actual integer-convolution identities for the Toeplitz and shifted
 Toeplitz-minus-Hankel kernels, with all sum rearrangements justified. -/

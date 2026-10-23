@@ -1,4 +1,8 @@
-import SquareMaximality.ClosedWalk.PlaneReflection
+module
+
+public import SquareMaximality.ClosedWalk.PlaneReflection
+
+@[expose] public section
 
 set_option autoImplicit false
 

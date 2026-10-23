@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SummableKernelProduct
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelProduct
+
+@[expose] public section
 
 /-! The missing inner-index tail in a product of two actual finite sections. -/
 namespace SpanningTreeIsoperimetry.SummableKernelProductTail

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.WeightedLaurentPath
-import SpanningTreeIsoperimetry.SummableDeterminantPath
+module
+
+public import SpanningTreeIsoperimetry.WeightedLaurentPath
+public import SpanningTreeIsoperimetry.SummableDeterminantPath
+
+@[expose] public section
 
 /-! A concrete three-term remainder estimate shared by weighted convolution
 and summable kernel products. The data below record proved scalar mass

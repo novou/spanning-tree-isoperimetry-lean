@@ -1,7 +1,11 @@
-import SquareMaximality.Rectangle.Reduction
-import Mathlib.Analysis.SpecialFunctions.Arcosh
-import Mathlib.Analysis.SpecialFunctions.Arsinh
-import Mathlib.Algebra.Order.Field.GeomSum
+module
+
+public import SquareMaximality.Rectangle.Reduction
+public import Mathlib.Analysis.SpecialFunctions.Arcosh
+public import Mathlib.Analysis.SpecialFunctions.Arsinh
+public import Mathlib.Algebra.Order.Field.GeomSum
+
+@[expose] public section
 
 set_option autoImplicit false
 

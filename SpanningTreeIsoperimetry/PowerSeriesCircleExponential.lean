@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PowerSeriesCircle
-import SpanningTreeIsoperimetry.WeightedExponentialRemainder
+module
+
+public import SpanningTreeIsoperimetry.PowerSeriesCircle
+public import SpanningTreeIsoperimetry.WeightedExponentialRemainder
+
+@[expose] public section
 
 /-! Identification of the formal positive-frequency exponential with the
 actual complex exponential on the circle. Absolute double-sum control

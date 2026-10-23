@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_rectangle24
-import SpanningTreeIsoperimetry.NarrowLogCertificates
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_rectangle24
+public import SpanningTreeIsoperimetry.NarrowLogCertificates
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Literal printed energy interval for rectangle24; every rational certificate is checked. -/
 namespace SpanningTreeIsoperimetry.PrintedEnergyBounds.rectangle24

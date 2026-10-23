@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CanonicalRectangleBounds
+module
+
+public import SpanningTreeIsoperimetry.CanonicalRectangleBounds
+
+@[expose] public section
 
 /-! Actual feasible minimum-side-sum hulls indexed before the canonical
 selector. This supplies common arithmetic for every imbalance family. -/

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FirstProfileModular
-import SpanningTreeIsoperimetry.CoupledRectangleError
-import Mathlib.Analysis.Calculus.SmoothSeries
+module
+
+public import SpanningTreeIsoperimetry.FirstProfileModular
+public import SpanningTreeIsoperimetry.CoupledRectangleError
+public import Mathlib.Analysis.Calculus.SmoothSeries
+
+@[expose] public section
 
 /-! Explicit first and second derivatives of the actual first rectangular
 profile. All differentiated series are locally uniformly summable. -/

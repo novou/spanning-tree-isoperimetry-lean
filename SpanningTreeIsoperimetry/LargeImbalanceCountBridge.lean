@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CrossHullCountComparison
-import SpanningTreeIsoperimetry.SourceHullArithmetic
-import SpanningTreeIsoperimetry.LargeImbalanceTest
+module
+
+public import SpanningTreeIsoperimetry.CrossHullCountComparison
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+public import SpanningTreeIsoperimetry.LargeImbalanceTest
+
+@[expose] public section
 
 /-! Actual T≥4 count exclusion once the rectangular remainder absorption is
 supplied. The remaining analytic input is explicit and is not counted here

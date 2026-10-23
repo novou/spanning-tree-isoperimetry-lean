@@ -1,4 +1,8 @@
-import SquareMaximality.ClosedWalk.VerticalCount
+module
+
+public import SquareMaximality.ClosedWalk.VerticalCount
+
+@[expose] public section
 
 set_option autoImplicit false
 

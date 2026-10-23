@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.AbsolutelySummableDeterminant
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
+module
+
+public import SpanningTreeIsoperimetry.AbsolutelySummableDeterminant
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+
+@[expose] public section
 
 /-! Products of entrywise absolutely summable real kernels, with an explicit
 mass bound. These kernels perturb the identity; the identity itself need

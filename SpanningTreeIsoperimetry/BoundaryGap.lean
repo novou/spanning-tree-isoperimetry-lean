@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SpanningTreeIsoperimetry.FourCorners
-import SpanningTreeIsoperimetry.EnhancedBoundary
+module
+
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SpanningTreeIsoperimetry.FourCorners
+public import SpanningTreeIsoperimetry.EnhancedBoundary
+
+@[expose] public section
 
 /-! The strengthened boundary-vacancy estimate in the current graph model. -/
 namespace SpanningTreeIsoperimetry

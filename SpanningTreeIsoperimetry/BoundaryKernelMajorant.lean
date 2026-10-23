@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.BoundaryKernelBounds
-import SpanningTreeIsoperimetry.BoundaryLossIntegral
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+module
+
+public import SpanningTreeIsoperimetry.BoundaryKernelBounds
+public import SpanningTreeIsoperimetry.BoundaryLossIntegral
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Rigorous domination and gamma substitution for the separated one-boundary
 loss density. Identification with actual Green limits is kept separate. -/

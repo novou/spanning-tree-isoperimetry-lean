@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.RefinedEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.RefinedEntropyBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! A one-step Euler correction of the checked Catalan blocks.
 No new long rational block expansion is needed. -/

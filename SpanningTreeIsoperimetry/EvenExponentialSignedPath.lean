@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.EvenExponentialPath
+module
+
+public import SpanningTreeIsoperimetry.EvenExponentialPath
+
+@[expose] public section
 
 /-! Positive and negative parameter directions of the actual even Laurent
 exponential, including the sign in the negative reparametrization. -/

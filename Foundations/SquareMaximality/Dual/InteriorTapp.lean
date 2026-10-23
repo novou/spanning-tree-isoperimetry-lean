@@ -1,7 +1,13 @@
-import SquareMaximality.Dual.InteriorFactor
-import SquareMaximality.Dual.Components
-import SquareMaximality.Multigraph.ContractionTrees
-import SquareMaximality.Boundary.Cellulation
+module
+
+public import SquareMaximality.Dual.InteriorFactor
+public import SquareMaximality.Dual.Components
+public import SquareMaximality.Multigraph.ContractionTrees
+public import SquareMaximality.Boundary.Cellulation
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Interior face stars and the Tapp reduction

@@ -1,7 +1,13 @@
-import SquareMaximality.Boundary.DeterminantSeries
-import SquareMaximality.Dual.Components
-import SquareMaximality.Inputs.MatrixTree
-import SquareMaximality.Multigraph.Contraction
+module
+
+public import SquareMaximality.Boundary.DeterminantSeries
+public import SquareMaximality.Dual.Components
+public import SquareMaximality.Inputs.MatrixTree
+public import SquareMaximality.Multigraph.Contraction
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Boundary determinants from the explicit rectangular dual

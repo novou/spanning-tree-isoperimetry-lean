@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangleModeSums
-import SpanningTreeIsoperimetry.SharpRectangleExpansion
+module
+
+public import SpanningTreeIsoperimetry.RectangleModeSums
+public import SpanningTreeIsoperimetry.SharpRectangleExpansion
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual retained Taylor errors, summed with the sharp mode bounds. -/
 namespace SpanningTreeIsoperimetry.RectangleTaylorRemainder

@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.BoundaryHyperbolic
-import SpanningTreeIsoperimetry.ScalarResolvent
+module
+
+public import SpanningTreeIsoperimetry.BoundaryHyperbolic
+public import SpanningTreeIsoperimetry.ScalarResolvent
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The general scalar path Green entry, including arbitrary interior depths.
 This supplies the coordinate-exchanged boundary-loss kernel, not just row one. -/

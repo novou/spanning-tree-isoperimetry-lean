@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RefinedObstruction_square33
-import SpanningTreeIsoperimetry.RefinedPiBounds
-import SpanningTreeIsoperimetry.RefinedEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstruction_square33
+public import SpanningTreeIsoperimetry.RefinedPiBounds
+public import SpanningTreeIsoperimetry.RefinedEntropyBounds
+
+@[expose] public section
 
 /-! Actual square33 energy threshold for the refined corner envelope. -/
 namespace SpanningTreeIsoperimetry.RefinedObstructionEnergy

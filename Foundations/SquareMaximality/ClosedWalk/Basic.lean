@@ -1,9 +1,13 @@
-import Mathlib.Algebra.BigOperators.Fin
-import Mathlib.Algebra.Group.Prod
-import Mathlib.Data.Finset.Max
-import Mathlib.Data.Fintype.Pi
-import Mathlib.Data.Fintype.Powerset
-import Mathlib.Data.Int.Basic
+module
+
+public import Mathlib.Algebra.BigOperators.Fin
+public import Mathlib.Algebra.Group.Prod
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Data.Fintype.Pi
+public import Mathlib.Data.Fintype.Powerset
+public import Mathlib.Data.Int.Basic
+
+@[expose] public section
 
 set_option autoImplicit false
 

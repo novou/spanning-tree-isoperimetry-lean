@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundarySingletonTail
+module
+
+public import SpanningTreeIsoperimetry.BoundarySingletonTail
+
+@[expose] public section
 
 /-! Explicit moment lower bounds for the two-cell and square-defect
 corrections. Scaling makes both tail estimates uniform for real r≥5. -/

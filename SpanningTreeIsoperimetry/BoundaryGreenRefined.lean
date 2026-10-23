@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryGreenExtension
-import SpanningTreeIsoperimetry.BoundaryGreenPolynomials
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenExtension
+public import SpanningTreeIsoperimetry.BoundaryGreenPolynomials
+
+@[expose] public section
 
 /-! Additional exact half-plane Green sums at displacements nine through twelve.
 The displayed polynomial candidates are checked by local rational identities. -/

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryLayerGreen
+module
+
+public import SpanningTreeIsoperimetry.BoundaryLayerGreen
+
+@[expose] public section
 
 /-! Checked determinant polynomials for the square, 3-by-2 rectangle,
 and length-four boundary strip. Every candidate is verified as an identity. -/

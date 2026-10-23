@@ -1,7 +1,13 @@
-import SquareMaximality.Dual.PlanarComplement
-import SquareMaximality.Dual.ForestProduct
-import SquareMaximality.Dual.InteriorTapp
-import SquareMaximality.Dual.RectangleTransferCurrent
+module
+
+public import SquareMaximality.Dual.PlanarComplement
+public import SquareMaximality.Dual.ForestProduct
+public import SquareMaximality.Dual.InteriorTapp
+public import SquareMaximality.Dual.RectangleTransferCurrent
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Constructing the canonical forest events from planar complements

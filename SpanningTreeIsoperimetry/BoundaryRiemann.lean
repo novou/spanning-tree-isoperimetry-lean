@@ -1,9 +1,13 @@
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
-import Mathlib.Topology.UniformSpace.HeineCantor
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Positivity
+module
+
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+public import Mathlib.Topology.UniformSpace.HeineCantor
+public import Mathlib.Analysis.SpecificLimits.Normed
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+
+@[expose] public section
 
 /-! A one-dimensional uniform-grid Riemann limit for the finite sine sums.
 Only continuity on the compact interval is required. -/

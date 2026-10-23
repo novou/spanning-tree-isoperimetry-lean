@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FerrersFoldStrict
+module
+
+public import SpanningTreeIsoperimetry.FerrersFoldStrict
+
+@[expose] public section
 
 /-! The small maximal blocks and full Ferrers-fold strictness alternative. -/
 namespace SpanningTreeIsoperimetry.CornerFolds

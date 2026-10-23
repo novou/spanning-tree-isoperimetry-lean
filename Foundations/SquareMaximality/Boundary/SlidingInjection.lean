@@ -1,5 +1,11 @@
-import SquareMaximality.Boundary.Windows2D
-import Mathlib.Combinatorics.SimpleGraph.Metric
+module
+
+public import SquareMaximality.Boundary.Windows2D
+public import Mathlib.Combinatorics.SimpleGraph.Metric
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

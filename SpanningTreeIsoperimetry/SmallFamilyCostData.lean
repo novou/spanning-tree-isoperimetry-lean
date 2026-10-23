@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallFamilyDefinitions
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyDefinitions
+
+@[expose] public section
 
 /-! Exact aspect-cost simplification, independent of derivative certificates. -/
 namespace SpanningTreeIsoperimetry.SmallFamilyCosts

@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.Grid
-import SpanningTreeIsoperimetry.HullArithmetic
-import SpanningTreeIsoperimetry.LocalBounds
-import SpanningTreeIsoperimetry.StabilityGeometry
-import Mathlib.Data.Finset.SymmDiff
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import SpanningTreeIsoperimetry.HullArithmetic
+public import SpanningTreeIsoperimetry.LocalBounds
+public import SpanningTreeIsoperimetry.StabilityGeometry
+public import Mathlib.Data.Finset.SymmDiff
+
+@[expose] public section
 
 open scoped symmDiff
 

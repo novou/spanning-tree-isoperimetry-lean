@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.StripFourierFive
-import SpanningTreeIsoperimetry.RefinedPiBounds
-import SpanningTreeIsoperimetry.PrintedElementaryConstants
-import SpanningTreeIsoperimetry.UniformStripEnergy
+module
+
+public import SpanningTreeIsoperimetry.StripFourierFive
+public import SpanningTreeIsoperimetry.RefinedPiBounds
+public import SpanningTreeIsoperimetry.PrintedElementaryConstants
+public import SpanningTreeIsoperimetry.UniformStripEnergy
+
+@[expose] public section
 
 /-! The displayed finite-five-coefficient upper bound, proved independently
 of the still separate infinite Toeplitz--Hankel determinant identity. -/

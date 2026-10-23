@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CanonicalAsymptoticGeometry
-import SpanningTreeIsoperimetry.FirstProfileQuadratic
+module
+
+public import SpanningTreeIsoperimetry.CanonicalAsymptoticGeometry
+public import SpanningTreeIsoperimetry.FirstProfileQuadratic
+
+@[expose] public section
 
 /-! The actual canonical strip has the full O(N^(-1/2)) count expansion.
 Replacing its count by the global maximum is a separate classification step. -/

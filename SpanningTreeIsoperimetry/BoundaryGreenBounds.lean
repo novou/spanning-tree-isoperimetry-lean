@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryGreenLoss
-import Mathlib.Topology.Order.MonotoneConvergence
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenLoss
+public import Mathlib.Topology.Order.MonotoneConvergence
+
+@[expose] public section
 
 /-! A discrete supersolution bounds every actual finite Green entry. -/
 namespace SpanningTreeIsoperimetry.BoundaryGreenBounds

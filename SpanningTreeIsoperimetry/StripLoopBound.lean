@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.CornerDeterminant
-import SpanningTreeIsoperimetry.DeterminantComparison
+module
+
+public import SpanningTreeIsoperimetry.CornerDeterminant
+public import SpanningTreeIsoperimetry.DeterminantComparison
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Finite loop comparisons for the uniform strip-energy bound

@@ -1,5 +1,9 @@
-import SquareMaximality.ClosedWalk.PlaneFirstHit
-import Mathlib.Data.Nat.Choose.Vandermonde
+module
+
+public import SquareMaximality.ClosedWalk.PlaneFirstHit
+public import Mathlib.Data.Nat.Choose.Vandermonde
+
+@[expose] public section
 
 set_option autoImplicit false
 

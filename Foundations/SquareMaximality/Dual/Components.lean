@@ -1,6 +1,12 @@
-import SquareMaximality.Dual.Encoding
-import SquareMaximality.Boundary.Canonical
-import SquareMaximality.Multigraph.Events
+module
+
+public import SquareMaximality.Dual.Encoding
+public import SquareMaximality.Boundary.Canonical
+public import SquareMaximality.Multigraph.Events
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Dual edge blocks of canonical vacancy components

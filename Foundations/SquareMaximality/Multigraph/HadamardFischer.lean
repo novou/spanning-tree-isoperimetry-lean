@@ -1,6 +1,10 @@
-import SquareMaximality.Multigraph.Events
-import Mathlib.Analysis.Matrix.Order
-import Mathlib.LinearAlgebra.Matrix.SchurComplement
+module
+
+public import SquareMaximality.Multigraph.Events
+public import Mathlib.Analysis.Matrix.Order
+public import Mathlib.LinearAlgebra.Matrix.SchurComplement
+
+@[expose] public section
 
 /-!
 # Hadamard--Fischer determinant inequalities

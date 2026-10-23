@@ -1,5 +1,9 @@
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
-import Mathlib.Data.Fin.VecNotation
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+public import Mathlib.Data.Fin.VecNotation
+
+@[expose] public section
 
 /-! Exact profile data for the small noncanonical family comparisons. These
 are definitions only; derivative and endpoint certificates are separate. -/

@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.Grid
-import SpanningTreeIsoperimetry.LocalBounds
-import SquareMaximality.Infrastructure
-import SquareMaximality.Constants
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import SpanningTreeIsoperimetry.LocalBounds
+public import SquareMaximality.Infrastructure
+public import SquareMaximality.Constants
+
+@[expose] public section
 
 /-! Definition-level bridges to the complete proofs included under Foundations.
 These are actual equalities, not assumptions identifying two tree-count models. -/

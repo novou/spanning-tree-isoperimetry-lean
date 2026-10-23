@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.CornerPrimalFaces
-import SpanningTreeIsoperimetry.TwoCornerStripTree
-import SpanningTreeIsoperimetry.FiniteFaceCountBridge
-import SpanningTreeIsoperimetry.ThreeCellEnergy
+module
+
+public import SpanningTreeIsoperimetry.CornerPrimalFaces
+public import SpanningTreeIsoperimetry.TwoCornerStripTree
+public import SpanningTreeIsoperimetry.FiniteFaceCountBridge
+public import SpanningTreeIsoperimetry.ThreeCellEnergy
+
+@[expose] public section
 
 /-! The actual opposite-pair, L and three-singleton tree counts at seventeen.
 The exhaustive shape reduction is separate from these strict comparisons. -/

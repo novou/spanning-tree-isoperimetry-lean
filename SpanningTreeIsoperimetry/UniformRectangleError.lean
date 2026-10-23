@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangleResidualBounds
-import SpanningTreeIsoperimetry.TrapezoidalKernelError
+module
+
+public import SpanningTreeIsoperimetry.RectangleResidualBounds
+public import SpanningTreeIsoperimetry.TrapezoidalKernelError
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Uniform quadratic control of the actual rectangle profile error. -/
 namespace SpanningTreeIsoperimetry.UniformRectangleError

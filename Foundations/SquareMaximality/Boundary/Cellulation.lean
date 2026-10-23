@@ -1,5 +1,11 @@
-import SquareMaximality.Boundary.MarkedCount
-import Mathlib.Data.Int.NatAbs
+module
+
+public import SquareMaximality.Boundary.MarkedCount
+public import Mathlib.Data.Int.NatAbs
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

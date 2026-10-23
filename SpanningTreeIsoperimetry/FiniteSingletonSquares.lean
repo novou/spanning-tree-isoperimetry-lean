@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.FiniteSingletonSmall
-import SpanningTreeIsoperimetry.FixedDirichletSystems
+module
+
+public import SpanningTreeIsoperimetry.FiniteSingletonSmall
+public import SpanningTreeIsoperimetry.FixedDirichletSystems
+
+@[expose] public section
 
 /-! Exact tiny finite Dirichlet systems and their singleton square lower bounds. -/
 namespace SpanningTreeIsoperimetry.FiniteSingletonSquares

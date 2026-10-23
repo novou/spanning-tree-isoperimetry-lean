@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallFamilyCountComparison
-import SpanningTreeIsoperimetry.SmallCornerCorrections
-import SpanningTreeIsoperimetry.MulticornerEnergyMinimum
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyCountComparison
+public import SpanningTreeIsoperimetry.SmallCornerCorrections
+public import SpanningTreeIsoperimetry.MulticornerEnergyMinimum
+
+@[expose] public section
 
 /-! Actual multicorner comparisons for the even selector-two deficit-three
 families, using the certified rows20 and21. -/

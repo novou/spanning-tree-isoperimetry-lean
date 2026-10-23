@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.EnergyConvergence
+module
+
+public import SpanningTreeIsoperimetry.EnergyConvergence
+
+@[expose] public section
 
 /-!
 # Explicit closed-word witnesses for strict strip inequalities

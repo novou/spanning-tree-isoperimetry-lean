@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_ell
-import SpanningTreeIsoperimetry.NarrowLogCertificates
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_ell
+public import SpanningTreeIsoperimetry.NarrowLogCertificates
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Literal printed energy interval for ell; every rational certificate is checked. -/
 namespace SpanningTreeIsoperimetry.PrintedEnergyBounds.ell

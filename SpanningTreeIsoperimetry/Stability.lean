@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.HullBounds
-import SpanningTreeIsoperimetry.RectangularComparison
-import SpanningTreeIsoperimetry.Targets
+module
+
+public import SpanningTreeIsoperimetry.HullBounds
+public import SpanningTreeIsoperimetry.RectangularComparison
+public import SpanningTreeIsoperimetry.Targets
+
+@[expose] public section
 
 /-! The quantitative stability inequality in the current graph model.
 Optimality of the coefficient requires a separate asymptotic argument. -/

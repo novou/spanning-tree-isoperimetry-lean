@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.SmallGreenPolynomials
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import SpanningTreeIsoperimetry.SmallGreenPolynomials
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Exact rational enclosures of the three checked determinant polynomials. -/
 namespace SpanningTreeIsoperimetry.SmallGreenEnclosures

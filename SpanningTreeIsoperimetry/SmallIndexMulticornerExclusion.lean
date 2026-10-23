@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.SmallFamilyExclusion
-import SpanningTreeIsoperimetry.OddTwoImbalanceExclusion
-import SpanningTreeIsoperimetry.EvenTwoImbalanceExclusion
-import SpanningTreeIsoperimetry.ThreeImbalanceExclusion
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyExclusion
+public import SpanningTreeIsoperimetry.OddTwoImbalanceExclusion
+public import SpanningTreeIsoperimetry.EvenTwoImbalanceExclusion
+public import SpanningTreeIsoperimetry.ThreeImbalanceExclusion
+
+@[expose] public section
 
 /-! Complete actual multicorner exclusion for noncanonical selector indices≤3. -/
 namespace SpanningTreeIsoperimetry.SmallIndexMulticornerExclusion

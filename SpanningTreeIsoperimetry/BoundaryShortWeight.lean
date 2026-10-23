@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundarySingletonWeight
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Series
+module
+
+public import SpanningTreeIsoperimetry.BoundarySingletonWeight
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Series
+
+@[expose] public section
 
 /-! Quantitative transformed weight for the two-cell and square-defect
 boundary corrections. -/

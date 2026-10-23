@@ -1,7 +1,13 @@
-import SpanningTreeIsoperimetry.PowerSeriesCircleExponential
-import SpanningTreeIsoperimetry.RegularizedFourierWeighted
-import SpanningTreeIsoperimetry.RegularizedFourierQuadraticLimit
-import SpanningTreeIsoperimetry.EvenFourierReconstruction
+module
+
+public import SpanningTreeIsoperimetry.PowerSeriesCircleExponential
+public import SpanningTreeIsoperimetry.RegularizedFourierWeighted
+public import SpanningTreeIsoperimetry.RegularizedFourierQuadraticLimit
+public import SpanningTreeIsoperimetry.EvenFourierReconstruction
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual positive-frequency factors of the regularized strip symbol.
 The zero mode is separated explicitly; all remaining coefficients are the

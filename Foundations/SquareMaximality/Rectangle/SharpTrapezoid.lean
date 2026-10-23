@@ -1,6 +1,12 @@
-import SquareMaximality.Rectangle.Entropy
-import Mathlib.Analysis.SpecialFunctions.Integrals.PosLogEqCircleAverage
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.RootsExtrema
+module
+
+public import SquareMaximality.Rectangle.Entropy
+public import Mathlib.Algebra.Polynomial.Splits
+public import Mathlib.Analysis.SpecialFunctions.Integrals.PosLogEqCircleAverage
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.Basic
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.RootsExtrema
+
+@[expose] public section
 
 set_option autoImplicit false
 

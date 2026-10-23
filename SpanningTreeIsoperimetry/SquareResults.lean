@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SpanningTreeIsoperimetry.StabilityGeometry
-import SquareMaximality.Theorem
+module
+
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SpanningTreeIsoperimetry.StabilityGeometry
+public import SquareMaximality.Theorem
+
+@[expose] public section
 
 /-! Closed square-cardinality results transported to the current definitions.
 Every dependency of SquareMaximality.Theorem is included under Foundations

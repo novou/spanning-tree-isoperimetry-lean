@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SummableKernelProduct
-import Mathlib.LinearAlgebra.Matrix.Block
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelProduct
+public import Mathlib.LinearAlgebra.Matrix.Block
+
+@[expose] public section
 
 /-! Exact finite compression through a lower triangular factor on the left
 and an upper triangular factor on the right. Infinite sums truncate exactly. -/

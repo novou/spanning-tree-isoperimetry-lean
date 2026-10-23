@@ -1,5 +1,9 @@
-import SquareMaximality.Dual.Vacancies
-import SquareMaximality.Boundary.Encoding
+module
+
+public import SquareMaximality.Dual.Vacancies
+public import SquareMaximality.Boundary.Encoding
+
+@[expose] public section
 
 /-!
 # Coordinate bridge for rectangular primal vertices

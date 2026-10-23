@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SummableKernelProductTail
-import Mathlib.Tactic.NoncommRing
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelProductTail
+public import Mathlib.Tactic.NoncommRing
+
+@[expose] public section
 
 /-! Multiplicativity of the actual absolutely-summable finite-section
 limit, and nonvanishing for explicit inverse perturbations. -/

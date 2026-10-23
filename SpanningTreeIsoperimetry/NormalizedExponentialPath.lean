@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.EvenExponentialSignedPath
-import SpanningTreeIsoperimetry.WeightedKernelProductPath
-import SpanningTreeIsoperimetry.NormalizedExponentialNonzero
-import SpanningTreeIsoperimetry.SummableDeterminantPath
+module
+
+public import SpanningTreeIsoperimetry.EvenExponentialSignedPath
+public import SpanningTreeIsoperimetry.WeightedKernelProductPath
+public import SpanningTreeIsoperimetry.NormalizedExponentialNonzero
+public import SpanningTreeIsoperimetry.SummableDeterminantPath
+
+@[expose] public section
 
 /-! Actual mass differentiation of the normalized exponential perturbation.
 The proof uses its two summable Toeplitz/Hankel product terms, then the checked

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.Grid
-import SpanningTreeIsoperimetry.HullArithmetic
-import Mathlib.Combinatorics.SimpleGraph.Finite
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import SpanningTreeIsoperimetry.HullArithmetic
+public import Mathlib.Combinatorics.SimpleGraph.Finite
+
+@[expose] public section
 
 /-!
 # The edge projection bound

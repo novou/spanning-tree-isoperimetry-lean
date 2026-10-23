@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.QuadrantMinorEnergy
-import SpanningTreeIsoperimetry.GreenLogDetComparison
-import SpanningTreeIsoperimetry.GreenStripLimits
-import Mathlib.Analysis.Matrix.Order
+module
+
+public import SpanningTreeIsoperimetry.QuadrantMinorEnergy
+public import SpanningTreeIsoperimetry.GreenLogDetComparison
+public import SpanningTreeIsoperimetry.GreenStripLimits
+public import Mathlib.Analysis.Matrix.Order
+
+@[expose] public section
 
 /-! Positive definiteness of actual quadrant minors, and a lower trace bound
 for finite corrections after extending one side to an infinite strip. -/

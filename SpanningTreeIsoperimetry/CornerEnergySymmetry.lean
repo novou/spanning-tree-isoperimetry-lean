@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CornerDeterminant
+module
+
+public import SpanningTreeIsoperimetry.CornerDeterminant
+
+@[expose] public section
 
 /-! Transposition and monotonicity in the sides of rectangular corner defects. -/
 namespace SpanningTreeIsoperimetry.CornerEnergy

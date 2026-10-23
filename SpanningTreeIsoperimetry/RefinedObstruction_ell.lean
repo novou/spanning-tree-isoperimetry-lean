@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ThreeCellEnergy
-import SpanningTreeIsoperimetry.TwoTierFerrers
+module
+
+public import SpanningTreeIsoperimetry.ThreeCellEnergy
+public import SpanningTreeIsoperimetry.TwoTierFerrers
+
+@[expose] public section
 
 /-! Reuse the already checked actual small-corner determinant formula. -/
 namespace SpanningTreeIsoperimetry.RefinedObstructionPolynomials.ell

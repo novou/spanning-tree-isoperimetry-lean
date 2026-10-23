@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.LatticeCongruence
-import SpanningTreeIsoperimetry.Isoperimetry
+module
+
+public import SpanningTreeIsoperimetry.LatticeCongruence
+public import SpanningTreeIsoperimetry.Isoperimetry
+
+@[expose] public section
 
 /-! Every actual maximizer admits an ordered origin-based minimal hull.
 Translations and coordinate exchange preserve the literal congruence relation. -/

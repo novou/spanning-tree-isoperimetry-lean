@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RefinedQuadrantKernel
-import SpanningTreeIsoperimetry.QuadrantMinorReduction
-import SpanningTreeIsoperimetry.TwoTierFerrers
+module
+
+public import SpanningTreeIsoperimetry.RefinedQuadrantKernel
+public import SpanningTreeIsoperimetry.QuadrantMinorReduction
+public import SpanningTreeIsoperimetry.TwoTierFerrers
+
+@[expose] public section
 
 /-! Actual small-corner Green determinants, reduced by certified interior
 Dirichlet rows. Every displayed affine entry and polynomial is proved below. -/

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SquareSingleCornerExclusion
-import SpanningTreeIsoperimetry.SingleCornerSmallExclusion
+module
+
+public import SpanningTreeIsoperimetry.SquareSingleCornerExclusion
+public import SpanningTreeIsoperimetry.SingleCornerSmallExclusion
+
+@[expose] public section
 
 /-! Every nonstrip single corner on a minimum-side-sum hull is excluded,
 including the square-hook alternative, with all corner placements allowed. -/

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CornerStripBridge
+module
+
+public import SpanningTreeIsoperimetry.CornerStripBridge
+
+@[expose] public section
 
 /-! Every finite lower-ideal vacancy set is attached to the rectangular
 boundary. The corresponding primal construction has no interior component. -/

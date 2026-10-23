@@ -1,7 +1,11 @@
-import SquareMaximality.Boundary.DeterminantReduction
-import SquareMaximality.ClosedWalk.Series
-import SquareMaximality.Rectangle.Entropy
-import Mathlib.Analysis.SpecialFunctions.Integrals.LogTrigonometric
+module
+
+public import SquareMaximality.Boundary.DeterminantReduction
+public import SquareMaximality.ClosedWalk.Series
+public import SquareMaximality.Rectangle.Entropy
+public import Mathlib.Analysis.SpecialFunctions.Integrals.LogTrigonometric
+
+@[expose] public section
 
 set_option autoImplicit false
 

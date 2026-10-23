@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundarySineModes
-import SpanningTreeIsoperimetry.BoundaryHyperbolic
-import Mathlib.Analysis.SpecialFunctions.Arcosh
+module
+
+public import SpanningTreeIsoperimetry.BoundarySineModes
+public import SpanningTreeIsoperimetry.BoundaryHyperbolic
+public import Mathlib.Analysis.SpecialFunctions.Arcosh
+
+@[expose] public section
 
 /-! Finite separation of variables for actual rectangular boundary Green
 entries, using the checked sine modes and continuant inverse formula. -/

@@ -1,5 +1,9 @@
-import SquareMaximality.Inputs.MatrixTreeProof
-import SquareMaximality.LinearAlgebra.GramCauchyBinet
+module
+
+public import SquareMaximality.Inputs.MatrixTreeProof
+public import SquareMaximality.LinearAlgebra.GramCauchyBinet
+
+@[expose] public section
 
 set_option autoImplicit false
 

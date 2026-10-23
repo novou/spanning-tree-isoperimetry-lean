@@ -1,4 +1,10 @@
-import SquareMaximality.ClosedWalk.PlaneMarked
+module
+
+public import SquareMaximality.ClosedWalk.PlaneMarked
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Coordinate symmetry of closed square-lattice words

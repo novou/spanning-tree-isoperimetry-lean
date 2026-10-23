@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.Stability
+module
+
+public import SpanningTreeIsoperimetry.Stability
+
+@[expose] public section
 
 /-! Exact-area rectangular witnesses and their optimal translational
 asymmetry, including the minimization over every lattice translate. -/

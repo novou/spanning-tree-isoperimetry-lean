@@ -1,5 +1,9 @@
-import SquareMaximality.Multigraph.Events
-import Mathlib.Algebra.BigOperators.Field
+module
+
+public import SquareMaximality.Multigraph.Events
+public import Mathlib.Algebra.BigOperators.Field
+
+@[expose] public section
 
 /-!
 # Incompatible spanning-tree containment events

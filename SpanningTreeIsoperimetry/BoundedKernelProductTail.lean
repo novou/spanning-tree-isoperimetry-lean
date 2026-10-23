@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundedKernelProduct
-import SpanningTreeIsoperimetry.SummableKernelDeterminant
+module
+
+public import SpanningTreeIsoperimetry.BoundedKernelProduct
+public import SpanningTreeIsoperimetry.SummableKernelDeterminant
+
+@[expose] public section
 
 /-! Finite-product determinant convergence with one summable kernel and
 one uniformly row-summable multiplier. The error is an actual kernel tail. -/

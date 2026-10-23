@@ -1,8 +1,12 @@
-import SquareMaximality.Staged
-import SquareMaximality.Subgraphs
-import SquareMaximality.Boundary.MatrixTreeCompletion
-import SquareMaximality.Inputs.MatrixTreeBridge
-import SquareMaximality.Inputs.MatrixTreeTheorem
+module
+
+public import SquareMaximality.Staged
+public import SquareMaximality.Subgraphs
+public import SquareMaximality.Boundary.MatrixTreeCompletion
+public import SquareMaximality.Inputs.MatrixTreeBridge
+public import SquareMaximality.Inputs.MatrixTreeTheorem
+
+@[expose] public section
 
 /-!
 # Fully formalized manuscript theorem

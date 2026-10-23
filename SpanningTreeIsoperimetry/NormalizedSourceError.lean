@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.NormalizedErrorAssembly
-import SpanningTreeIsoperimetry.SourceHullArithmetic
+module
+
+public import SpanningTreeIsoperimetry.NormalizedErrorAssembly
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+
+@[expose] public section
 
 /-! Actual selector parameters for the normalized remainder comparison.
 The final coupled analytic bound is still supplied explicitly here. -/

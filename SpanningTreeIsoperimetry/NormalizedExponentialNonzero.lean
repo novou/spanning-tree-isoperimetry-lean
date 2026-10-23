@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.NormalizedExponentialInverse
+module
+
+public import SpanningTreeIsoperimetry.NormalizedExponentialInverse
+
+@[expose] public section
 
 /-! The actual normalized exponential kernel has an explicitly entrywise
 summable inverse perturbation, so its finite-section determinant limit is

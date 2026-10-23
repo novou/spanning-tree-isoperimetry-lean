@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SingletonEnergy
+module
+
+public import SpanningTreeIsoperimetry.SingletonEnergy
+
+@[expose] public section
 
 /-! Actual quadrant inverse entries satisfy symmetry and the corner
 Dirichlet equation. These identities evaluate the three-cell Green minor. -/

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.GreenUnionBound
+module
+
+public import SpanningTreeIsoperimetry.GreenUnionBound
+
+@[expose] public section
 
 /-! Actual infinite-strip Green kernels and the two-boundary loss inequality.
 All limits are bounded monotone limits of finite inverse matrices. -/

@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.FluxBounds
-import SpanningTreeIsoperimetry.AspectCost
+module
+
+public import SpanningTreeIsoperimetry.FluxBounds
+public import SpanningTreeIsoperimetry.AspectCost
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Bounds for the actual aspect/flux comparison. Tree-count exclusion also
 uses the finite-domain comparison and refined corner-energy envelope. -/

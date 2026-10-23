@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.RefinedSmallEnergyUpper
-import SpanningTreeIsoperimetry.StripSupportingLines
-import SpanningTreeIsoperimetry.SmallShapeCatalogue
-import SpanningTreeIsoperimetry.CornerConcentration
-import SpanningTreeIsoperimetry.CornerPrimalDomains
+module
+
+public import SpanningTreeIsoperimetry.RefinedSmallEnergyUpper
+public import SpanningTreeIsoperimetry.StripSupportingLines
+public import SpanningTreeIsoperimetry.SmallShapeCatalogue
+public import SpanningTreeIsoperimetry.CornerConcentration
+public import SpanningTreeIsoperimetry.CornerPrimalDomains
+
+@[expose] public section
 
 /-! Exact quadrant-energy baselines for every nonconcentrated family of
 size two, three, or four. The square comparison retains its actual energy. -/

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.StripTreeComparisons
-import SpanningTreeIsoperimetry.Targets
+module
+
+public import SpanningTreeIsoperimetry.StripTreeComparisons
+public import SpanningTreeIsoperimetry.Targets
+
+@[expose] public section
 
 /-! The explicit selector is optimal among all single strips on minimum
 side-sum hulls. Excluding nonstrip maximizers is a separate energy argument. -/

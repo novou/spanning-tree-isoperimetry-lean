@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.MatrixTree
-import SpanningTreeIsoperimetry.SmallCases
-import Mathlib.Tactic.NormDet
+module
+
+public import SpanningTreeIsoperimetry.MatrixTree
+public import SpanningTreeIsoperimetry.SmallCases
+public import Mathlib.Tactic.NormDet
+
+@[expose] public section
 
 /-! Exact counts of actual primal spanning trees in the exceptional small domains.
 The coordinate lists, graph Laplacians and determinants are all checked in Lean.

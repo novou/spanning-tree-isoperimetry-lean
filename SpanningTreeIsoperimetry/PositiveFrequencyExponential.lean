@@ -1,7 +1,11 @@
-import Mathlib.Basic.Real.Basic
-import Mathlib.RingTheory.PowerSeries.Exp
-import Mathlib.RingTheory.PowerSeries.Substitution
-import Mathlib.RingTheory.PowerSeries.Order
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.RingTheory.PowerSeries.Exp
+public import Mathlib.RingTheory.PowerSeries.Substitution
+public import Mathlib.RingTheory.PowerSeries.Order
+
+@[expose] public section
 
 /-! Positive-frequency exponential coefficients as actual formal
 convolution coefficients. Zero constant term makes every coefficient a

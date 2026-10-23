@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangularRemainder
-import Mathlib.Analysis.Normed.Group.Tannery
+module
+
+public import SpanningTreeIsoperimetry.RectangularRemainder
+public import Mathlib.Analysis.Normed.Group.Tannery
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Continuity of the actual first rectangular aspect profile, obtained by
 dominating its logarithmic series on a positive local interval. -/

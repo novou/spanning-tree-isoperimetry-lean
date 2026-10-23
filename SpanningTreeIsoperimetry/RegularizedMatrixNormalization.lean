@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RegularizedLaurentIdentification
-import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
-import SpanningTreeIsoperimetry.RegularizedStripNormalization
+module
+
+public import SpanningTreeIsoperimetry.RegularizedLaurentIdentification
+public import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
+public import SpanningTreeIsoperimetry.RegularizedStripNormalization
+
+@[expose] public section
 
 /-! Exact scalar normalization connecting the actual Green boundary matrix
 with the zero-mean symbol used in the determinant deformation. -/

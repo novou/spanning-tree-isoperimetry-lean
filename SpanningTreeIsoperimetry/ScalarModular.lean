@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.ScalarResolvent
-import Mathlib.RingTheory.EuclideanDomain
-import Mathlib.Algebra.Polynomial.Degree.Units
+module
+
+public import SpanningTreeIsoperimetry.ScalarResolvent
+public import Mathlib.RingTheory.EuclideanDomain
+public import Mathlib.Algebra.Polynomial.Degree.Units
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Modular construction of the scalar boundary resolvent. -/
 namespace SpanningTreeIsoperimetry.ScalarModular

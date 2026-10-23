@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallFamilyPatternData
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyPatternData
+
+@[expose] public section
 
 /-! Natural side/deficit metadata for the first twenty profile rows. -/
 namespace SpanningTreeIsoperimetry.SmallFamilyRowData

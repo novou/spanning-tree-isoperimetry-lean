@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.RefinedQuadrantBoundary
+module
+
+public import SpanningTreeIsoperimetry.RefinedQuadrantBoundary
+
+@[expose] public section
 
 /-! Exact determinant polynomials of the actual quadrant boundary strips.
 Every interpolation candidate below is checked as a matrix identity. -/

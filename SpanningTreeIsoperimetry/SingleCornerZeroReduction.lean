@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SingleCornerSmallReduction
-import SpanningTreeIsoperimetry.SourceHullArithmetic
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerSmallReduction
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+
+@[expose] public section
 
 /-! The zero source index: odd side sum is strictly improvable; square
 hooks transfer maximality to a literal pair of nonempty opposite strips. -/

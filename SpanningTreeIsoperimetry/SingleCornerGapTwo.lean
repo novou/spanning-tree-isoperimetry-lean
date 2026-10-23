@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SingleCornerSmallReduction
-import SpanningTreeIsoperimetry.RectangularNotchEll
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerSmallReduction
+public import SpanningTreeIsoperimetry.RectangularNotchEll
+
+@[expose] public section
 
 /-! Exhaustive actual exclusion of every nonstrip single Ferrers corner
 when the two hull side lengths differ by two. -/

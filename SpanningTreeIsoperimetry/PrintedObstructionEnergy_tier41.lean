@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_tier41
-import SpanningTreeIsoperimetry.NarrowLogCertificates
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_tier41
+public import SpanningTreeIsoperimetry.NarrowLogCertificates
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Literal printed energy interval for tier41; every rational certificate is checked. -/
 namespace SpanningTreeIsoperimetry.PrintedEnergyBounds.tier41

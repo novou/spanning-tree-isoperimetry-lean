@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FixedDirichletSystems
+module
+
+public import SpanningTreeIsoperimetry.FixedDirichletSystems
+
+@[expose] public section
 
 /-! Explicit integer potentials for all seven finite boundary systems.
 Each complete linear system is checked by Lean's kernel. -/

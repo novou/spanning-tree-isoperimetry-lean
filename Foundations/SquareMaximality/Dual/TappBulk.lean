@@ -1,5 +1,11 @@
-import SquareMaximality.Dual.TappBulkGeometry
-import SquareMaximality.Rectangle.Bulk
+module
+
+public import SquareMaximality.Dual.TappBulkGeometry
+public import SquareMaximality.Rectangle.Bulk
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

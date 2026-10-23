@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FiniteFaceCountBridge
-import SpanningTreeIsoperimetry.CornerPrimalFaces
-import SpanningTreeIsoperimetry.CanonicalStrips
+module
+
+public import SpanningTreeIsoperimetry.FiniteFaceCountBridge
+public import SpanningTreeIsoperimetry.CornerPrimalFaces
+public import SpanningTreeIsoperimetry.CanonicalStrips
+
+@[expose] public section
 
 /-! The ten-vertex opposite-singleton candidate ties the canonical strip.
 Both actual primal counts reduce to the same four-vertex face path. -/

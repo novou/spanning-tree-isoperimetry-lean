@@ -1,6 +1,10 @@
-import SquareMaximality.Geometry
-import Mathlib.Combinatorics.SimpleGraph.Acyclic
-import Mathlib.Data.Fintype.Card
+module
+
+public import SquareMaximality.Geometry
+public import Mathlib.Combinatorics.SimpleGraph.Acyclic
+public import Mathlib.Data.Fintype.Card
+
+@[expose] public section
 
 set_option autoImplicit false
 

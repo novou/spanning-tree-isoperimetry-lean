@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.PrimalDirichlet
-import SpanningTreeIsoperimetry.DomainIsometries
-import SpanningTreeIsoperimetry.ComparisonDomain
+module
+
+public import SpanningTreeIsoperimetry.PrimalDirichlet
+public import SpanningTreeIsoperimetry.DomainIsometries
+public import SpanningTreeIsoperimetry.ComparisonDomain
+
+@[expose] public section
 
 /-! Concrete primal corner strips and their boundary Green minors. -/
 namespace SpanningTreeIsoperimetry.CornerStripBridge

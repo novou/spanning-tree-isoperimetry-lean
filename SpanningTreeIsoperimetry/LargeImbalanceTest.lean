@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.LargeImbalanceScalarChecks
-import SpanningTreeIsoperimetry.LargeImbalanceGeometry
-import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+module
+
+public import SpanningTreeIsoperimetry.LargeImbalanceScalarChecks
+public import SpanningTreeIsoperimetry.LargeImbalanceGeometry
+public import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+
+@[expose] public section
 
 /-! The normalized corner test at the actual canonical selector parameters.
 This closes the scalar side of large-imbalance exclusion; the finite rectangle

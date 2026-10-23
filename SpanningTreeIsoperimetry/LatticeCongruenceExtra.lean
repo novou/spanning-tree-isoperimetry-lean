@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.LatticeCongruence
+module
+
+public import SpanningTreeIsoperimetry.LatticeCongruence
+
+@[expose] public section
 
 /-! Symmetry of concrete lattice congruence and maximality transport by count. -/
 namespace SpanningTreeIsoperimetry

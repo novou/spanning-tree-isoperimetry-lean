@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.RegularizedLogPotential
-import SpanningTreeIsoperimetry.LogCosineFourier
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import SpanningTreeIsoperimetry.RegularizedLogPotential
+public import SpanningTreeIsoperimetry.LogCosineFourier
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Fourier--Laplace identity for the actual angular kernel. Above four,
 continuous symmetric log-potential integrals may be interchanged. A compact

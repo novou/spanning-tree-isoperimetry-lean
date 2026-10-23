@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryLossKernel
+module
+
+public import SpanningTreeIsoperimetry.BoundaryLossKernel
+
+@[expose] public section
 
 /-! The actual two-boundary fourth-order Green loss, combining the proved
 one-boundary integral bounds with finite-word inclusion/exclusion. -/

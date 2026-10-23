@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryGreenExtension
-import Mathlib.Data.Nat.Dist
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenExtension
+public import Mathlib.Data.Nat.Dist
+
+@[expose] public section
 
 /-! Affine polynomials for the checked half-plane and quadrant boundary sums. -/
 namespace SpanningTreeIsoperimetry.BoundaryGreenPolynomials

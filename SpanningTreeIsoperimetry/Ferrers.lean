@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.Grid
-import Mathlib.Order.Preorder.Finite
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import Mathlib.Order.Preorder.Finite
+
+@[expose] public section
 
 /-!
 # Wordwise corner-defect comparisons

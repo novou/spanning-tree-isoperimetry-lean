@@ -1,6 +1,10 @@
-import Mathlib.Analysis.Polynomial.Basic
-import Mathlib.Topology.Algebra.Polynomial
-import Mathlib.Algebra.Polynomial.Roots
+module
+
+public import Mathlib.Analysis.Polynomial.Basic
+public import Mathlib.Topology.Algebra.Polynomial
+public import Mathlib.Algebra.Polynomial.Roots
+
+@[expose] public section
 
 /-! A finite positive-residue rational function has a numerator whose roots
 strictly alternate with its ordered poles. The proof is included locally:

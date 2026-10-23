@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.CornerEnergyTransfer
-import SquareMaximality.Boundary.SpectralBound
-import SquareMaximality.ClosedWalk.EntropySeries
-import SquareMaximality.Multigraph.TransferCurrentConstruction
+module
+
+public import SpanningTreeIsoperimetry.CornerEnergyTransfer
+public import SquareMaximality.Boundary.SpectralBound
+public import SquareMaximality.ClosedWalk.EntropySeries
+public import SquareMaximality.Multigraph.TransferCurrentConstruction
+
+@[expose] public section
 
 /-!
 # Connecting the concrete corner words with Dirichlet determinants

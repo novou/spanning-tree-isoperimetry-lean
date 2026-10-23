@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.WeightedBilinearPath
-import SpanningTreeIsoperimetry.ToeplitzHankelMassBounds
-import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+module
+
+public import SpanningTreeIsoperimetry.WeightedBilinearPath
+public import SpanningTreeIsoperimetry.ToeplitzHankelMassBounds
+public import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+
+@[expose] public section
 
 /-! Actual Toeplitz/Hankel products inherit the weighted-coefficient Leibniz
 rule in total entry mass. All linearity and product bounds are discharged for

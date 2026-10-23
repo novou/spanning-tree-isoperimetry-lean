@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SummableKernelProduct
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelProduct
+
+@[expose] public section
 
 /-! Multiplication by concrete row/column-summable kernels preserves the
 entrywise summable ideal. No ambient operator algebra is assumed. -/

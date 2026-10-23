@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.WiredPatchGeometry
-import SpanningTreeIsoperimetry.WiredPatchSymmetry
-import SpanningTreeIsoperimetry.InteriorAvoidance
+module
+
+public import SpanningTreeIsoperimetry.WiredPatchGeometry
+public import SpanningTreeIsoperimetry.WiredPatchSymmetry
+public import SpanningTreeIsoperimetry.InteriorAvoidance
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual rectangle-dual perpendicular pairs inherit the free-patch
 avoidance margin, including pairs arbitrarily close to a wired boundary. -/

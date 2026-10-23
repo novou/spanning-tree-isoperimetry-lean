@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.MulticornerExclusion
-import SpanningTreeIsoperimetry.SingleCornerZeroReduction
+module
+
+public import SpanningTreeIsoperimetry.MulticornerExclusion
+public import SpanningTreeIsoperimetry.SingleCornerZeroReduction
+
+@[expose] public section
 
 /-! The square-hook weak fold cannot preserve global maximality: its target
 has two nonempty corner strips, already excluded on every minimum hull. -/

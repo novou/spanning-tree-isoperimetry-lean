@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.NarrowEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.NarrowEntropyBounds
+
+@[expose] public section
 
 /-! Short exact logarithm certificates after dyadic rescaling. -/
 namespace SpanningTreeIsoperimetry.NarrowLogCertificates

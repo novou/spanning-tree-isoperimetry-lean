@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ClassificationAssembly
-import SpanningTreeIsoperimetry.SourceHullArithmetic
+module
+
+public import SpanningTreeIsoperimetry.ClassificationAssembly
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+
+@[expose] public section
 
 /-! Every large maximizing concentrated corner family is the canonical strip,
 with no restriction on which admissible rectangle contains it. -/

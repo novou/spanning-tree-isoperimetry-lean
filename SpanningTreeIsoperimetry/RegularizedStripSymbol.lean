@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.StripFourierCoefficients
-import Mathlib.Analysis.SpecialFunctions.Arcosh
+module
+
+public import SpanningTreeIsoperimetry.StripFourierCoefficients
+public import Mathlib.Analysis.SpecialFunctions.Arcosh
+
+@[expose] public section
 
 /-! The actual regularized even strip symbol. Smoothness is asserted only
 for z>4; its critical coefficient agrees with the checked angular kernel. -/

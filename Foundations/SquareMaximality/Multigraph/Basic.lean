@@ -1,5 +1,9 @@
-import Mathlib.Combinatorics.Graph.Basic
-import Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected
+module
+
+public import Mathlib.Combinatorics.Graph.Basic
+public import Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected
+
+@[expose] public section
 
 /-!
 # Finite edge-labelled multigraphs

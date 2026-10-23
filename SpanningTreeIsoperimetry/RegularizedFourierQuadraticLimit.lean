@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RegularizedFourierDecay
-import SpanningTreeIsoperimetry.RegularizedFourierQuadratic
+module
+
+public import SpanningTreeIsoperimetry.RegularizedFourierDecay
+public import SpanningTreeIsoperimetry.RegularizedFourierQuadratic
+
+@[expose] public section
 
 /-! Actual summability and critical limit, discharging the uniform bound
 in the generic dominated-convergence bridge. -/

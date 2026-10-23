@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.OneSidedLaurentKernels
-import SpanningTreeIsoperimetry.ToeplitzHankelMassBounds
-import SpanningTreeIsoperimetry.BoundedKernelAlgebra
-import SpanningTreeIsoperimetry.BoundedKernelSylvester
+module
+
+public import SpanningTreeIsoperimetry.OneSidedLaurentKernels
+public import SpanningTreeIsoperimetry.ToeplitzHankelMassBounds
+public import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+public import SpanningTreeIsoperimetry.BoundedKernelSylvester
+
+@[expose] public section
 
 /-! Exact normalized Toeplitz-minus-Hankel factorization. The two actual
 normalizations differ by the order of one summable remainder and one

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SummableDeterminantAffine
-import SpanningTreeIsoperimetry.SummableDeterminantContinuity
+module
+
+public import SpanningTreeIsoperimetry.SummableDeterminantAffine
+public import SpanningTreeIsoperimetry.SummableDeterminantContinuity
+
+@[expose] public section
 
 /-! Trace linearity, an absolute entry-mass bound, and differentiation along
 summable kernel paths. Every trace in these statements is justified by actual

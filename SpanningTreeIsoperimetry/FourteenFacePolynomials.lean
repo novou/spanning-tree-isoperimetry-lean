@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ConcreteCounts
-import SpanningTreeIsoperimetry.FiniteFaceCountBridge
+module
+
+public import SpanningTreeIsoperimetry.ConcreteCounts
+public import SpanningTreeIsoperimetry.FiniteFaceCountBridge
+
+@[expose] public section
 
 /-! Literal variable-parameter face polynomials at N=14. Both coordinate
 matrices are identified with the actual bounded faces of the already defined

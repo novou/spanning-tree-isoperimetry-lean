@@ -1,8 +1,14 @@
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SpanningTreeIsoperimetry.EpsilonBounds
-import SquareMaximality.Paper
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Analysis.Complex.ExponentialBounds
+module
+
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SpanningTreeIsoperimetry.EpsilonBounds
+public import SquareMaximality.Paper
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Analysis.Complex.ExponentialBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # The area–boundary comparison for rectangles

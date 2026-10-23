@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.FiniteShortDefectError
-import SpanningTreeIsoperimetry.FiniteCornerOrientation
+module
+
+public import SpanningTreeIsoperimetry.FiniteShortDefectError
+public import SpanningTreeIsoperimetry.FiniteCornerOrientation
+
+@[expose] public section
 
 /-! Actual weighted finite corrections used by the small noncanonical
 families. Arguments r,s are primal side lengths throughout. -/

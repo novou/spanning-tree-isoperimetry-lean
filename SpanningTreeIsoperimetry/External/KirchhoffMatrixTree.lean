@@ -1,3 +1,5 @@
+module
+
 /-
 Copyright (c) 2026 Ho Boon Suan.
 Released under the MIT license; see LICENSE-FerrersBound in this directory.
@@ -7,13 +9,15 @@ Original path: FerrersBound/Graph/KirchhoffMatrixTreeCore.lean
 Ported to Lean/mathlib 4.34.1 with API and tactic compatibility changes.
 -/
 
-import Mathlib.Combinatorics.SimpleGraph.Acyclic
-import Mathlib.Combinatorics.SimpleGraph.Dart
-import Mathlib.Combinatorics.SimpleGraph.LapMatrix
-import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
-import Mathlib.LinearAlgebra.Matrix.Determinant.Misc
-import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
-import Mathlib.Tactic
+public import Mathlib.Combinatorics.SimpleGraph.Acyclic
+public import Mathlib.Combinatorics.SimpleGraph.Dart
+public import Mathlib.Combinatorics.SimpleGraph.LapMatrix
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Misc
+public import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open scoped BigOperators Matrix
 open Matrix Finset

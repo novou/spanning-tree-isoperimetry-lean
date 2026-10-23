@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.RefinedQuadrantBoundary
+module
+
+public import SpanningTreeIsoperimetry.RefinedQuadrantBoundary
+
+@[expose] public section
 
 /-! Exact affine kernels for the small triangular coordinate region needed
 by all refined corner obstructions. The recurrence is the actual quadrant

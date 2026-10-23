@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.LaurentCircle
-import SpanningTreeIsoperimetry.RegularizedCircleFactorization
-import SpanningTreeIsoperimetry.OneSidedToeplitz
+module
+
+public import SpanningTreeIsoperimetry.LaurentCircle
+public import SpanningTreeIsoperimetry.RegularizedCircleFactorization
+public import SpanningTreeIsoperimetry.OneSidedToeplitz
+
+@[expose] public section
 
 /-! The Laurent convolution of the two formal exponential factors is
 identified with the actual cosine coefficients of the deformed strip

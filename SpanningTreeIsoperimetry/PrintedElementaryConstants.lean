@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.NarrowEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.NarrowEntropyBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Literal rational intervals printed in the quadrant-certificate appendix. -/
 namespace SpanningTreeIsoperimetry.PrintedElementaryConstants

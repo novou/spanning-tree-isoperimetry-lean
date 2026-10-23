@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.ScalarProduct
-import SpanningTreeIsoperimetry.LayerDeterminant
-import SpanningTreeIsoperimetry.ScalarResultant
+module
+
+public import SpanningTreeIsoperimetry.ScalarProduct
+public import SpanningTreeIsoperimetry.LayerDeterminant
+public import SpanningTreeIsoperimetry.ScalarResultant
+
+@[expose] public section
 
 /-! Exact rational counting from explicit extended-gcd and signed Euclidean
 data. This module does not assert the fast bit-complexity bound or the modular

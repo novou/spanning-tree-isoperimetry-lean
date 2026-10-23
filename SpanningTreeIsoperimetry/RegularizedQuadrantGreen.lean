@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.RegularizedGreenSeries
+module
+
+public import SpanningTreeIsoperimetry.RegularizedGreenSeries
+
+@[expose] public section
 
 /-! Actual finite-box exhaustion and Poisson equation for the regularized
 quadrant Green kernel. Every finite entry is a genuine matrix inverse. -/

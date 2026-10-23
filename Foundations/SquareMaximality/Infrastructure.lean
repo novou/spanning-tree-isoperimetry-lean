@@ -1,5 +1,9 @@
-import SquareMaximality.Graph
-import Mathlib.Tactic.Ring
+module
+
+public import SquareMaximality.Graph
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 set_option autoImplicit false
 

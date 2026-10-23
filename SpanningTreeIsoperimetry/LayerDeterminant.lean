@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.ScalarResolvent
-import Mathlib.LinearAlgebra.Matrix.SchurComplement
+module
+
+public import SpanningTreeIsoperimetry.ScalarResolvent
+public import Mathlib.LinearAlgebra.Matrix.SchurComplement
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Rectangle determinant via checked layer Schur complements. -/
 namespace SpanningTreeIsoperimetry.LayerDeterminant

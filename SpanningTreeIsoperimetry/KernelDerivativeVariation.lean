@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.LatticeKernelDerivatives
-import Mathlib.Analysis.Convex.Jensen
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+
+public import SpanningTreeIsoperimetry.LatticeKernelDerivatives
+public import Mathlib.Analysis.Convex.Jensen
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Explicit total-variation bounds for the third and fifth angular-kernel
 derivatives, using the proved numerator polynomials and the FTC. -/

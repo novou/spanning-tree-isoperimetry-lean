@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.BoundarySeparatedGreen
-import SpanningTreeIsoperimetry.BoundaryTridiagonalGreen
+module
+
+public import SpanningTreeIsoperimetry.BoundarySeparatedGreen
+public import SpanningTreeIsoperimetry.BoundaryTridiagonalGreen
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Full finite-y sine separation for every actual rectangular Green entry.
 The arbitrary-depth scalar inverse handles either boundary orientation. -/

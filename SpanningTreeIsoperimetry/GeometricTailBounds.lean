@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.RectangleResidualBounds
+module
+
+public import SpanningTreeIsoperimetry.RectangleResidualBounds
+
+@[expose] public section
 
 /-! Exact higher polynomial/geometric tail bounds for rectangular remainders. -/
 namespace SpanningTreeIsoperimetry.GeometricTailBounds

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.Targets
-import SpanningTreeIsoperimetry.DomainIsometries
+module
+
+public import SpanningTreeIsoperimetry.Targets
+public import SpanningTreeIsoperimetry.DomainIsometries
+
+@[expose] public section
 
 /-! The concrete lattice isometries in the classification target preserve
 counts and maximality, and their congruence relation composes. -/

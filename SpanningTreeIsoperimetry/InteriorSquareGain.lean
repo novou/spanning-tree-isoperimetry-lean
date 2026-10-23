@@ -1,5 +1,11 @@
-import SquareMaximality.Dual.TappRayleigh
-import SquareMaximality.Inputs.MatrixTreeTheorem
+module
+
+public import SquareMaximality.Dual.TappRayleigh
+public import SquareMaximality.Inputs.MatrixTreeTheorem
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Retaining the initial factor four for connected unions of unit-square boundaries.
 The final product assembly is adapted from Jiechen Zhang's included

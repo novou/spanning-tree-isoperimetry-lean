@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SmallFamilySourceBounds
-import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilySourceBounds
+public import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+
+@[expose] public section
 
 /-! Row metadata and common algebra for the first twenty small-family
 comparisons. Matching records the actual hull gap and total defect. -/

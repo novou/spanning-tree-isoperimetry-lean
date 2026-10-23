@@ -1,6 +1,10 @@
-import Mathlib.Data.Int.Interval
-import Mathlib.Data.Finset.Prod
-import Mathlib.Data.Finset.Card
+module
+
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Data.Finset.Prod
+public import Mathlib.Data.Finset.Card
+
+@[expose] public section
 
 set_option autoImplicit false
 

@@ -1,9 +1,15 @@
-import SpanningTreeIsoperimetry.RectangleProfileContinuity
-import SpanningTreeIsoperimetry.SecondProfileModular
-import Mathlib.NumberTheory.ModularForms.Discriminant
-import Mathlib.Analysis.Complex.CauchyIntegral
-import Mathlib.Analysis.Analytic.Constructions
-import Mathlib.Analysis.InnerProductSpace.Calculus
+module
+
+public import SpanningTreeIsoperimetry.RectangleProfileContinuity
+public import SpanningTreeIsoperimetry.SecondProfileModular
+public import Mathlib.NumberTheory.ModularForms.Discriminant
+public import Mathlib.Analysis.Complex.CauchyIntegral
+public import Mathlib.Analysis.Analytic.Constructions
+public import Mathlib.Analysis.InnerProductSpace.Calculus
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual first rectangle profile on the imaginary axis. The eta
 product identifies its logarithmic series; the checked discriminant

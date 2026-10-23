@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundaryKernelBounds
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+module
+
+public import SpanningTreeIsoperimetry.BoundaryKernelBounds
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+
+@[expose] public section
 
 /-! An integrable double-integral construction for the full-plane potential.
 This is the analytic starting point for the alternate potential-kernel route

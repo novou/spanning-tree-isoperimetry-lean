@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.FluxDefinition
-import SpanningTreeIsoperimetry.RectangularRemainder
-import Mathlib.Analysis.Calculus.Deriv.MeanValue
+module
+
+public import SpanningTreeIsoperimetry.FluxDefinition
+public import SpanningTreeIsoperimetry.RectangularRemainder
+public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual rational boundary-flux envelope B(r,s,k) used in the finite
 strip comparison. These scalar bounds do not assume a Green-error estimate. -/

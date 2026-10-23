@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallMaximumValue
+module
+
+public import SpanningTreeIsoperimetry.SmallMaximumValue
+
+@[expose] public section
 
 /-! Every maximizing opposite pair at a small cardinality is one of the five
 actual exceptional domains, up to lattice congruence. -/

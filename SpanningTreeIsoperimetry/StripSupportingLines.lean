@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.RefinedStripEnergy
+module
+
+public import SpanningTreeIsoperimetry.RefinedStripEnergy
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual universal strip-energy supporting line used in Appendix B. -/
 namespace SpanningTreeIsoperimetry.StripSupportingLines

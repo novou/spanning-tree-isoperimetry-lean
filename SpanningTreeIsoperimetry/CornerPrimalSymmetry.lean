@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerPrimalFaces
-import SpanningTreeIsoperimetry.LatticeCongruence
-import SpanningTreeIsoperimetry.FourCorners
+module
+
+public import SpanningTreeIsoperimetry.CornerPrimalFaces
+public import SpanningTreeIsoperimetry.LatticeCongruence
+public import SpanningTreeIsoperimetry.FourCorners
+
+@[expose] public section
 
 /-! Reflections and coordinate exchange of the actual four-corner primal
 models, expressed in the classification's concrete congruence relation. -/

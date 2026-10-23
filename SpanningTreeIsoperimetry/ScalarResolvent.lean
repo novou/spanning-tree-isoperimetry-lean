@@ -1,10 +1,16 @@
-import SpanningTreeIsoperimetry.CornerDeterminant
-import SpanningTreeIsoperimetry.SmallCases
-import Mathlib.LinearAlgebra.Matrix.Kronecker
-import Mathlib.LinearAlgebra.Matrix.Block
-import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
-import Mathlib.LinearAlgebra.Matrix.Polynomial
-import Mathlib.Algebra.Polynomial.Roots
+module
+
+public import SpanningTreeIsoperimetry.CornerDeterminant
+public import SpanningTreeIsoperimetry.SmallCases
+public import Mathlib.LinearAlgebra.Matrix.Kronecker
+public import Mathlib.LinearAlgebra.Matrix.Block
+public import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
+public import Mathlib.LinearAlgebra.Matrix.Polynomial
+public import Mathlib.Algebra.Polynomial.Roots
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual rectangular Dirichlet inverse and its scalar moment minors.
 No layer-resolvent formula or Hankel determinant identity is assumed. -/

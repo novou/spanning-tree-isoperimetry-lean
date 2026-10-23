@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CanonicalChecks
-import SpanningTreeIsoperimetry.CanonicalStrips
-import SpanningTreeIsoperimetry.LatticeCongruenceExtra
+module
+
+public import SpanningTreeIsoperimetry.CanonicalChecks
+public import SpanningTreeIsoperimetry.CanonicalStrips
+public import SpanningTreeIsoperimetry.LatticeCongruenceExtra
+
+@[expose] public section
 
 /-! All globally maximizing single strips are canonical, except the three
 actual adjacent-hull ties at cardinalities 3, 8 and 10. -/

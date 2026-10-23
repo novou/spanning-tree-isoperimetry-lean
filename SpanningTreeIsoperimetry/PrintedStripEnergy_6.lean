@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RefinedStripEnclosures
-import SpanningTreeIsoperimetry.NarrowLogCertificates
+module
+
+public import SpanningTreeIsoperimetry.RefinedStripEnclosures
+public import SpanningTreeIsoperimetry.NarrowLogCertificates
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Literal printed interval for the actual strip of length6. -/
 namespace SpanningTreeIsoperimetry.PrintedEnergyBounds.strip6

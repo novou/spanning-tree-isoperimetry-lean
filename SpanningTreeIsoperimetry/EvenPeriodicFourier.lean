@@ -1,4 +1,8 @@
-import Mathlib.Analysis.Fourier.AddCircle
+module
+
+public import Mathlib.Analysis.Fourier.AddCircle
+
+@[expose] public section
 
 /-! Fourier coefficients of a continuous even2pi-periodic real function,
 identified with its actual half-interval cosine integrals. -/

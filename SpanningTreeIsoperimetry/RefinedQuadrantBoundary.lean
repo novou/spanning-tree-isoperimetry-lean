@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundaryGreenRefined
-import SpanningTreeIsoperimetry.QuadrantBoundaryGreen
-import SpanningTreeIsoperimetry.QuadrantMinorEnergy
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenRefined
+public import SpanningTreeIsoperimetry.QuadrantBoundaryGreen
+public import SpanningTreeIsoperimetry.QuadrantMinorEnergy
+
+@[expose] public section
 
 /-! The actual first six quadrant boundary sites and the exact strip-energy
 interface for the refined corner comparisons. -/

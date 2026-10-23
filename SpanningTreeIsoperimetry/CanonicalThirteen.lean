@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SmallPrimalComparisons
-import SpanningTreeIsoperimetry.CanonicalStrips
+module
+
+public import SpanningTreeIsoperimetry.SmallPrimalComparisons
+public import SpanningTreeIsoperimetry.CanonicalStrips
+
+@[expose] public section
 
 /-! The second thirteen-vertex maximizer candidate has the canonical count.
 The full maximality classification is proved separately from this equality. -/

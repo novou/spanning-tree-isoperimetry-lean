@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.GreenLogDetComparison
-import SpanningTreeIsoperimetry.BoundaryFlux
-import SpanningTreeIsoperimetry.CornerLimit
-import SpanningTreeIsoperimetry.CornerEnergySymmetry
+module
+
+public import SpanningTreeIsoperimetry.GreenLogDetComparison
+public import SpanningTreeIsoperimetry.BoundaryFlux
+public import SpanningTreeIsoperimetry.CornerLimit
+public import SpanningTreeIsoperimetry.CornerEnergySymmetry
+
+@[expose] public section
 
 /-! Actual finite strip-energy correction bounded by the constructed quadrant
 boundary flux. The explicit fourth-order kernel estimate is a later step. -/

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryLossSeries
-import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+module
+
+public import SpanningTreeIsoperimetry.BoundaryLossSeries
+public import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+
+@[expose] public section
 
 /-! The positive hyperbolic boundary-loss integral is its convergent image
 series. The fourth-order bound follows from the checked zeta-four sum. -/

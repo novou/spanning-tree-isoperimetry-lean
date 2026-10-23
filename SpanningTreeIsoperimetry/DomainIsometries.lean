@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SquareMaximality.Boundary.Faces
-import Mathlib.LinearAlgebra.Matrix.Reindex
+module
+
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SquareMaximality.Boundary.Faces
+public import Mathlib.LinearAlgebra.Matrix.Reindex
+
+@[expose] public section
 
 /-! Finite induced-graph transport for the coordinate maps used by strip
 domains, and the natural-face/integer-domain determinant identification. -/

@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangularComparison
-import Mathlib.Analysis.SpecialFunctions.Log.Summable
+module
+
+public import SpanningTreeIsoperimetry.RectangularComparison
+public import Mathlib.Analysis.SpecialFunctions.Log.Summable
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Exact normalized remainder of the actual rectangle tree count and the
 convergent aspect profiles. Quantitative higher-order bounds are separate. -/

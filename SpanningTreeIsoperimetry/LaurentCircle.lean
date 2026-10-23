@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.LaurentWeightedConvolution
-import SpanningTreeIsoperimetry.PowerSeriesCircleFourier
+module
+
+public import SpanningTreeIsoperimetry.LaurentWeightedConvolution
+public import SpanningTreeIsoperimetry.PowerSeriesCircleFourier
+
+@[expose] public section
 
 /-! Actual Fourier evaluation of weighted real Laurent coefficients,
 including convolution and coefficient extraction. -/

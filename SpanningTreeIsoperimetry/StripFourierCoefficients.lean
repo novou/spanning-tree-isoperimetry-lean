@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.TrapezoidalKernelError
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+module
+
+public import SpanningTreeIsoperimetry.TrapezoidalKernelError
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+
+@[expose] public section
 
 /-! Actual cosine coefficients of the logarithmic half-plane symbol.
 These definitions use the angular lattice kernel itself; no determinant

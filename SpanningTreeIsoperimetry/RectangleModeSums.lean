@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.LogResidualTaylor
-import SpanningTreeIsoperimetry.RetainedModeBounds
+module
+
+public import SpanningTreeIsoperimetry.LogResidualTaylor
+public import SpanningTreeIsoperimetry.RetainedModeBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual finite mode-sum estimates for the fourth-order rectangle expansion. -/
 namespace SpanningTreeIsoperimetry.RectangleModeSums

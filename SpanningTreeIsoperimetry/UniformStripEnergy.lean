@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.GreenExhaustion
-import Mathlib.Topology.Order.MonotoneConvergence
+module
+
+public import SpanningTreeIsoperimetry.GreenExhaustion
+public import Mathlib.Topology.Order.MonotoneConvergence
+
+@[expose] public section
 
 /-! Uniform strip-energy bound from actual finite Green minors and their
 half-plane limit. No asymptotic determinant theorem is assumed. -/

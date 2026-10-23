@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.Polarization
-import Mathlib.Data.Matrix.Block
-import Mathlib.LinearAlgebra.Matrix.Trace
+module
+
+public import SpanningTreeIsoperimetry.Polarization
+public import Mathlib.Data.Matrix.Block
+public import Mathlib.LinearAlgebra.Matrix.Trace
+
+@[expose] public section
 
 /-! Matrix trace form of two-point polarization. -/
 

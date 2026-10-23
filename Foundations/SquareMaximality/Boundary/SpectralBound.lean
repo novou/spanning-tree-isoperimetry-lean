@@ -1,5 +1,9 @@
-import SquareMaximality.Boundary.DeterminantSeries
-import Mathlib.LinearAlgebra.Matrix.Gershgorin
+module
+
+public import SquareMaximality.Boundary.DeterminantSeries
+public import Mathlib.LinearAlgebra.Matrix.Gershgorin
+
+@[expose] public section
 
 /-!
 # Strict spectral bound for rectangular face adjacency

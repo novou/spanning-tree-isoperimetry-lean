@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerProfileNormalization
-import SpanningTreeIsoperimetry.CanonicalThirteen
-import SpanningTreeIsoperimetry.SeventeenPrimalComparisons
+module
+
+public import SpanningTreeIsoperimetry.CornerProfileNormalization
+public import SpanningTreeIsoperimetry.CanonicalThirteen
+public import SpanningTreeIsoperimetry.SeventeenPrimalComparisons
+
+@[expose] public section
 
 /-! Actual N13 count comparisons after symmetry normalization. -/
 namespace SpanningTreeIsoperimetry.ThirteenCandidateExclusions

@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_ell
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_square
-import SpanningTreeIsoperimetry.RefinedStripEnergy
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_ell
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_square
+public import SpanningTreeIsoperimetry.RefinedStripEnergy
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Modest actual upper bounds needed to select the exact size-three and
 size-four nonconcentrated energy baselines. -/

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundarySpectralKernel
-import SpanningTreeIsoperimetry.ScalarModular
-import Mathlib.Algebra.Polynomial.Roots
+module
+
+public import SpanningTreeIsoperimetry.BoundarySpectralKernel
+public import SpanningTreeIsoperimetry.ScalarModular
+public import Mathlib.Algebra.Polynomial.Roots
+
+@[expose] public section
 
 /-! The explicit trigonometric residue expression in Section 7.
 This is an independent proof-route addition; the scalar product theorem is

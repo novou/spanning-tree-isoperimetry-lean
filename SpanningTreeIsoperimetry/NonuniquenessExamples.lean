@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallMaximizers
+module
+
+public import SpanningTreeIsoperimetry.SmallMaximizers
+
+@[expose] public section
 
 /-! Actual noncongruent maximizing pairs at 3, 8, 10 and 13 vertices.
 Separation uses the lattice-isometry invariant maximum coordinate distance. -/

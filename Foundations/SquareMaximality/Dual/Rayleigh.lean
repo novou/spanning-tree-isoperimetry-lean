@@ -1,8 +1,14 @@
-import SquareMaximality.Dual.TappSeries
-import SquareMaximality.Dual.PlanarComplement
-import SquareMaximality.Inputs.MatrixTree
-import Mathlib.LinearAlgebra.Matrix.Adjugate
-import Mathlib.Analysis.Matrix.Order
+module
+
+public import SquareMaximality.Dual.TappSeries
+public import SquareMaximality.Dual.PlanarComplement
+public import SquareMaximality.Inputs.MatrixTree
+public import Mathlib.LinearAlgebra.Matrix.Adjugate
+public import Mathlib.Analysis.Matrix.Order
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Finite Rayleigh monotonicity and the half-plane exhaustion boundary

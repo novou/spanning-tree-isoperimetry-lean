@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FiniteDeterminantContinuity
-import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
-import Mathlib.Algebra.Polynomial.Eval.Degree
+module
+
+public import SpanningTreeIsoperimetry.FiniteDeterminantContinuity
+public import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
+public import Mathlib.Algebra.Polynomial.Eval.Degree
+
+@[expose] public section
 
 /-! A dimension-independent first-order determinant remainder, using the
 actual principal-minor coefficient formula and the checked row-sum bound. -/

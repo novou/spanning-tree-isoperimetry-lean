@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RectangularSecondProfile
-import Mathlib.NumberTheory.ModularForms.EisensteinSeries.QExpansion
+module
+
+public import SpanningTreeIsoperimetry.RectangularSecondProfile
+public import Mathlib.NumberTheory.ModularForms.EisensteinSeries.QExpansion
+
+@[expose] public section
 
 /-! Exact reciprocal symmetry of the genuine second rectangular profile,
 from the locally available weight-four Eisenstein series theorem. -/

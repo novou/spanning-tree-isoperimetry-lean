@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+module
+
+public import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+
+@[expose] public section
 
 /-! Structural lower bounds for shallow single-corner diagrams. The finite
 energy values used here are the checked obstruction energies. -/

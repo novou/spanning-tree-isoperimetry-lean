@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RegularizedQuadrantGreen
-import SpanningTreeIsoperimetry.StripSpectralRegularization
-import SpanningTreeIsoperimetry.CornerLimit
+module
+
+public import SpanningTreeIsoperimetry.RegularizedQuadrantGreen
+public import SpanningTreeIsoperimetry.StripSpectralRegularization
+public import SpanningTreeIsoperimetry.CornerLimit
+
+@[expose] public section
 
 /-! Regularized corner determinants with the bulk constant defined by the
 actual closed-loop series. Its identification with the zero symbol coefficient

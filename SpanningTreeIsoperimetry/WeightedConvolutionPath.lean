@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.WeightedBilinearPath
+module
+
+public import SpanningTreeIsoperimetry.WeightedBilinearPath
+
+@[expose] public section
 
 /-! The actual weighted Laurent convolution obeys the ordinary Leibniz
 remainder rule, proved from concrete summability and mass estimates. -/

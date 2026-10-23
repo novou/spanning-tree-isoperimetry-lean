@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.WeightedPowerSeries
-import Mathlib.Analysis.Fourier.AddCircle
-import Mathlib.Analysis.Normed.Group.FunctionSeries
+module
+
+public import SpanningTreeIsoperimetry.WeightedPowerSeries
+public import Mathlib.Analysis.Fourier.AddCircle
+public import Mathlib.Analysis.Normed.Group.FunctionSeries
+
+@[expose] public section
 
 /-! Actual circle evaluation of absolutely summable real power-series
 coefficients. The multiplication proof is the absolutely convergent Cauchy

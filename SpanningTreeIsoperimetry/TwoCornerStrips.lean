@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CornerFolds
+module
+
+public import SpanningTreeIsoperimetry.CornerFolds
+
+@[expose] public section
 
 /-! Opposite strip orientations for the actual two-corner fold. -/
 namespace SpanningTreeIsoperimetry.CornerFolds

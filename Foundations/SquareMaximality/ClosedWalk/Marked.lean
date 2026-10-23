@@ -1,4 +1,8 @@
-import SquareMaximality.ClosedWalk.FirstHit
+module
+
+public import SquareMaximality.ClosedWalk.FirstHit
+
+@[expose] public section
 
 set_option autoImplicit false
 

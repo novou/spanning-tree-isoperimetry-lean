@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PotentialKernelIntegral
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import SpanningTreeIsoperimetry.PotentialKernelIntegral
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+
+@[expose] public section
 
 /-! Normalization and harmonic recurrences for the actual integral-defined
 full-plane potential. The double-integral singularity is removed only on a

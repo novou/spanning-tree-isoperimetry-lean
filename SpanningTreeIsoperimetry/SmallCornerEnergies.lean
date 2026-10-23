@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallGreenPolynomials
-import SpanningTreeIsoperimetry.CornerEnergySymmetry
-import SpanningTreeIsoperimetry.UniformStripEnergy
+module
+
+public import SpanningTreeIsoperimetry.SmallGreenPolynomials
+public import SpanningTreeIsoperimetry.CornerEnergySymmetry
+public import SpanningTreeIsoperimetry.UniformStripEnergy
+
+@[expose] public section
 
 /-! The checked small determinant polynomials are the actual quadrant
 Green minors and hence the exact corner energies. -/

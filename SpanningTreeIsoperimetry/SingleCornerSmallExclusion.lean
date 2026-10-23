@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.SingleCornerSelectorGeometry
-import SpanningTreeIsoperimetry.SingleCornerCountComparison
-import SpanningTreeIsoperimetry.SingleCornerParameterCosts
-import SpanningTreeIsoperimetry.SingleCornerOddGeometry
-import SpanningTreeIsoperimetry.SingleCornerGapTwo
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerSelectorGeometry
+public import SpanningTreeIsoperimetry.SingleCornerCountComparison
+public import SpanningTreeIsoperimetry.SingleCornerParameterCosts
+public import SpanningTreeIsoperimetry.SingleCornerOddGeometry
+public import SpanningTreeIsoperimetry.SingleCornerGapTwo
+
+@[expose] public section
 
 /-! Actual exclusion of nonstrip single corners at every positive
 noncanonical source index when the canonical index is at most three. -/

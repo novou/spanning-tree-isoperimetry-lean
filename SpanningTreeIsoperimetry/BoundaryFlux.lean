@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryGreenBounds
-import SpanningTreeIsoperimetry.CornerStripBridge
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenBounds
+public import SpanningTreeIsoperimetry.CornerStripBridge
+
+@[expose] public section
 
 /-! Cancellation along an actual finite corner strip leaves exactly the side
 and top boundary flux. All finite Green functions are actual matrix inverses. -/

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CornerPrimalFaces
-import SpanningTreeIsoperimetry.Isoperimetry
+module
+
+public import SpanningTreeIsoperimetry.CornerPrimalFaces
+public import SpanningTreeIsoperimetry.Isoperimetry
+
+@[expose] public section
 
 /-! The actual four-corner decomposition of a normalized maximizing domain
 is exactly the explicit primal family used by the fold comparisons. -/

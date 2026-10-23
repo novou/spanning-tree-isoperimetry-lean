@@ -1,8 +1,14 @@
-import SquareMaximality.Boundary.DeterminantReduction
-import SquareMaximality.Boundary.TraceWalks
-import Mathlib.Analysis.Matrix.Spectrum
-import Mathlib.Combinatorics.SimpleGraph.LapMatrix
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import SquareMaximality.Boundary.DeterminantReduction
+public import SquareMaximality.Boundary.TraceWalks
+public import Mathlib.Analysis.Matrix.Spectrum
+public import Mathlib.Combinatorics.SimpleGraph.LapMatrix
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Boundary face-adjacency determinant series

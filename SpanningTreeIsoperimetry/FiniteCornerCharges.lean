@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FiniteCornerProducts
-import SpanningTreeIsoperimetry.FiniteSingletonSquareLower
-import SpanningTreeIsoperimetry.FiniteLongStripError
+module
+
+public import SpanningTreeIsoperimetry.FiniteCornerProducts
+public import SpanningTreeIsoperimetry.FiniteSingletonSquareLower
+public import SpanningTreeIsoperimetry.FiniteLongStripError
+
+@[expose] public section
 
 /-! Actual per-cell finite corner charges and strict tree-count comparisons
 with the single long-side strip in the same hull. -/

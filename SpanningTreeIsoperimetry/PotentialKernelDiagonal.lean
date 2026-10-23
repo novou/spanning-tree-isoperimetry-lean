@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.PotentialKernelImages
-import SpanningTreeIsoperimetry.PeriodicSquareRotation
-import SpanningTreeIsoperimetry.PoissonCosineIntegral
-import SpanningTreeIsoperimetry.PotentialDiagonalSine
+module
+
+public import SpanningTreeIsoperimetry.PotentialKernelImages
+public import SpanningTreeIsoperimetry.PeriodicSquareRotation
+public import SpanningTreeIsoperimetry.PoissonCosineIntegral
+public import SpanningTreeIsoperimetry.PotentialDiagonalSine
+
+@[expose] public section
 
 /-! Exact diagonal values of the actual integral-defined lattice potential.
 The proof uses a bounded periodic-square rotation, an elementary Poisson

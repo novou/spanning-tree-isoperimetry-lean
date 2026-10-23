@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.StabilitySharpnessGeometry
-import SpanningTreeIsoperimetry.RectangleProfileContinuity
-import SpanningTreeIsoperimetry.UniformRectangleError
+module
+
+public import SpanningTreeIsoperimetry.StabilitySharpnessGeometry
+public import SpanningTreeIsoperimetry.RectangleProfileContinuity
+public import SpanningTreeIsoperimetry.UniformRectangleError
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Sharpness of the actual stability coefficient along exact-area
 rectangles a² by (a+1)². -/

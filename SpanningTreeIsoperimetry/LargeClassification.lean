@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SingleCornerExclusion
-import SpanningTreeIsoperimetry.ClassificationAssembly
-import SpanningTreeIsoperimetry.ConcentratedMaximizers
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerExclusion
+public import SpanningTreeIsoperimetry.ClassificationAssembly
+public import SpanningTreeIsoperimetry.ConcentratedMaximizers
+
+@[expose] public section
 
 /-! Complete large-cardinality classification, assembled from actual corner
 exclusions and strip equality. No missing mathematical lemma is a premise. -/

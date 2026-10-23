@@ -1,7 +1,11 @@
-import Mathlib.NumberTheory.ZetaValues
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Positivity
+module
+
+public import Mathlib.NumberTheory.ZetaValues
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+
+@[expose] public section
 
 /-! Exact fourth-order summation bound used after separating the one-boundary
 Green-loss kernel. This module makes no claim identifying a Green kernel. -/

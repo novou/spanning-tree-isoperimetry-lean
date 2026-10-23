@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.AdjacentPairExclusion
-import SpanningTreeIsoperimetry.CanonicalStrips
-import SpanningTreeIsoperimetry.TwoCornerStripTree
-import SpanningTreeIsoperimetry.FiniteGreenMonotonicity
+module
+
+public import SpanningTreeIsoperimetry.AdjacentPairExclusion
+public import SpanningTreeIsoperimetry.CanonicalStrips
+public import SpanningTreeIsoperimetry.TwoCornerStripTree
+public import SpanningTreeIsoperimetry.FiniteGreenMonotonicity
+
+@[expose] public section
 
 /-! Concrete corner-profile normalization and the single-strip count bound. -/
 namespace SpanningTreeIsoperimetry.CornerProfileNormalization

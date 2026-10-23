@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.FluxBounds
-import SpanningTreeIsoperimetry.FiniteLongStripError
-import SpanningTreeIsoperimetry.RefinedEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.FluxBounds
+public import SpanningTreeIsoperimetry.FiniteLongStripError
+public import SpanningTreeIsoperimetry.RefinedEntropyBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The first (reciprocal-square) finite-strip estimate of Section 4.
 The proof uses the checked fourth-order Green bound away from the terminal

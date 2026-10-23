@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SummableDeterminantAffine
-import SpanningTreeIsoperimetry.SummableDeterminantContinuity
+module
+
+public import SpanningTreeIsoperimetry.SummableDeterminantAffine
+public import SpanningTreeIsoperimetry.SummableDeterminantContinuity
+
+@[expose] public section
 
 /-! Differentiating the actual finite-section determinant along an entrywise
 summable kernel path. A remainder small in total entry mass is transferred

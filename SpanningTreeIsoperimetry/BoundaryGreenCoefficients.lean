@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundaryGreen
-import Mathlib.Analysis.Polynomial.Basic
-import Mathlib.Tactic.ComputeDegree
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreen
+public import Mathlib.Analysis.Polynomial.Basic
+public import Mathlib.Tactic.ComputeDegree
+
+@[expose] public section
 
 namespace SpanningTreeIsoperimetry.BoundaryGreen
 open scoped BigOperators Topology

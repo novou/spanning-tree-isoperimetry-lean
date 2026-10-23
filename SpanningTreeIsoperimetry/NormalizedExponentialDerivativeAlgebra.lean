@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.NormalizedExponentialPath
-import SpanningTreeIsoperimetry.BoundedKernelLinear
+module
+
+public import SpanningTreeIsoperimetry.NormalizedExponentialPath
+public import SpanningTreeIsoperimetry.BoundedKernelLinear
+
+@[expose] public section
 
 /-! Algebraic forms of the actual normalized kernel derivative. These are
 identities of kernels; no trace of an individual nonsummable factor is used. -/

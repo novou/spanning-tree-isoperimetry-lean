@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallFamilyMonotonicity
-import SpanningTreeIsoperimetry.SmallFamilyProfiles
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyMonotonicity
+public import SpanningTreeIsoperimetry.SmallFamilyProfiles
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 
 /-! Exact endpoint certificates for the inverse-fourth correction profiles
 in the small-family and rectangular-notch comparisons. -/

@@ -1,5 +1,9 @@
-import SquareMaximality.ClosedWalk.Marked
-import Mathlib.Data.Int.Interval
+module
+
+public import SquareMaximality.ClosedWalk.Marked
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 set_option autoImplicit false
 

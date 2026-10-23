@@ -1,6 +1,12 @@
-import SquareMaximality.Rectangle.Spectral
-import SquareMaximality.Rectangle.SharpTrapezoid
-import Mathlib.Analysis.SumIntegralComparisons
+module
+
+public import SquareMaximality.Rectangle.Spectral
+public import SquareMaximality.Rectangle.SharpTrapezoid
+public import Mathlib.Analysis.SumIntegralComparisons
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

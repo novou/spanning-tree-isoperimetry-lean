@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallCornerCorrections
+module
+
+public import SpanningTreeIsoperimetry.SmallCornerCorrections
+
+@[expose] public section
 
 /-! Weighted finite-correction lower bounds for the strip pairs in the
 small-family table. All sizes are primal side lengths. -/

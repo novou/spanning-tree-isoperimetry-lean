@@ -1,4 +1,8 @@
-import SquareMaximality.Main
+module
+
+public import SquareMaximality.Main
+
+@[expose] public section
 
 set_option autoImplicit false
 

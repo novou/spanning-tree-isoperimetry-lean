@@ -1,6 +1,10 @@
-import SquareMaximality.ClosedWalk.EntropySeries
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import SquareMaximality.ClosedWalk.EntropySeries
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+
+@[expose] public section
 
 /-! The elementary cosine Poisson integral from a uniformly dominated
 geometric series and the checked central-binomial generating function. -/

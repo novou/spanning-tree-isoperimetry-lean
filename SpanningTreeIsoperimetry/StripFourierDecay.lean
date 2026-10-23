@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.StripFourierCoefficients
-import SpanningTreeIsoperimetry.LatticeKernelDerivatives
-import Mathlib.Analysis.PSeries
+module
+
+public import SpanningTreeIsoperimetry.StripFourierCoefficients
+public import SpanningTreeIsoperimetry.LatticeKernelDerivatives
+public import Mathlib.Analysis.PSeries
+
+@[expose] public section
 
 /-! Absolute decay of the actual critical strip-symbol coefficients. -/
 namespace SpanningTreeIsoperimetry.StripFourierDecay

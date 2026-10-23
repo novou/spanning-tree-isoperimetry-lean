@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SingleCornerShallowCosts
-import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerShallowCosts
+public import SpanningTreeIsoperimetry.RefinedCornerEnvelope
+
+@[expose] public section
 
 /-! Actual Ferrers energies dominate every shallow index-three cost, using
 the complete structural obstruction envelope and the six checked ranges. -/

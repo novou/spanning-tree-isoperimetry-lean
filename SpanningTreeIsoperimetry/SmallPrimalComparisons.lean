@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerPrimalFaces
-import SpanningTreeIsoperimetry.ThirteenFaceCounts
-import SpanningTreeIsoperimetry.ThreeCellEnergy
+module
+
+public import SpanningTreeIsoperimetry.CornerPrimalFaces
+public import SpanningTreeIsoperimetry.ThirteenFaceCounts
+public import SpanningTreeIsoperimetry.ThreeCellEnergy
+
+@[expose] public section
 
 /-! The square-hull N=13 comparisons for actual connected primal domains. -/
 namespace SpanningTreeIsoperimetry.SmallPrimalComparisons

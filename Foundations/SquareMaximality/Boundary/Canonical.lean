@@ -1,5 +1,9 @@
-import SquareMaximality.Boundary.Components
-import SquareMaximality.Boundary.Assembly
+module
+
+public import SquareMaximality.Boundary.Components
+public import SquareMaximality.Boundary.Assembly
+
+@[expose] public section
 
 /-!
 # Canonical hull-factor data

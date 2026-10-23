@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.RegularizedLaurentIdentification
-import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
-import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
+module
+
+public import SpanningTreeIsoperimetry.RegularizedLaurentIdentification
+public import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
+public import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The exact log-cosine Fourier identity on the open unit disk. The
 Taylor series is the checked complex logarithm series; coefficient

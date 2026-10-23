@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CornerFolds
+module
+
+public import SpanningTreeIsoperimetry.CornerFolds
+
+@[expose] public section
 
 /-! Actual maximal-block Ferrers folds on integer face domains. -/
 namespace SpanningTreeIsoperimetry.CornerFolds

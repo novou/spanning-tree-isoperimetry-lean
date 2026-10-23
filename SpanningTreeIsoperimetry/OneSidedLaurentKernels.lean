@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.LaurentConvolutionAlgebra
-import SpanningTreeIsoperimetry.TriangularCompression
+module
+
+public import SpanningTreeIsoperimetry.LaurentConvolutionAlgebra
+public import SpanningTreeIsoperimetry.TriangularCompression
+
+@[expose] public section
 
 /-! One-sided support of actual Laurent coefficients gives triangular
 Toeplitz kernels and exact multiplication without a Hankel defect. -/

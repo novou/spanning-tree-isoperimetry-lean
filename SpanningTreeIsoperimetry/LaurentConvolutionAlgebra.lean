@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.LaurentWeightedConvolution
+module
+
+public import SpanningTreeIsoperimetry.LaurentWeightedConvolution
+
+@[expose] public section
 
 /-! The actual integer convolution has a unit and is associative on
 absolutely summable coefficients. Weighted summability is preserved by the

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.LaurentWeightedConvolution
-import Mathlib.Analysis.Asymptotics.Lemmas
+module
+
+public import SpanningTreeIsoperimetry.LaurentWeightedConvolution
+public import Mathlib.Analysis.Asymptotics.Lemmas
+
+@[expose] public section
 
 /-! Elementary path estimates in the concrete weighted Laurent mass.
 No normed-space instance is introduced. -/

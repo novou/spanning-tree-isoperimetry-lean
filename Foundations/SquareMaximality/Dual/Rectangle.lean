@@ -1,4 +1,8 @@
-import SquareMaximality.Multigraph.All
+module
+
+public import SquareMaximality.Multigraph.All
+
+@[expose] public section
 
 set_option autoImplicit false
 

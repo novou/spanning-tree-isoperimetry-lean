@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.SmallFamilyDefinitions
-import Mathlib.Analysis.Calculus.Deriv.MeanValue
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyDefinitions
+public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! A common derivative comparison for every weighted inverse-fourth
 correction in the small noncanonical families. -/

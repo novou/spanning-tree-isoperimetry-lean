@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PotentialKernelHarmonic
-import SpanningTreeIsoperimetry.BoundaryGreenLoss
+module
+
+public import SpanningTreeIsoperimetry.PotentialKernelHarmonic
+public import SpanningTreeIsoperimetry.BoundaryGreenLoss
+
+@[expose] public section
 
 /-! The four-image potential satisfies the actual killed-quadrant Poisson
 equation. This is a discrete consequence of the checked integral potential's

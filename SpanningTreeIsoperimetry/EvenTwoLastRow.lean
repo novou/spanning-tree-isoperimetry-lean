@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.EvenTwoFamilyRows
-import SpanningTreeIsoperimetry.LargeImbalanceGeometry
+module
+
+public import SpanningTreeIsoperimetry.EvenTwoFamilyRows
+public import SpanningTreeIsoperimetry.LargeImbalanceGeometry
+
+@[expose] public section
 
 /-! The common final even selector-two multicorner row. -/
 namespace SpanningTreeIsoperimetry.EvenTwoLastRow

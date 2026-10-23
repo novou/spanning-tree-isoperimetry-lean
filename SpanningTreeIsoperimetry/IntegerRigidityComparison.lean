@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.Isoperimetry
+module
+
+public import SpanningTreeIsoperimetry.Isoperimetry
+
+@[expose] public section
 
 /-! The full quantitative integer-rigidity comparison for arbitrary connected
 lattice domains. This does not assume that the source is a maximizer. -/

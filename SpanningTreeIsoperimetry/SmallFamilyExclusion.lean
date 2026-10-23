@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallFamilyRowComparison
-import SpanningTreeIsoperimetry.SmallFamilyPatternReduction
-import SpanningTreeIsoperimetry.SourceHullArithmetic
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyRowComparison
+public import SpanningTreeIsoperimetry.SmallFamilyPatternReduction
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+
+@[expose] public section
 
 /-! Actual count exclusion for every multicorner family in the first table. -/
 namespace SpanningTreeIsoperimetry.SmallFamilyExclusion

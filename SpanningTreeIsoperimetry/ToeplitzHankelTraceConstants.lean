@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ToeplitzHankelKernels
-import SpanningTreeIsoperimetry.SummableKernelTrace
+module
+
+public import SpanningTreeIsoperimetry.ToeplitzHankelKernels
+public import SpanningTreeIsoperimetry.SummableKernelTrace
+
+@[expose] public section
 
 /-! The actual linear and quadratic trace constants for weighted Laurent
 coefficients. Only summable differences and Hankel products are traced;

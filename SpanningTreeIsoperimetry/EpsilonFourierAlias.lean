@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.StripFourierLaplace
-import SpanningTreeIsoperimetry.StripFourierDecay
-import SpanningTreeIsoperimetry.EpsilonBounds
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import SpanningTreeIsoperimetry.StripFourierLaplace
+public import SpanningTreeIsoperimetry.StripFourierDecay
+public import SpanningTreeIsoperimetry.EpsilonBounds
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 /-! Actual periodic trapezoidal alias identity. The already checked
 log-integral and Fourier--Laplace identity meet through absolutely summable

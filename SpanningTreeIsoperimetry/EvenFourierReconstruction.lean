@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.EvenPeriodicFourier
+module
+
+public import SpanningTreeIsoperimetry.EvenPeriodicFourier
+
+@[expose] public section
 
 /-! Endpoint reconstruction and the even-mode sum for actual cosine
 coefficients of a continuous even periodic function. -/

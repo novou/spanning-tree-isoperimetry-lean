@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.StripPolarization
-import SpanningTreeIsoperimetry.DomainIsometries
-import SpanningTreeIsoperimetry.Repetition
+module
+
+public import SpanningTreeIsoperimetry.StripPolarization
+public import SpanningTreeIsoperimetry.DomainIsometries
+public import SpanningTreeIsoperimetry.Repetition
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Concrete corner separation and diagonal folds on integer face domains. -/
 namespace SpanningTreeIsoperimetry.CornerFolds

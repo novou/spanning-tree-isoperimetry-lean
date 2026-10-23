@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RectangularQuadrature
-import SpanningTreeIsoperimetry.KernelDerivativeVariation
+module
+
+public import SpanningTreeIsoperimetry.RectangularQuadrature
+public import SpanningTreeIsoperimetry.KernelDerivativeVariation
+
+@[expose] public section
 
 /-! The actual rectangular epsilon has explicit third- and fifth-order
 remainders, obtained from local quadrature and the proved kernel derivatives. -/

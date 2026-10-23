@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.JacobiPolynomials
-import Mathlib.Data.Nat.Choose.Basic
+module
+
+public import SpanningTreeIsoperimetry.JacobiPolynomials
+public import Mathlib.Data.Nat.Choose.Basic
+
+@[expose] public section
 
 /-! Algebraic initial-jump and terminal-rank facts for modular Hankel
 computation. The successive noninitial degree-jump identity remains separate. -/

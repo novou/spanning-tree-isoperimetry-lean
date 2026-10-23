@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.RegularizedCornerDeterminant
+module
+
+public import SpanningTreeIsoperimetry.RegularizedCornerDeterminant
+
+@[expose] public section
 
 /-! Actual quadrant inverse-minor normalization for the regularized loop
 energy. The bulk term is the convergent closed-loop series, independently of

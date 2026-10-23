@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.AngularKernelTaylor
-import SpanningTreeIsoperimetry.CoupledRectangleError
+module
+
+public import SpanningTreeIsoperimetry.AngularKernelTaylor
+public import SpanningTreeIsoperimetry.CoupledRectangleError
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Pointwise logarithmic-residual bounds and convergent geometric tails for
 the actual rectangular remainder. -/

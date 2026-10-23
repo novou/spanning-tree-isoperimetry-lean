@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FerrersFold
+module
+
+public import SpanningTreeIsoperimetry.FerrersFold
+
+@[expose] public section
 
 /-! Strict geometric witnesses for maximal-block Ferrers folds. -/
 namespace SpanningTreeIsoperimetry.CornerFolds

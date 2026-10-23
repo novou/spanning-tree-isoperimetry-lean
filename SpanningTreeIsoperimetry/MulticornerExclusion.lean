@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallIndexMulticornerExclusion
-import SpanningTreeIsoperimetry.LargeImbalanceExclusion
-import SpanningTreeIsoperimetry.CanonicalCornerConcentration
+module
+
+public import SpanningTreeIsoperimetry.SmallIndexMulticornerExclusion
+public import SpanningTreeIsoperimetry.LargeImbalanceExclusion
+public import SpanningTreeIsoperimetry.CanonicalCornerConcentration
+
+@[expose] public section
 
 /-! Actual exclusion of every multicorner family on a minimum-side-sum hull.
 The small-index and large-index actual count estimates are fully instantiated. -/

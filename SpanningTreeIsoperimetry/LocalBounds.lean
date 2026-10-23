@@ -1,15 +1,19 @@
-import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
-import Mathlib.Analysis.Real.Sqrt
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Analysis.PSeries
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.Tactic.FinCases
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.GCongr
-import Mathlib.Tactic.Ring
+module
+
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import Mathlib.Analysis.Real.Sqrt
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Analysis.PSeries
+public import Mathlib.Analysis.SpecificLimits.Normed
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.GCongr
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-!
 # Exact local bounds from Appendix B

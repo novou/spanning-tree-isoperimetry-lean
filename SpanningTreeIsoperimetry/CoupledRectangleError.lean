@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangularRemainder
-import Mathlib.Analysis.Calculus.Deriv.Polynomial
+module
+
+public import SpanningTreeIsoperimetry.RectangularRemainder
+public import Mathlib.Analysis.Calculus.Deriv.Polynomial
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Checked arithmetic and convergent geometric moments used by the higher
 rectangle correction. The full coupled-error estimate is not yet asserted. -/

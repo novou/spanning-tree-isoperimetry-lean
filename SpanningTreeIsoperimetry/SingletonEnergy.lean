@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.QuadrantGreen
-import SpanningTreeIsoperimetry.UniformStripEnergy
+module
+
+public import SpanningTreeIsoperimetry.QuadrantGreen
+public import SpanningTreeIsoperimetry.UniformStripEnergy
+
+@[expose] public section
 
 /-! Exact singleton quadrant energy, with the actual Green entry and
 finite-minor energy limits identified by uniqueness of limits. -/

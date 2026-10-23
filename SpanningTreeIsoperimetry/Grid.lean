@@ -1,8 +1,12 @@
-import Mathlib.Combinatorics.SimpleGraph.Acyclic
-import Mathlib.Data.Int.Interval
-import Mathlib.Data.Finset.Prod
-import Mathlib.SetTheory.Cardinal.Finite
-import Mathlib.Tactic
+module
+
+public import Mathlib.Combinatorics.SimpleGraph.Acyclic
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Data.Finset.Prod
+public import Mathlib.SetTheory.Cardinal.Finite
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! The actual lattice and combinatorial spanning-tree count.
 The count is not defined to be a determinant: the matrix-tree bridge is a

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RegularizedFourierDecay
-import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
-import Mathlib.Analysis.PSeries
+module
+
+public import SpanningTreeIsoperimetry.RegularizedFourierDecay
+public import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
+public import Mathlib.Analysis.PSeries
+
+@[expose] public section
 
 /-! Actual weighted absolute summability of the regularized logarithmic
 strip symbol. A third integration by parts suffices for every z>4. -/

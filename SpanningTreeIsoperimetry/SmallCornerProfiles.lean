@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.SmallShapeCatalogue
-import SpanningTreeIsoperimetry.CornerPrimalDomains
-import SpanningTreeIsoperimetry.CornerPrimalSymmetry
-import SpanningTreeIsoperimetry.TwoCornerStripTree
+module
+
+public import SpanningTreeIsoperimetry.SmallShapeCatalogue
+public import SpanningTreeIsoperimetry.CornerPrimalDomains
+public import SpanningTreeIsoperimetry.CornerPrimalSymmetry
+public import SpanningTreeIsoperimetry.TwoCornerStripTree
+
+@[expose] public section
 
 /-! Exhaustive profiles of sparse four-corner defects. The finite catalogue
 describes the literal diagrams, before count comparisons or maximality. -/

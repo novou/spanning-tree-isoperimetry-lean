@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangleTaylorRemainder
-import SpanningTreeIsoperimetry.RectangleTailRemainder
+module
+
+public import SpanningTreeIsoperimetry.RectangleTaylorRemainder
+public import SpanningTreeIsoperimetry.RectangleTailRemainder
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual fourth-order rectangle expansion with complete local errors. -/
 namespace SpanningTreeIsoperimetry.FourthOrderRectangleError

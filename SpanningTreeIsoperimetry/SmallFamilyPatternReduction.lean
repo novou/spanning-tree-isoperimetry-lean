@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallFamilyThreeCorners
-import SpanningTreeIsoperimetry.SmallFamilyStripPairs
-import SpanningTreeIsoperimetry.SmallFamilyNonstripPairs
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyThreeCorners
+public import SpanningTreeIsoperimetry.SmallFamilyStripPairs
+public import SpanningTreeIsoperimetry.SmallFamilyNonstripPairs
+
+@[expose] public section
 
 /-! Exhaustive reduction of the first twenty small-family rows. Every
 placement and every Ferrers shape is covered by support and size arguments. -/

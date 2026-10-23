@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.QuadrantLowerTrace
-import SpanningTreeIsoperimetry.BoundaryLossKernel
+module
+
+public import SpanningTreeIsoperimetry.QuadrantLowerTrace
+public import SpanningTreeIsoperimetry.BoundaryLossKernel
+
+@[expose] public section
 
 /-! The lower Green trace is the integral of its actual finite quadratic
 kernel, including signed inverse coefficients. -/

@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.JacobiReduction
-import SpanningTreeIsoperimetry.SignedJacobiChain
-import SpanningTreeIsoperimetry.ScalarModular
-import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
+module
+
+public import SpanningTreeIsoperimetry.JacobiReduction
+public import SpanningTreeIsoperimetry.SignedJacobiChain
+public import SpanningTreeIsoperimetry.ScalarModular
+public import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
+
+@[expose] public section
 
 /-! The manuscript's signed-Euclidean product for the actual corner-strip
 counts. All recurrence parameters are derived from the positive Green form. -/

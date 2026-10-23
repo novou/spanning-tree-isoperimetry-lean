@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.MaximizingStripClassification
-import SpanningTreeIsoperimetry.SmallPairClassification
-import SpanningTreeIsoperimetry.NonuniquenessExamples
+module
+
+public import SpanningTreeIsoperimetry.MaximizingStripClassification
+public import SpanningTreeIsoperimetry.SmallPairClassification
+public import SpanningTreeIsoperimetry.NonuniquenessExamples
+
+@[expose] public section
 
 /-! Complete small-cardinality equality classification in concrete lattice
 congruence, including exactly the four nonunique cardinalities. -/

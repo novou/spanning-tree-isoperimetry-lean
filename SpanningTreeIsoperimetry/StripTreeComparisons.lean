@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CornerStripBridge
-import SpanningTreeIsoperimetry.StripPolarization
-import SpanningTreeIsoperimetry.ThinRectangles
+module
+
+public import SpanningTreeIsoperimetry.CornerStripBridge
+public import SpanningTreeIsoperimetry.StripPolarization
+public import SpanningTreeIsoperimetry.ThinRectangles
+
+@[expose] public section
 
 /-! The strip orientation and adjacent-hull comparisons for actual primal
 spanning-tree counts, including the one-dimensional endpoints. -/

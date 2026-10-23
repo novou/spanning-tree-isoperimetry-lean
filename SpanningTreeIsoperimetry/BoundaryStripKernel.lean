@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.BoundaryScalarLimit
-import SpanningTreeIsoperimetry.BoundarySpectralKernel
-import SpanningTreeIsoperimetry.BoundaryKernelMajorant
-import SpanningTreeIsoperimetry.GreenSwap
+module
+
+public import SpanningTreeIsoperimetry.BoundaryScalarLimit
+public import SpanningTreeIsoperimetry.BoundarySpectralKernel
+public import SpanningTreeIsoperimetry.BoundaryKernelMajorant
+public import SpanningTreeIsoperimetry.GreenSwap
+
+@[expose] public section
 
 /-! Fixed-width infinite-strip entries from actual finite inverses, followed
 by the exact finite-y boundary-loss sum. No continuum kernel is assumed. -/

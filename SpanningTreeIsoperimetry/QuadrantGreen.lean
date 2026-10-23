@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.QuadrantWalkCount
-import SpanningTreeIsoperimetry.MatrixGreenSeries
-import SpanningTreeIsoperimetry.HalfPlaneWalks
-import SpanningTreeIsoperimetry.CornerLimit
-import Mathlib.Analysis.Normed.Group.Tannery
+module
+
+public import SpanningTreeIsoperimetry.QuadrantWalkCount
+public import SpanningTreeIsoperimetry.MatrixGreenSeries
+public import SpanningTreeIsoperimetry.HalfPlaneWalks
+public import SpanningTreeIsoperimetry.CornerLimit
+public import Mathlib.Analysis.Normed.Group.Tannery
+
+@[expose] public section
 
 /-! The boundary Green entries of the quadrant, obtained from actual finite
 walks and the second reflection, without assuming the method of images. -/

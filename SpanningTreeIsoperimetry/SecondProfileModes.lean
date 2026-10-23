@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RectangularSecondProfile
-import Mathlib.Analysis.Convex.Deriv
+module
+
+public import SpanningTreeIsoperimetry.RectangularSecondProfile
+public import Mathlib.Analysis.Convex.Deriv
+
+@[expose] public section
 
 /-! Actual exponential mode derivatives for the genuine second profile. -/
 namespace SpanningTreeIsoperimetry.SecondProfileModes

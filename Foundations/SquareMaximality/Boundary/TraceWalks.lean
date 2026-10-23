@@ -1,4 +1,8 @@
-import SquareMaximality.Boundary.SeriesCharging
+module
+
+public import SquareMaximality.Boundary.SeriesCharging
+
+@[expose] public section
 
 /-!
 # The finite trace--walk bridge

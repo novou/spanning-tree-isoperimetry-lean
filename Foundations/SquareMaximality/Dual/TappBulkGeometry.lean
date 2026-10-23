@@ -1,4 +1,8 @@
-import SquareMaximality.Dual.TappSeries
+module
+
+public import SquareMaximality.Dual.TappSeries
+
+@[expose] public section
 
 /-!
 # Rectangular words-on-a-page geometry for the Tapp bulk argument

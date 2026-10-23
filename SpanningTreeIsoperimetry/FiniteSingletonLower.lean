@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundarySingletonIntegral
-import SpanningTreeIsoperimetry.SingletonEnergy
-import SpanningTreeIsoperimetry.GreenSwap
+module
+
+public import SpanningTreeIsoperimetry.BoundarySingletonIntegral
+public import SpanningTreeIsoperimetry.SingletonEnergy
+public import SpanningTreeIsoperimetry.GreenSwap
+
+@[expose] public section
 
 /-! The actual finite singleton correction: scalar Green identification and
 the fourth-order lower bound for primal short sides at least four. -/

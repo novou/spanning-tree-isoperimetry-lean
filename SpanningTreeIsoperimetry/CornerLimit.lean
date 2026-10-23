@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CornerDeterminant
-import Mathlib.Analysis.Normed.Group.Tannery
+module
+
+public import SpanningTreeIsoperimetry.CornerDeterminant
+public import Mathlib.Analysis.Normed.Group.Tannery
+
+@[expose] public section
 
 /-! The quadrant energy is the limit of the actual finite Green-minor
 energies. The proof uses eventual containment of each finite word and the

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CanonicalRectangleBounds
-import SpanningTreeIsoperimetry.FiniteSingletonSquareLower
-import SpanningTreeIsoperimetry.RectangularRemainder
+module
+
+public import SpanningTreeIsoperimetry.CanonicalRectangleBounds
+public import SpanningTreeIsoperimetry.FiniteSingletonSquareLower
+public import SpanningTreeIsoperimetry.RectangularRemainder
+
+@[expose] public section
 
 /-! Algebraic conversion of the refined coupled remainder bound into actual
 singleton absorption. The coupled estimate is an explicit input until the

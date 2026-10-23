@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.RectangularNotchComparison
+module
+
+public import SpanningTreeIsoperimetry.RectangularNotchComparison
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The remaining L-shaped single-corner notch, with its actual weighted
 finite correction and same-cardinality rectangular competitor. -/

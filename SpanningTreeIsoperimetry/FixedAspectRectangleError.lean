@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.FourthOrderRectangleError
-import SpanningTreeIsoperimetry.FirstProfileModular
+module
+
+public import SpanningTreeIsoperimetry.FourthOrderRectangleError
+public import SpanningTreeIsoperimetry.FirstProfileModular
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The printed fixed-aspect fourth-order rectangle remainder for every
 positive aspect. Only the quadrature coefficient grows with the aspect;

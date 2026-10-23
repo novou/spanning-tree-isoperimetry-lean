@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.QuadrantBoundaryGreen
-import SpanningTreeIsoperimetry.BoundaryGreenPolynomials
+module
+
+public import SpanningTreeIsoperimetry.QuadrantBoundaryGreen
+public import SpanningTreeIsoperimetry.BoundaryGreenPolynomials
+
+@[expose] public section
 
 /-! The first two actual quadrant Green rows, obtained from finite
 Dirichlet equations and the checked boundary exhaustion. -/

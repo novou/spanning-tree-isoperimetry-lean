@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.AngularKernelTaylor
+module
+
+public import SpanningTreeIsoperimetry.AngularKernelTaylor
+
+@[expose] public section
 
 /-! Exact low-mode exponential bounds for the sharp rectangular remainder.
 Rational lower bounds for exp(gamma) are proved from the exact cosh equation. -/

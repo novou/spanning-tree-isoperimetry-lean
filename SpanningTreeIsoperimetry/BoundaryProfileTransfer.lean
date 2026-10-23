@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.BoundaryLowerIntegral
-import SpanningTreeIsoperimetry.BoundarySingletonWeight
-import Mathlib.Topology.Order.IntermediateValue
+module
+
+public import SpanningTreeIsoperimetry.BoundaryLowerIntegral
+public import SpanningTreeIsoperimetry.BoundarySingletonWeight
+public import Mathlib.Topology.Order.IntermediateValue
+
+@[expose] public section
 
 /-! Monotone gamma substitution transfers a proved profile on[0,1] into
 an actual finite-domain correction lower bound. -/

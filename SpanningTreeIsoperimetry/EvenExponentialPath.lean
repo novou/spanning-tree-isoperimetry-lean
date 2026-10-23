@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
-import SpanningTreeIsoperimetry.WeightedConvolutionPath
+module
+
+public import SpanningTreeIsoperimetry.OneSidedLaurentCompatibility
+public import SpanningTreeIsoperimetry.WeightedConvolutionPath
+
+@[expose] public section
 
 /-! The actual even Laurent exponential inherits a weighted derivative from
 its proved positive factor and reflected factor. The convolution derivative

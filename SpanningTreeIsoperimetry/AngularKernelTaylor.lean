@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.LatticeKernelDerivatives
-import Mathlib.Analysis.Calculus.Taylor
+module
+
+public import SpanningTreeIsoperimetry.LatticeKernelDerivatives
+public import Mathlib.Analysis.Calculus.Taylor
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Cubic and fifth-order angular-kernel bounds derived from its checked
 actual derivative chain and the real Taylor theorem. -/

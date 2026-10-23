@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FiniteSingletonLower
+module
+
+public import SpanningTreeIsoperimetry.FiniteSingletonLower
+
+@[expose] public section
 
 /-! Exact one- and two-face infinite strips close the small-side cases of
 the singleton correction bound. -/

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallMaximumValue
+module
+
+public import SpanningTreeIsoperimetry.SmallMaximumValue
+
+@[expose] public section
 
 /-! Attainment and equality for the actual small maximum values. -/
 namespace SpanningTreeIsoperimetry.SmallMaximizers

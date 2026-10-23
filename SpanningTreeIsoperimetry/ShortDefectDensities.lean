@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.BoundaryProfileTransfer
-import SpanningTreeIsoperimetry.BoundarySingletonIntegral
-import SpanningTreeIsoperimetry.ShortDefectPolynomials
-import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
+module
+
+public import SpanningTreeIsoperimetry.BoundaryProfileTransfer
+public import SpanningTreeIsoperimetry.BoundarySingletonIntegral
+public import SpanningTreeIsoperimetry.ShortDefectPolynomials
+public import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
+
+@[expose] public section
 
 /-! Actual small-defect lower densities factor as the singleton density times
 the checked inverse-quadrant quadratic polynomials. -/

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallFamilyPatternData
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyPatternData
+
+@[expose] public section
 
 /-! Three or more nonempty corners satisfy one of the table's source rows,
 without enumerating corner placements or Ferrers diagrams. -/

@@ -2,7 +2,7 @@
 
 This note maps the results and proofs of *Spanning-Tree Maximization Forces Isoperimetry in the Square Lattice* to this Lean project. It describes the common mathematical objects, the corresponding theorems, and the places where the two proofs take different routes.
 
-Section numbers and titles refer to the current paper in either the article or AMS layout. TeX labels provide additional search keys. The full statement index is in [coverage.md](coverage.md). Abbreviated Lean names lie in the `SpanningTreeIsoperimetry` namespace unless prefixed by `Real`. [SpanningTreeIsoperimetry.lean](../SpanningTreeIsoperimetry.lean) is the aggregate import; the included [Foundations/](../Foundations/) directory contains the `SquareMaximality` library.
+Section numbers, titles, and TeX labels refer to the [paper](https://arxiv.org/abs/2605.23773v3). The full statement index is in [coverage.md](coverage.md). Abbreviated Lean names lie in the `SpanningTreeIsoperimetry` namespace unless prefixed by `Real`. [SpanningTreeIsoperimetry.lean](../SpanningTreeIsoperimetry.lean) is the aggregate import; the included [Foundations/](../Foundations/) directory contains the `SquareMaximality` library.
 
 ## Mathematical objects
 
@@ -10,7 +10,7 @@ The paper studies finite connected induced subgraphs of the nearest-neighbor lat
 
 The canonical domain `C_N` is selected by `L = ceil(2 sqrt(N))`, `r = ceil((L−sqrt(L²−4N))/2)`, `s=L−r`, and `k=rs−N`, then deleting `k` consecutive vertices along the longer side at a corner. For positive `N`, the maximum is `tau(C_N)` except at `N=7,14,17`, where it is respectively `16,8960,112456`. Nonuniqueness occurs exactly at `N=3,8,10,13`; `C_N` is the unique maximizing isometry class for every `N≥18`.
 
-The common constants are `h = 4 Catalan/pi`, the square-lattice entropy, and `alpha = log(1+sqrt(2))`, the boundary coefficient. The corner energy `E(M)` subtracts the bulk loss `h|M|` from the quadrant deletion cost. For a straight strip of `k` cells, `E_k = E(I_k)` and `C_strip = sup_k E_k`. Section 4.1 of the paper defines these energies by their nonnegative closed-walk series; [CornerEnergy.lean](../SpanningTreeIsoperimetry/CornerEnergy.lean) and [EnergyConvergence.lean](../SpanningTreeIsoperimetry/EnergyConvergence.lean) provide the formal definitions and convergence.
+The common constants are `h = 4 Catalan/pi`, the square-lattice entropy, and `alpha = log(1+sqrt(2))`, the boundary coefficient. Section 4.1 identifies the finite deletion ratio with a Green minor and defines its energy by subtracting `h|M|` from the logarithmic loss. The corner energy `E(M)` is the quadrant limit, expressed by a nonnegative closed-walk series. For a straight strip of `k` cells, `E_k = E(I_k)` and `C_strip = sup_k E_k`. [CornerEnergy.lean](../SpanningTreeIsoperimetry/CornerEnergy.lean) and [EnergyConvergence.lean](../SpanningTreeIsoperimetry/EnergyConvergence.lean) provide the series definitions and convergence; [FerrersPrimalBridge.lean](../SpanningTreeIsoperimetry/FerrersPrimalBridge.lean) connects the vertex and face domains.
 
 ## Statement map
 
@@ -40,9 +40,13 @@ The positive face coordinates in the Green-function appendix are the translation
 
 ## Proof-route comparison
 
+### Vacancy components and the hull comparison
+
+Section 3.2 selects a spanning forest of the dual edge subgraph associated with each vacancy component. Contracting that forest identifies the same vertices as the full subgraph, so its containment probability in a uniform dual spanning tree equals the corresponding primal deletion ratio. Hadamard–Fischer for the transfer-current minors gives the product comparison. The included [ForestEventsConstruction.lean](../Foundations/SquareMaximality/Dual/ForestEventsConstruction.lean), [CanonicalVacancyDeletion.lean](../Foundations/SquareMaximality/Dual/CanonicalVacancyDeletion.lean), and [ForestProduct.lean](../Foundations/SquareMaximality/Dual/ForestProduct.lean) implement these identifications and the product inequality.
+
 ### Polarization and finite corner corrections
 
-Section 5 expands products over reflection-pair signs. Lean proves that expansion in [Polarization.lean](../SpanningTreeIsoperimetry/Polarization.lean) and connects it to matrix traces in [PolarizationTrace.lean](../SpanningTreeIsoperimetry/PolarizationTrace.lean). A Hadamard change of basis separates the occupancy mean and difference; polarization replaces the difference by its absolute value. The reflection cover counts each vertex twice, including fixed-axis vertices, and weights each copy by one half. In [PolarizationStrict.lean](../SpanningTreeIsoperimetry/PolarizationStrict.lean), a preferred-side path joins singly occupied reflection pairs of opposite original signs; traversing it outward and back produces a strictly improved even moment.
+Section 5 expands products over reflection-pair signs. Lean proves that expansion in [Polarization.lean](../SpanningTreeIsoperimetry/Polarization.lean) and connects it to matrix traces in [PolarizationTrace.lean](../SpanningTreeIsoperimetry/PolarizationTrace.lean). A Hadamard change of basis separates the occupancy mean and difference; polarization replaces the difference by its absolute value. The reflection cover counts each vertex twice, including fixed-axis vertices, and weights each copy by one half. In [PolarizationStrict.lean](../SpanningTreeIsoperimetry/PolarizationStrict.lean), a preferred-side path joins singly occupied reflection pairs whose occupied points originally lie in opposite half-planes; traversing it outward and back produces a strictly improved even moment.
 
 For the finite corrections in Section 4.5, [CornerEnergyTransfer.lean](../SpanningTreeIsoperimetry/CornerEnergyTransfer.lean) sums the closed-word placements that meet the defect and leave the face rectangle. [CornerDeterminant.lean](../SpanningTreeIsoperimetry/CornerDeterminant.lean) proves, for a Ferrers defect `M` contained in the face rectangle `U`,
 
@@ -147,12 +151,6 @@ The proposition in Section 8.2 (`prop:scalar-resolvent`) distinguishes the ratio
 
 ## Verification
 
-The toolchain is fixed by [lean-toolchain](../lean-toolchain), and dependency revisions by [lake-manifest.json](../lake-manifest.json). [lakefile.toml](../lakefile.toml) declares the included `Foundations` library and mathlib. The pinned versions are Lean 4.34.1 and mathlib v4.34.1. The setup instructions for a fresh checkout are in the project's [README](../README.md#build-and-verification).
-
-From the Lean project root, run
-
-```sh
-python3 scripts/audit.py
-```
-
-[audit.py](../scripts/audit.py) builds the project and runs [Audit.lean](../scripts/Audit.lean) to inspect theorem declarations and their axiom dependencies. The audit requires the listed public endpoints and permits `propext`, `Classical.choice`, and `Quot.sound`. Run it as the sole build process, with the proof sources fixed for the duration.
+The [README](../README.md#build-and-verification) gives build and axiom-audit
+commands. The [statement interface](statement-interface.md#verification)
+describes the independent statement comparison and exported-proof checks.

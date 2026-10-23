@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.RectangularRemainder
-import Mathlib.Analysis.Calculus.Deriv.Polynomial
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+module
+
+public import SpanningTreeIsoperimetry.RectangularRemainder
+public import Mathlib.Analysis.Calculus.Deriv.Polynomial
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Local Euler–Maclaurin identities through order six, proved by explicit
 polynomial differentiation and repeated integration by parts. -/

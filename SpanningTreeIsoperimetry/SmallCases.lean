@@ -1,10 +1,14 @@
-import SpanningTreeIsoperimetry.Grid
-import Mathlib.Algebra.Polynomial.Basic
-import Mathlib.Combinatorics.SimpleGraph.AdjMatrix
-import Mathlib.LinearAlgebra.Matrix.Charpoly.Basic
-import Mathlib.Tactic.FinCases
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Ring
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import Mathlib.Algebra.Polynomial.Basic
+public import Mathlib.Combinatorics.SimpleGraph.AdjMatrix
+public import Mathlib.LinearAlgebra.Matrix.Charpoly.Basic
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-!
 # The polynomial calculations in the exceptional small hulls

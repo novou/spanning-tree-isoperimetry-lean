@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.MulticornerEndpointChecks
-import SpanningTreeIsoperimetry.FluxBounds
-import SpanningTreeIsoperimetry.AspectCost
+module
+
+public import SpanningTreeIsoperimetry.MulticornerEndpointChecks
+public import SpanningTreeIsoperimetry.FluxBounds
+public import SpanningTreeIsoperimetry.AspectCost
+
+@[expose] public section
 
 /-! The single-corner endpoint comparisons lifted to the entire shallow
 parameter ranges by the checked aspect and flux monotonicity. -/

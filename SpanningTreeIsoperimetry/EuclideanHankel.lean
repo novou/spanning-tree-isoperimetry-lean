@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ScalarResolvent
-import Mathlib.Analysis.Matrix.LDL
+module
+
+public import SpanningTreeIsoperimetry.ScalarResolvent
+public import Mathlib.Analysis.Matrix.LDL
+
+@[expose] public section
 
 /-! Orthogonalization of the actual positive moment matrices. The eventual
 signed Euclidean-chain identification is separate from these proved matrix

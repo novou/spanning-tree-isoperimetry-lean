@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SummableDeterminantFirstOrder
+module
+
+public import SpanningTreeIsoperimetry.SummableDeterminantFirstOrder
+
+@[expose] public section
 
 /-! Global continuity estimate for the actual finite-section determinant
 limit. The right side uses only the entrywise absolute-sum masses. -/

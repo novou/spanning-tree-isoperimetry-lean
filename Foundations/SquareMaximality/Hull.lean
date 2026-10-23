@@ -1,5 +1,9 @@
-import SquareMaximality.Geometry
-import Mathlib.Data.Finset.Max
+module
+
+public import SquareMaximality.Geometry
+public import Mathlib.Data.Finset.Max
+
+@[expose] public section
 
 set_option autoImplicit false
 

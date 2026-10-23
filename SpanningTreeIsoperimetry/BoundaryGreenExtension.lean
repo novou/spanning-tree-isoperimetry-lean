@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryHalfPlane
+module
+
+public import SpanningTreeIsoperimetry.BoundaryHalfPlane
+
+@[expose] public section
 
 /-! Additional exact boundary Green sums at displacements six through eight.
 The polynomial candidates are checked by rational identities in Lean. -/

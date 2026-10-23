@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.NormalizedSourceError
-import SpanningTreeIsoperimetry.LargeImbalanceCountBridge
+module
+
+public import SpanningTreeIsoperimetry.NormalizedSourceError
+public import SpanningTreeIsoperimetry.LargeImbalanceCountBridge
+
+@[expose] public section
 
 /-! Exact selector coordinates for the small single-corner reductions. -/
 namespace SpanningTreeIsoperimetry.SingleCornerSelectorGeometry

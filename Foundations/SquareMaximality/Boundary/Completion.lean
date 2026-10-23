@@ -1,7 +1,11 @@
-import SquareMaximality.Boundary.SpectralBound
-import SquareMaximality.Dual.TappSeries
-import SquareMaximality.Dual.BoundaryDeterminants
-import SquareMaximality.Dual.RectangleTransferCurrent
+module
+
+public import SquareMaximality.Boundary.SpectralBound
+public import SquareMaximality.Dual.TappSeries
+public import SquareMaximality.Dual.BoundaryDeterminants
+public import SquareMaximality.Dual.RectangleTransferCurrent
+
+@[expose] public section
 
 /-!
 # Manuscript-facing hull completion

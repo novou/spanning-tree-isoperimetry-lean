@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FiniteFaceCountBridge
+module
+
+public import SpanningTreeIsoperimetry.FiniteFaceCountBridge
+
+@[expose] public section
 
 /-! The exact face comparisons on the three-vacancy square hull at N=13. -/
 namespace SpanningTreeIsoperimetry.ThirteenFaceCounts

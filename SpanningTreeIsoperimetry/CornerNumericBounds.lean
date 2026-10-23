@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.StripEnergyBound
-import Mathlib.Analysis.Complex.Exponential
+module
+
+public import SpanningTreeIsoperimetry.StripEnergyBound
+public import Mathlib.Analysis.Complex.Exponential
+
+@[expose] public section
 
 /-! Short exact entropy and logarithm enclosures for the fixed corner shapes. -/
 namespace SpanningTreeIsoperimetry.CornerNumericBounds

@@ -1,9 +1,13 @@
-import SpanningTreeIsoperimetry.ConjugationHankelAlgebra
-import SpanningTreeIsoperimetry.PositiveExponentialSignedPath
-import SpanningTreeIsoperimetry.WeightedKernelProductPath
-import SpanningTreeIsoperimetry.SummableTraceConjugation
-import SpanningTreeIsoperimetry.SummableTracePath
-import Mathlib.Analysis.Calculus.MeanValue
+module
+
+public import SpanningTreeIsoperimetry.ConjugationHankelAlgebra
+public import SpanningTreeIsoperimetry.PositiveExponentialSignedPath
+public import SpanningTreeIsoperimetry.WeightedKernelProductPath
+public import SpanningTreeIsoperimetry.SummableTraceConjugation
+public import SpanningTreeIsoperimetry.SummableTracePath
+public import Mathlib.Analysis.Calculus.MeanValue
+
+@[expose] public section
 
 /-! The actual trace of a triangular conjugation defect. The derivative
 is obtained in total entry mass from the checked HH Leibniz rule, and its

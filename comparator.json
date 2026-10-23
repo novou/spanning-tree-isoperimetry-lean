@@ -1,0 +1,28 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "SpanningTreeChallenge.maximizer_isoperimetric",
+    "SpanningTreeChallenge.maximum_value",
+    "SpanningTreeChallenge.maximizer_iff",
+    "SpanningTreeChallenge.nonuniqueness_iff",
+    "SpanningTreeChallenge.unique_large",
+    "SpanningTreeChallenge.sharp_stability",
+    "SpanningTreeChallenge.coefficient_optimal",
+    "SpanningTreeChallenge.scalar_resolvent",
+    "SpanningTreeChallenge.scalar_series",
+    "SpanningTreeChallenge.hankel_minor",
+    "SpanningTreeChallenge.scalar_chain",
+    "SpanningTreeChallenge.cornerStrip_product",
+    "SpanningTreeChallenge.cornerStrip_recurrence",
+    "SpanningTreeChallenge.extremal_count_asymptotic",
+    "SpanningTreeChallenge.strip_fourier_identity",
+    "SpanningTreeChallenge.strip_energy_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

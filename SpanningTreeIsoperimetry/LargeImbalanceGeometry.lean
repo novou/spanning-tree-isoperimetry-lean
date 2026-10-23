@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.CanonicalFluxBounds
+module
+
+public import SpanningTreeIsoperimetry.CanonicalFluxBounds
+
+@[expose] public section
 
 /-! Selector arithmetic used by the actual large-imbalance scalar test. -/
 namespace SpanningTreeIsoperimetry.LargeImbalanceGeometry

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.NormalizedRectangleError
-import SpanningTreeIsoperimetry.LargeImbalanceCountBridge
+module
+
+public import SpanningTreeIsoperimetry.NormalizedRectangleError
+public import SpanningTreeIsoperimetry.LargeImbalanceCountBridge
+
+@[expose] public section
 
 /-! Actual large-imbalance exclusion from the checked normalized rectangle
 error; no analytic premise is assumed. -/

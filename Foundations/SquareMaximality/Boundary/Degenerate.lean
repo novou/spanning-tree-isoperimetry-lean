@@ -1,5 +1,9 @@
-import SquareMaximality.Normalization
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import SquareMaximality.Normalization
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+
+@[expose] public section
 
 set_option autoImplicit false
 

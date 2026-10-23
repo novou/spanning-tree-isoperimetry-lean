@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CornerSeparationTree
-import SpanningTreeIsoperimetry.FerrersFoldHook
+module
+
+public import SpanningTreeIsoperimetry.CornerSeparationTree
+public import SpanningTreeIsoperimetry.FerrersFoldHook
+
+@[expose] public section
 
 /-! Maximal-block Ferrers folds as actual primal spanning-tree comparisons. -/
 namespace SpanningTreeIsoperimetry.CornerPrimalDomains

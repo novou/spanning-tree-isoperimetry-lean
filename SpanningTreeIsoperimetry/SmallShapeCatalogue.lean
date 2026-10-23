@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.FerrersFoldHook
-import SpanningTreeIsoperimetry.StripRigidity
-import SpanningTreeIsoperimetry.HullArithmetic
-import Mathlib.Tactic.IntervalCases
+module
+
+public import SpanningTreeIsoperimetry.FerrersFoldHook
+public import SpanningTreeIsoperimetry.StripRigidity
+public import SpanningTreeIsoperimetry.HullArithmetic
+public import Mathlib.Tactic.IntervalCases
+
+@[expose] public section
 
 /-! The small classification has six possible nonstrip hulls. A Ferrers
 defect of at most three cells is a strip or the three-cell L. -/

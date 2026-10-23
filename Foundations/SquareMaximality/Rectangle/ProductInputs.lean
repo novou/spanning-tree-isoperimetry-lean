@@ -1,6 +1,10 @@
-import SquareMaximality.Rectangle.Product
-import SquareMaximality.Rectangle.Trapezoid
-import SquareMaximality.Inputs.MatrixTree
+module
+
+public import SquareMaximality.Rectangle.Product
+public import SquareMaximality.Rectangle.Trapezoid
+public import SquareMaximality.Inputs.MatrixTree
+
+@[expose] public section
 
 set_option autoImplicit false
 

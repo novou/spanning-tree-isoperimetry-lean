@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.CanonicalCornerLong
-import SpanningTreeIsoperimetry.CanonicalShortStripEnergy
-import SpanningTreeIsoperimetry.CornerProfileNormalization
+module
+
+public import SpanningTreeIsoperimetry.CanonicalCornerLong
+public import SpanningTreeIsoperimetry.CanonicalShortStripEnergy
+public import SpanningTreeIsoperimetry.CornerProfileNormalization
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual canonical-hull concentration for N≥18, with strict nonstrip
 improvement and uniqueness up to the concrete lattice congruence relation. -/

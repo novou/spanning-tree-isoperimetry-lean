@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.StripSpectralRegularization
-import SpanningTreeIsoperimetry.StripStrictness
+module
+
+public import SpanningTreeIsoperimetry.StripSpectralRegularization
+public import SpanningTreeIsoperimetry.StripStrictness
+
+@[expose] public section
 
 /-! The actual regularized strip energies increase to their supremum.
 This is a wordwise statement, independent of a determinant asymptotic. -/

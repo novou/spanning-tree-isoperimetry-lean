@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.SingleCornerSmallOrientation
-import SpanningTreeIsoperimetry.NormalizedRectangleError
-import SpanningTreeIsoperimetry.CrossHullCountComparison
-import SpanningTreeIsoperimetry.SourceHullArithmetic
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerSmallOrientation
+public import SpanningTreeIsoperimetry.NormalizedRectangleError
+public import SpanningTreeIsoperimetry.CrossHullCountComparison
+public import SpanningTreeIsoperimetry.SourceHullArithmetic
+
+@[expose] public section
 
 /-! Actual count transport for a single occupied corner. The rectangle error
 is discharged by the checked normalized absorption theorem. -/

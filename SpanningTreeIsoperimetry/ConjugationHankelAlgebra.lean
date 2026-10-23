@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.HankelConvolution
-import SpanningTreeIsoperimetry.ToeplitzHankelMassBounds
-import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+module
+
+public import SpanningTreeIsoperimetry.HankelConvolution
+public import SpanningTreeIsoperimetry.ToeplitzHankelMassBounds
+public import SpanningTreeIsoperimetry.BoundedKernelAlgebra
+
+@[expose] public section
 
 /-! Exact algebra for the summable defect of a triangular conjugation.
 No trace is assigned to the individual nonsummable Toeplitz factors. -/

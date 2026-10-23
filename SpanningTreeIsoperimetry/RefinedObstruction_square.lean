@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RectangleEnergyBounds
-import SpanningTreeIsoperimetry.TwoTierFerrers
+module
+
+public import SpanningTreeIsoperimetry.RectangleEnergyBounds
+public import SpanningTreeIsoperimetry.TwoTierFerrers
+
+@[expose] public section
 
 /-! Reuse the already checked actual small-corner determinant formula. -/
 namespace SpanningTreeIsoperimetry.RefinedObstructionPolynomials.square

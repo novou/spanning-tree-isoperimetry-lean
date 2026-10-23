@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.RefinedObstruction_tier41
-import SpanningTreeIsoperimetry.RefinedPiBounds
-import SpanningTreeIsoperimetry.RefinedEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.RefinedObstruction_tier41
+public import SpanningTreeIsoperimetry.RefinedPiBounds
+public import SpanningTreeIsoperimetry.RefinedEntropyBounds
+
+@[expose] public section
 
 /-! Actual tier41 energy threshold for the refined corner envelope. -/
 namespace SpanningTreeIsoperimetry.RefinedObstructionEnergy

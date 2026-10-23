@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.SmallFamilyFoldable
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyFoldable
+
+@[expose] public section
 
 /-! Every pair of straight corner strips in the small table either folds
 strictly or satisfies the matching finite source-energy lower bound. -/

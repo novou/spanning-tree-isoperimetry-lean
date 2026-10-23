@@ -1,7 +1,13 @@
-import SpanningTreeIsoperimetry.StripLoopBound
-import SpanningTreeIsoperimetry.FoundationsBridge
-import Mathlib.LinearAlgebra.Matrix.SchurComplement
-import Mathlib.Tactic.Abel
+module
+
+public import SpanningTreeIsoperimetry.StripLoopBound
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import Mathlib.LinearAlgebra.Matrix.SchurComplement
+public import Mathlib.Tactic.Abel
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Scalar estimates for the uniform strip-energy comparison

@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallFamilyRowTargets
-import SpanningTreeIsoperimetry.SmallFamilyCountComparison
-import SpanningTreeIsoperimetry.CanonicalStrips
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyRowTargets
+public import SpanningTreeIsoperimetry.SmallFamilyCountComparison
+public import SpanningTreeIsoperimetry.CanonicalStrips
+
+@[expose] public section
 
 /-! Every proved first-table source row gives a strict actual count
 improvement, uniformly over all admissible hull sizes. -/

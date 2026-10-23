@@ -1,4 +1,8 @@
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 
 /-! Common exact interval for the reciprocal-pi polynomial certificates. -/
 namespace SpanningTreeIsoperimetry.RefinedPiBounds

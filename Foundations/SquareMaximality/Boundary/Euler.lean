@@ -1,5 +1,11 @@
-import SquareMaximality.Boundary.Cellulation
-import SquareMaximality.Boundary.KingRuns
+module
+
+public import SquareMaximality.Boundary.Cellulation
+public import SquareMaximality.Boundary.KingRuns
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

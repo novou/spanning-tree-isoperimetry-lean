@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CornerPrimalDomains
-import SpanningTreeIsoperimetry.FerrersFold
+module
+
+public import SpanningTreeIsoperimetry.CornerPrimalDomains
+public import SpanningTreeIsoperimetry.FerrersFold
+
+@[expose] public section
 
 /-! The marked faces of actual four-corner primal vacancies are exactly the
 same Ferrers diagrams placed in the smaller face rectangle. -/

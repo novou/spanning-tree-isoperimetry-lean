@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.SummableKernelDeterminant
-import SpanningTreeIsoperimetry.SummableKernelTrace
-import SpanningTreeIsoperimetry.FiniteDeterminantFirstOrder
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelDeterminant
+public import SpanningTreeIsoperimetry.SummableKernelTrace
+public import SpanningTreeIsoperimetry.FiniteDeterminantFirstOrder
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+
+@[expose] public section
 
 /-! Passing the dimension-free determinant remainder to the actual
 finite-section limit. This supplies a local determinant derivative without

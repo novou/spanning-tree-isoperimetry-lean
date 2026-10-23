@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.GreenCornerReflection
-import SpanningTreeIsoperimetry.CornerPrimalFaces
+module
+
+public import SpanningTreeIsoperimetry.GreenCornerReflection
+public import SpanningTreeIsoperimetry.CornerPrimalFaces
+
+@[expose] public section
 
 /-! Actual four-corner counts are bounded by the sum of the individual finite
 corner energies. All placement, disjointness and cardinality inputs are proved. -/

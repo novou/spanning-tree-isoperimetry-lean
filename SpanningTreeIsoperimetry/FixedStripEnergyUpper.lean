@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.CrossHullCountComparison
-import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
-import SpanningTreeIsoperimetry.RefinedEntropyBounds
+module
+
+public import SpanningTreeIsoperimetry.CrossHullCountComparison
+public import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
+public import SpanningTreeIsoperimetry.RefinedEntropyBounds
+
+@[expose] public section
 
 /-! Explicit upper bounds for actual finite strip energies. Exact rational
 Green determinants and finite exponential sums prove every displayed bound. -/

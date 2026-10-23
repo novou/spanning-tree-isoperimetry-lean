@@ -1,6 +1,10 @@
-import SquareMaximality.Boundary.Faces
-import SquareMaximality.Boundary.KingRuns
-import SquareMaximality.ClosedWalk.All
+module
+
+public import SquareMaximality.Boundary.Faces
+public import SquareMaximality.Boundary.KingRuns
+public import SquareMaximality.ClosedWalk.All
+
+@[expose] public section
 
 /-!
 # Finite closed-walk charging

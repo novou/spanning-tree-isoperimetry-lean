@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FiniteDeterminantContinuity
+module
+
+public import SpanningTreeIsoperimetry.FiniteDeterminantContinuity
+
+@[expose] public section
 
 /-! Zero-padding invariance for actual finite-section determinants. -/
 namespace SpanningTreeIsoperimetry.FiniteSectionPadding

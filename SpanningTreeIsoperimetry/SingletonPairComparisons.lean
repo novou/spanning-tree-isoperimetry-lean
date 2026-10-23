@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallTenComparison
-import SpanningTreeIsoperimetry.CanonicalThirteen
-import SpanningTreeIsoperimetry.CanonicalChecks
+module
+
+public import SpanningTreeIsoperimetry.SmallTenComparison
+public import SpanningTreeIsoperimetry.CanonicalThirteen
+public import SpanningTreeIsoperimetry.CanonicalChecks
+
+@[expose] public section
 
 /-! Opposite singleton counts on all four small two-vacancy hulls. -/
 namespace SpanningTreeIsoperimetry.SingletonPairComparisons

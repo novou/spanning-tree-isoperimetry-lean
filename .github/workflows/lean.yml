@@ -50,15 +50,27 @@ jobs:
           ln -s "$HOME/.elan" .tooling/elan
           scripts/lake.sh env lean --version
 
-      - name: Build the checked proof closure sequentially
+      - name: Build proof and comparison modules sequentially
         run: python3 scripts/build_serial.py
 
       - name: Audit proof dependencies
         run: python3 scripts/audit.py
 
+      - name: Install the Comparator sandbox
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y bubblewrap
+
+      - name: Compare the independent Challenge and Solution statements
+        id: comparator
+        shell: bash
+        run: scripts/lake.sh env lake comparator --config comparator.json 2>&1 | tee build/comparator.log
+
       - name: Summarize verification
         if: always()
         shell: bash
+        env:
+          COMPARATOR_OUTCOME: ${{ steps.comparator.outcome }}
         run: |
           python3 - <<'PY'
           import json
@@ -71,8 +83,11 @@ jobs:
                   data = json.loads(report.read_text())
                   out.write('### Lean verification\n\n')
                   out.write(f"Build and axiom audit passed for {data['theorem_declarations_audited']:,} theorem declarations.\n\n")
+                  out.write(f"Checked {len(data['required_endpoints_checked'])} manuscript endpoints and {len(data['solution_theorems_checked'])} compared Solution theorem exports.\n\n")
+                  out.write(f"Solution proof holes: {data['solution_proof_holes']}; independent Challenge statement holes: {data['challenge_statement_holes']}.\n\n")
                   out.write('Allowed axioms: `propext`, `Classical.choice`, `Quot.sound`.\n\n')
-                  out.write('See `docs/coverage.md` for manuscript coverage and any remaining proof work.\n')
+                  out.write(f"Statement comparison: {os.environ['COMPARATOR_OUTCOME']}.\n\n")
+                  out.write('See `docs/coverage.md` for the manuscript statement index.\n')
               else:
                   out.write('Verification did not produce a successful audit report. See the failed step and attached logs.\n')
           PY
@@ -84,7 +99,9 @@ jobs:
           name: lean-verification-logs
           path: |
             build/audit.json
+            build/Audit.lean
             build/axioms.log
+            build/comparator.log
             build/build.log
             build/serial/*.log
             build/serial/plan.json

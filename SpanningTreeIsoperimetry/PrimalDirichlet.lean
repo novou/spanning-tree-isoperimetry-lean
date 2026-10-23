@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.CornerDeterminant
-import SpanningTreeIsoperimetry.GapConvexity
-import SquareMaximality.Dual.PlanarComplement
-import SquareMaximality.Dual.BoundaryDeterminants
-import SquareMaximality.Inputs.MatrixTreeTheorem
+module
+
+public import SpanningTreeIsoperimetry.CornerDeterminant
+public import SpanningTreeIsoperimetry.GapConvexity
+public import SquareMaximality.Dual.PlanarComplement
+public import SquareMaximality.Dual.BoundaryDeterminants
+public import SquareMaximality.Inputs.MatrixTreeTheorem
+
+@[expose] public section
 
 /-! Actual primal tree counts and the finite face Dirichlet matrix when
 every vacancy component meets the rectangular boundary. -/

@@ -1,6 +1,10 @@
-import SquareMaximality.Multigraph.Basic
-import Mathlib.Data.Matrix.Basic
-import Mathlib.SetTheory.Cardinal.Finite
+module
+
+public import SquareMaximality.Multigraph.Basic
+public import Mathlib.Data.Matrix.Basic
+public import Mathlib.SetTheory.Cardinal.Finite
+
+@[expose] public section
 
 /-!
 # Multiplicity matrices and Laplacians

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.Targets
+module
+
+public import SpanningTreeIsoperimetry.Targets
+
+@[expose] public section
 
 /-! Exact selector arithmetic for normalized rectangular error and large
 imbalance bounds. These are inequalities for the actual integer hull parameters. -/

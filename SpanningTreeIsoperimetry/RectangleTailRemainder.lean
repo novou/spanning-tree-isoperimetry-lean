@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.RectangleModeSums
-import SpanningTreeIsoperimetry.GeometricTailBounds
-import SpanningTreeIsoperimetry.SharpRectangleExpansion
+module
+
+public import SpanningTreeIsoperimetry.RectangleModeSums
+public import SpanningTreeIsoperimetry.GeometricTailBounds
+public import SpanningTreeIsoperimetry.SharpRectangleExpansion
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Quantitative omitted-mode and endpoint errors for the actual rectangle. -/
 namespace SpanningTreeIsoperimetry.RectangleTailRemainder

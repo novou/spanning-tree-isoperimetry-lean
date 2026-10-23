@@ -1,7 +1,11 @@
-import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
-import Mathlib.LinearAlgebra.Multilinear.Basic
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
+module
+
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+public import Mathlib.LinearAlgebra.Multilinear.Basic
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+
+@[expose] public section
 
 /-! A dimension-independent finite determinant continuity estimate.
 The entrywise absolute-sum norm is the only matrix size parameter. This is

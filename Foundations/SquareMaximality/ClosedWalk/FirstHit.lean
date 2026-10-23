@@ -1,4 +1,8 @@
-import SquareMaximality.ClosedWalk.Reflection
+module
+
+public import SquareMaximality.ClosedWalk.Reflection
+
+@[expose] public section
 
 set_option autoImplicit false
 

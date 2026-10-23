@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.GreenMinorProducts
-import SpanningTreeIsoperimetry.CornerPrimalDomains
+module
+
+public import SpanningTreeIsoperimetry.GreenMinorProducts
+public import SpanningTreeIsoperimetry.CornerPrimalDomains
+
+@[expose] public section
 
 /-! Reflection of actual rectangular Green minors between the four corners. -/
 namespace SpanningTreeIsoperimetry.GreenCornerReflection

@@ -1,9 +1,13 @@
-import SpanningTreeIsoperimetry.WiredPairs
-import SpanningTreeIsoperimetry.InteriorSquareGain
-import SpanningTreeIsoperimetry.EnhancedBoundary
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SpanningTreeIsoperimetry.VacancyCounts
-import SquareMaximality.Boundary.MatrixTreeCompletion
+module
+
+public import SpanningTreeIsoperimetry.WiredPairs
+public import SpanningTreeIsoperimetry.InteriorSquareGain
+public import SpanningTreeIsoperimetry.EnhancedBoundary
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SpanningTreeIsoperimetry.VacancyCounts
+public import SquareMaximality.Boundary.MatrixTreeCompletion
+
+@[expose] public section
 
 /-! The interior surcharge and the combined boundary/interior hull bound. -/
 namespace SpanningTreeIsoperimetry.InteriorCost

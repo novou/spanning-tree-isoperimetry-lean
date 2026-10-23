@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.PolarizationReflections
-import SpanningTreeIsoperimetry.DomainSpectral
-import SpanningTreeIsoperimetry.DeterminantComparison
+module
+
+public import SpanningTreeIsoperimetry.PolarizationReflections
+public import SpanningTreeIsoperimetry.DomainSpectral
+public import SpanningTreeIsoperimetry.DeterminantComparison
+
+@[expose] public section
 
 /-! Concrete finite-lattice determinant inequalities for polarization. -/
 namespace SpanningTreeIsoperimetry.Polarization

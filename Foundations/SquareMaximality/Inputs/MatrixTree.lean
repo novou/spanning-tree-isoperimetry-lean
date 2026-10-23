@@ -1,6 +1,10 @@
-import SquareMaximality.Infrastructure
-import SquareMaximality.Multigraph.All
-import Mathlib.Combinatorics.SimpleGraph.LapMatrix
+module
+
+public import SquareMaximality.Infrastructure
+public import SquareMaximality.Multigraph.All
+public import Mathlib.Combinatorics.SimpleGraph.LapMatrix
+
+@[expose] public section
 
 set_option autoImplicit false
 

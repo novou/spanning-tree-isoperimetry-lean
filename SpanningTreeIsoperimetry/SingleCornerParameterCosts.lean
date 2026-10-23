@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.SingleCornerShallowEnergy
-import SpanningTreeIsoperimetry.SmallFamilyCountComparison
-import SpanningTreeIsoperimetry.LargeImbalanceGeometry
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerShallowEnergy
+public import SpanningTreeIsoperimetry.SmallFamilyCountComparison
+public import SpanningTreeIsoperimetry.LargeImbalanceGeometry
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Shallow costs in actual source and target hull coordinates. -/
 namespace SpanningTreeIsoperimetry.SingleCornerParameterCosts

@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.CornerNumericBounds
+module
+
+public import SpanningTreeIsoperimetry.CornerNumericBounds
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Exact entropy enclosures using bounded blocks of the actual alternating
 Catalan series. Every rational block comparison is checked by Lean. -/

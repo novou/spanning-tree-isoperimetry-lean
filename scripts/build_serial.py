@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate Lake artifacts serially for the checked aggregate import closure.
+"""Regenerate Lake artifacts serially for the proof and comparison modules.
 
 Each module's :deps facet must pass Lake's --no-build check immediately before
 its :leanArts build. Together with topological order and frozen sources, this
@@ -20,14 +20,16 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-AGGREGATE = "SpanningTreeIsoperimetry"
+# Challenge and Solution deliberately declare the same interface in independent
+# environments. Build each module separately; never import them into one module.
+ROOT_MODULES = ("SpanningTreeIsoperimetry", "Solution", "Challenge")
 LOGS = ROOT / "build" / "serial"
 LAKE = ROOT / "scripts" / "lake.sh"
 MODULE_NAME = re.compile(r"[A-Za-z_][A-Za-z_0-9']*(?:\.[A-Za-z_][A-Za-z_0-9']*)*")
 
 
 def imports(path):
-    """Read plain import declarations, excluding nested comments and strings."""
+    """Read module imports, excluding nested comments and strings."""
     text = path.read_text()
     clean, i, depth = [], 0, 0
     while i < len(text):
@@ -66,7 +68,10 @@ def imports(path):
         raise RuntimeError(f"Unclosed comment in {path}")
     result = []
     for line in "".join(clean).splitlines():
-        match = re.fullmatch(r"\s*(?:(?:public|private)\s+)?import\s+(.+?)\s*", line)
+        match = re.fullmatch(
+            r"\s*(?:(?:public|private)\s+)?(?:meta\s+)?import\s+(?:all\s+)?(.+?)\s*",
+            line,
+        )
         if match:
             for name in match[1].split():
                 if not MODULE_NAME.fullmatch(name):
@@ -81,12 +86,12 @@ def local_source(name):
         path = base / relative
         if path.is_file():
             return path
-    if name.startswith(("SpanningTreeIsoperimetry", "SquareMaximality")):
+    if name in ROOT_MODULES or name.startswith(("SpanningTreeIsoperimetry.", "SquareMaximality")):
         raise RuntimeError(f"Missing local source: {name}")
     return None
 
 
-def plan():
+def plan(roots=ROOT_MODULES):
     order, sources, external, visiting = [], {}, set(), set()
 
     def visit(name):
@@ -105,7 +110,8 @@ def plan():
         sources[name] = path
         order.append(name)
 
-    visit(AGGREGATE)
+    for name in roots:
+        visit(name)
     toolchain = (ROOT / "lean-toolchain").read_text().strip()
     toolchain_dir = toolchain.replace("/", "--").replace(":", "---")
     system_lib = ROOT / ".tooling" / "elan" / "toolchains" / toolchain_dir / "lib" / "lean"
@@ -130,7 +136,7 @@ def main():
     LOGS.mkdir(parents=True, exist_ok=True)
     plan_file = LOGS / "plan.json"
     plan_file.write_text(json.dumps({
-        "aggregate": AGGREGATE, "local_order": order,
+        "roots": ROOT_MODULES, "local_order": order,
         "external_preflight": external, "installed_system_modules": system,
     }, indent=2) + "\n")
     print(f"Plan: {len(order)} local modules; {len(external)} external cached targets; "
@@ -161,19 +167,32 @@ def main():
                                f"See {log}\n{log.read_text()[-2500:]}")
         return result.returncode == 0
 
-    # Once legitimate traces exist, future audit invocations take this fast path.
-    if run(["--no-cache", "--no-build", "build"], "aggregate-fast-path.log", allow_failure=True):
+    root_targets = [f"+{name}:leanArts" for name in ROOT_MODULES]
+
+    # Check the explicit roots as well as Lake's default targets: a configuration
+    # that accidentally drops Solution must not reduce this script's coverage.
+    if (run(["--no-cache", "--no-build", "build", *root_targets],
+            "roots-fast-path.log", allow_failure=True)
+            and run(["--no-cache", "--no-build", "build"],
+                    "aggregate-fast-path.log", allow_failure=True)):
         run(["build"], "aggregate-build.log")
-        print("Aggregate already cached; ordinary lake build passed.", flush=True)
+        print("All proof and comparison modules cached; ordinary lake build passed.", flush=True)
         return
 
-    # Adding imports of already checked leaves only invalidates the aggregate.
-    if run(["--no-cache", "--no-build", "build", f"+{AGGREGATE}:deps"],
-           "aggregate-deps-fast-path.log", allow_failure=True):
-        run(["--no-cache", "build", f"+{AGGREGATE}:leanArts"], "aggregate-module-build.log")
+    # Interface edits often invalidate only these roots. Each successful :deps
+    # preflight still permits exactly one compiler in the following build.
+    roots_only = True
+    for name in ROOT_MODULES:
+        if not run(["--no-cache", "--no-build", "build", f"+{name}:deps"],
+                   f"{name}-deps-fast-path.log", allow_failure=True):
+            roots_only = False
+            break
+        run(["--no-cache", "build", f"+{name}:leanArts"], f"{name}-module-build.log")
+    if roots_only:
+        run(["--no-cache", "--no-build", "build", *root_targets], "roots-cached-preflight.log")
         run(["--no-build", "build"], "aggregate-cached-preflight.log")
         run(["build"], "aggregate-build.log")
-        print("Only aggregate rebuilt; ordinary cached lake build passed.", flush=True)
+        print("Root modules checked serially; ordinary cached lake build passed.", flush=True)
         return
 
     # --no-build is checked before Lake executes a build action. A stale external
@@ -196,6 +215,7 @@ def main():
         run(["--no-cache", "build", f"+{name}:leanArts"], label + ".build.log")
         print(f"[{number}/{len(order)}] {name}", flush=True)
 
+    run(["--no-cache", "--no-build", "build", *root_targets], "roots-cached-preflight.log")
     run(["--no-build", "build"], "aggregate-cached-preflight.log")
     run(["build"], "aggregate-build.log")
     print("Serial rebuild and ordinary cached lake build passed.", flush=True)

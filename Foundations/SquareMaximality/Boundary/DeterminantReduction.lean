@@ -1,6 +1,12 @@
-import SquareMaximality.Boundary.Euler
-import SquareMaximality.Boundary.SeriesCharging
-import SquareMaximality.Boundary.Canonical
+module
+
+public import SquareMaximality.Boundary.Euler
+public import SquareMaximality.Boundary.SeriesCharging
+public import SquareMaximality.Boundary.Canonical
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Boundary determinant-series reduction

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FerrersBoundaryAttachment
+module
+
+public import SpanningTreeIsoperimetry.FerrersBoundaryAttachment
+
+@[expose] public section
 
 /-! A single Ferrers corner gives an actual connected primal domain.
 Its hull, vacancy components and tree count are constructed explicitly. -/

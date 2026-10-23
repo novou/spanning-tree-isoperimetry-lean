@@ -1,6 +1,12 @@
-import SquareMaximality.Dual.TappWindowScan
-import SquareMaximality.Dual.TappPrefixBounds
-import SquareMaximality.Inputs.MatrixTreeBridge
+module
+
+public import SquareMaximality.Dual.TappWindowScan
+public import SquareMaximality.Dual.TappPrefixBounds
+public import SquareMaximality.Inputs.MatrixTreeBridge
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Closing Tapp's finite Rayleigh step

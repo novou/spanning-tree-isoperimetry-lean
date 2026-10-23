@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.EuclideanHankel
+module
+
+public import SpanningTreeIsoperimetry.EuclideanHankel
+
+@[expose] public section
 
 /-! Simultaneous tridiagonal reduction of the actual path operator and its
 positive commuting boundary Green form. -/

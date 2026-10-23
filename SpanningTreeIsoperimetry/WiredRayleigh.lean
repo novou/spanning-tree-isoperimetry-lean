@@ -1,7 +1,11 @@
-import SquareMaximality.Multigraph.TransferCurrentConstruction
-import SquareMaximality.Inputs.MatrixTreeTheorem
-import SpanningTreeIsoperimetry.InteriorSurcharge
-import SpanningTreeIsoperimetry.AvoidanceDeterminant
+module
+
+public import SquareMaximality.Multigraph.TransferCurrentConstruction
+public import SquareMaximality.Inputs.MatrixTreeTheorem
+public import SpanningTreeIsoperimetry.InteriorSurcharge
+public import SpanningTreeIsoperimetry.AvoidanceDeterminant
+
+@[expose] public section
 
 /-!
 # Rayleigh comparison under vertex wiring

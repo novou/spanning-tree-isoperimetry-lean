@@ -1,5 +1,11 @@
-import SquareMaximality.Boundary.King
-import SquareMaximality.Boundary.SlidingInjection
+module
+
+public import SquareMaximality.Boundary.King
+public import SquareMaximality.Boundary.SlidingInjection
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 set_option autoImplicit false
 

@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.RectangularSecondProfile
-import SpanningTreeIsoperimetry.RectangleResidualBounds
-import SpanningTreeIsoperimetry.TrapezoidalKernelError
+module
+
+public import SpanningTreeIsoperimetry.RectangularSecondProfile
+public import SpanningTreeIsoperimetry.RectangleResidualBounds
+public import SpanningTreeIsoperimetry.TrapezoidalKernelError
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Exact decomposition underlying the sharp fourth-order rectangle error.
 The quantitative fourth-order bound is assembled separately from this identity. -/

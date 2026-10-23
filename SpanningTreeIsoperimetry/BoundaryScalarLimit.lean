@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryTridiagonalGreen
+module
+
+public import SpanningTreeIsoperimetry.BoundaryTridiagonalGreen
+
+@[expose] public section
 
 /-! The arbitrary-depth scalar half-line Green kernel is the limit of actual
 finite tridiagonal inverse entries, with its exact positive boundary loss. -/

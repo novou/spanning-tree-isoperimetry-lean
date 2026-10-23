@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SummableKernelAlgebra
-import SpanningTreeIsoperimetry.SummableDeterminantFirstOrder
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelAlgebra
+public import SpanningTreeIsoperimetry.SummableDeterminantFirstOrder
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+
+@[expose] public section
 
 /-! Concrete affine determinant paths at an explicitly invertible identity
 perturbation. Every kernel product is the actual convergent entry sum. -/

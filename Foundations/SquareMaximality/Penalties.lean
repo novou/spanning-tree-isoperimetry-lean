@@ -1,5 +1,9 @@
-import SquareMaximality.Normalization
-import SquareMaximality.Constants
+module
+
+public import SquareMaximality.Normalization
+public import SquareMaximality.Constants
+
+@[expose] public section
 
 set_option autoImplicit false
 

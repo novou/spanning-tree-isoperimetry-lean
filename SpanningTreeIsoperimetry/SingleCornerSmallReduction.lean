@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.SingleCornerSmallOrientation
-import SpanningTreeIsoperimetry.SmallShapeCatalogue
-import SpanningTreeIsoperimetry.LatticeCongruenceExtra
+module
+
+public import SpanningTreeIsoperimetry.SingleCornerSmallOrientation
+public import SpanningTreeIsoperimetry.SmallShapeCatalogue
+public import SpanningTreeIsoperimetry.LatticeCongruenceExtra
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual strict single-corner improvements and the sole square-hook
 alternative, including shallow two-row transposition followed by a fold. -/

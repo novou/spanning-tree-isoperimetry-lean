@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.BoundaryWalkCount
-import SpanningTreeIsoperimetry.BoundaryHalfPlane
-import SquareMaximality.ClosedWalk.Symmetry
-import Mathlib.Data.Nat.Dist
+module
+
+public import SpanningTreeIsoperimetry.BoundaryWalkCount
+public import SpanningTreeIsoperimetry.BoundaryHalfPlane
+public import SquareMaximality.ClosedWalk.Symmetry
+public import Mathlib.Data.Nat.Dist
+
+@[expose] public section
 
 /-! A second first-hit reflection gives actual quadrant boundary path counts.
 The free horizontal coordinate may start at any nonnegative abscissa. -/

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.RowConvexPrimal
-import SpanningTreeIsoperimetry.CornerFolds
+module
+
+public import SpanningTreeIsoperimetry.RowConvexPrimal
+public import SpanningTreeIsoperimetry.CornerFolds
+
+@[expose] public section
 
 /-! Actual primal rectangles with four prescribed Ferrers corner defects. -/
 namespace SpanningTreeIsoperimetry.CornerPrimalDomains

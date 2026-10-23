@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.AvoidanceDeterminant
-import SpanningTreeIsoperimetry.InteriorSurcharge
-import SquareMaximality.Dual.Rectangle
+module
+
+public import SpanningTreeIsoperimetry.AvoidanceDeterminant
+public import SpanningTreeIsoperimetry.InteriorSurcharge
+public import SquareMaximality.Dual.Rectangle
+
+@[expose] public section
 
 /-! The labelled five-by-five primal patch has exactly the already checked
 free-patch avoidance probability. The cofactor entries are identified

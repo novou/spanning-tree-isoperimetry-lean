@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.RectangleResidualBounds
-import Mathlib.Analysis.Calculus.Taylor
+module
+
+public import SpanningTreeIsoperimetry.RectangleResidualBounds
+public import Mathlib.Analysis.Calculus.Taylor
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Second-order control of the actual logarithmic lattice modes. -/
 namespace SpanningTreeIsoperimetry.LogResidualTaylor

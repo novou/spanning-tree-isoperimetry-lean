@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.Grid
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Data.Fintype.Pi
+module
+
+public import SpanningTreeIsoperimetry.Grid
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Fintype.Pi
+
+@[expose] public section
 
 /-!
 # Nonnegative sign expansion for discrete polarization

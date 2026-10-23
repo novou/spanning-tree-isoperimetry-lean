@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.LargeClassification
+module
+
+public import SpanningTreeIsoperimetry.LargeClassification
+
+@[expose] public section
 
 /-! Complete actual maximum values, equality classes and nonuniqueness at
 all positive cardinalities, combining the large and small classifications. -/

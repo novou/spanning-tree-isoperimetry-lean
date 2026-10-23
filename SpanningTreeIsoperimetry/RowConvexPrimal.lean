@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FerrersPrimalBridge
+module
+
+public import SpanningTreeIsoperimetry.FerrersPrimalBridge
+
+@[expose] public section
 
 /-! Sparse row-convex primal domains: actual connectivity, hull, boundary
 attachment and the finite Dirichlet tree-count identity. -/

@@ -1,4 +1,8 @@
-import SquareMaximality.Multigraph.HadamardFischer
+module
+
+public import SquareMaximality.Multigraph.HadamardFischer
+
+@[expose] public section
 
 /-!
 # Transfer-current determinant interface

@@ -1,10 +1,14 @@
-import SpanningTreeIsoperimetry.FixedStripEnergyUpper
-import SpanningTreeIsoperimetry.SmallFamilyProfiles
-import SpanningTreeIsoperimetry.SmallFamilyCostData
-import SpanningTreeIsoperimetry.RefinedStripEnergy
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_ell
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_square
-import SpanningTreeIsoperimetry.RefinedObstructionEnergy_rectangle23
+module
+
+public import SpanningTreeIsoperimetry.FixedStripEnergyUpper
+public import SpanningTreeIsoperimetry.SmallFamilyProfiles
+public import SpanningTreeIsoperimetry.SmallFamilyCostData
+public import SpanningTreeIsoperimetry.RefinedStripEnergy
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_ell
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_square
+public import SpanningTreeIsoperimetry.RefinedObstructionEnergy_rectangle23
+
+@[expose] public section
 
 /-! Exact small-family endpoint comparisons. All finite target energies,
 logarithms, and quadrant-energy bounds are checked within the project. -/

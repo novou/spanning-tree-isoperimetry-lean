@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CanonicalCornerConcentration
-import SpanningTreeIsoperimetry.SmallMaximizerClassification
+module
+
+public import SpanningTreeIsoperimetry.CanonicalCornerConcentration
+public import SpanningTreeIsoperimetry.SmallMaximizerClassification
+
+@[expose] public section
 
 /-! Final classification interfaces. Canonical-hull equality is unconditional.
 The global assembly lemmas explicitly require the remaining large-hull

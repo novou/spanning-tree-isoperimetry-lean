@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.QuadrantMinorReduction
+module
+
+public import SpanningTreeIsoperimetry.QuadrantMinorReduction
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Northeast-boundary reduction for every finite Ferrers diagram.
 The interior matrix equations are consequences of the actual quadrant Green

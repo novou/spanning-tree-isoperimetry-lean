@@ -1,4 +1,8 @@
-import SquareMaximality.Boundary.Encoding
+module
+
+public import SquareMaximality.Boundary.Encoding
+
+@[expose] public section
 
 set_option autoImplicit false
 

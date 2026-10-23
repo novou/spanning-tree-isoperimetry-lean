@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.OneSidedToeplitz
-import SpanningTreeIsoperimetry.OneSidedLaurentKernels
+module
+
+public import SpanningTreeIsoperimetry.OneSidedToeplitz
+public import SpanningTreeIsoperimetry.OneSidedLaurentKernels
+
+@[expose] public section
 
 /-! The positive-frequency lift respects actual Laurent convolution and
 transfers the proved weighted exponential remainder to Laurent coefficients. -/

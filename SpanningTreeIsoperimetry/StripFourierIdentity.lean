@@ -1,9 +1,13 @@
-import SpanningTreeIsoperimetry.NormalizedLogDerivativeTrace
-import SpanningTreeIsoperimetry.NormalizedDeterminantInitialValue
-import SpanningTreeIsoperimetry.RegularizedTraceValues
-import SpanningTreeIsoperimetry.RegularizedFiniteSectionLimit
-import SpanningTreeIsoperimetry.RegularizedStripCriticalLimit
-import SpanningTreeIsoperimetry.ScalarDeterminantODE
+module
+
+public import SpanningTreeIsoperimetry.NormalizedLogDerivativeTrace
+public import SpanningTreeIsoperimetry.NormalizedDeterminantInitialValue
+public import SpanningTreeIsoperimetry.RegularizedTraceValues
+public import SpanningTreeIsoperimetry.RegularizedFiniteSectionLimit
+public import SpanningTreeIsoperimetry.RegularizedStripCriticalLimit
+public import SpanningTreeIsoperimetry.ScalarDeterminantODE
+
+@[expose] public section
 
 /-! The exact strip Fourier identity, with the determinant deformation,
 actual symbol and energy identifications, and critical passage all proved

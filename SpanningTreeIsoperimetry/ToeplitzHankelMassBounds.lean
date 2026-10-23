@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.LaurentWeightedConvolution
+module
+
+public import SpanningTreeIsoperimetry.LaurentWeightedConvolution
+
+@[expose] public section
 
 /-! Quantitative linear controls for the actual Toeplitz and Hankel maps.
 These estimates also apply directly to coefficient differences and remainders. -/

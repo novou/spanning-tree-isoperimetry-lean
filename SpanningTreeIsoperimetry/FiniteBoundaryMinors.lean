@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.FiniteGreenPotentials
+module
+
+public import SpanningTreeIsoperimetry.FiniteGreenPotentials
+
+@[expose] public section
 
 /-! All eight finite boundary-minor floors from Appendix B, for the actual
 rectangular inverse matrices. Exact integer systems replace root brackets. -/

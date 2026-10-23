@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
-import SpanningTreeIsoperimetry.FiniteCornerCharges
-import SpanningTreeIsoperimetry.CanonicalSmallBaseline
+module
+
+public import SpanningTreeIsoperimetry.FiniteBoundaryMinorBridge
+public import SpanningTreeIsoperimetry.FiniteCornerCharges
+public import SpanningTreeIsoperimetry.CanonicalSmallBaseline
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Actual short-strip finite energies beat the exact competing quadrant
 baselines plus per-cell corrections, by the checked terminal Green minors. -/

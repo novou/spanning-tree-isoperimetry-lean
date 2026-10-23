@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.CanonicalChecks
-import SpanningTreeIsoperimetry.CanonicalStrips
+module
+
+public import SpanningTreeIsoperimetry.CanonicalChecks
+public import SpanningTreeIsoperimetry.CanonicalStrips
+
+@[expose] public section
 
 /-! The proposed values have actual connected witnesses at every size.
 The upper bound and classification are separate results. -/

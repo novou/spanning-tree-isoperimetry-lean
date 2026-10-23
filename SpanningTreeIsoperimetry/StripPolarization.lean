@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.PolarizationStrict
-import Mathlib.LinearAlgebra.Matrix.Reindex
+module
+
+public import SpanningTreeIsoperimetry.PolarizationStrict
+public import Mathlib.LinearAlgebra.Matrix.Reindex
+
+@[expose] public section
 
 /-!
 # Concrete strip folds

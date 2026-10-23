@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.SmallFamilyCostBounds
-import SpanningTreeIsoperimetry.CoupledRectangleBounds
-import SpanningTreeIsoperimetry.CrossHullCountComparison
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyCostBounds
+public import SpanningTreeIsoperimetry.CoupledRectangleBounds
+public import SpanningTreeIsoperimetry.CrossHullCountComparison
+
+@[expose] public section
 
 /-! Actual finite count comparison from a certified weighted source profile.
 The rectangle error and aspect conversion are proved here, rather than supplied

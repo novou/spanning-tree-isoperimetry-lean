@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.AllCardinalityClassification
-import SpanningTreeIsoperimetry.CanonicalCountAsymptotic
-import Mathlib.Order.Lattice.Nat
+module
+
+public import SpanningTreeIsoperimetry.AllCardinalityClassification
+public import SpanningTreeIsoperimetry.CanonicalCountAsymptotic
+public import Mathlib.Order.Lattice.Nat
+
+@[expose] public section
 
 /-! The actual global maximum and its complete asymptotic expansion. The
 maximum is defined intrinsically from all connected lattice domains. -/

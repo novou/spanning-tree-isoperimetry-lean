@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SmallFamilyRowData
-import SpanningTreeIsoperimetry.SmallFamilyCostBounds
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyRowData
+public import SpanningTreeIsoperimetry.SmallFamilyCostBounds
+
+@[expose] public section
 
 /-! Target-side monotonicity and cost endpoints for the first twenty rows. -/
 namespace SpanningTreeIsoperimetry.SmallFamilyRowTargets

@@ -1,5 +1,11 @@
-import SquareMaximality.Dual.ForestProduct
-import SquareMaximality.Multigraph.Incompatible
+module
+
+public import SquareMaximality.Dual.ForestProduct
+public import SquareMaximality.Multigraph.Incompatible
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Interior-component factor from incompatible forest events

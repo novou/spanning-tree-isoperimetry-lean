@@ -1,8 +1,12 @@
-import SquareMaximality.Inputs.MatrixTree
-import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
-import Mathlib.LinearAlgebra.Matrix.Determinant.TotallyUnimodular
-import Mathlib.LinearAlgebra.Matrix.SchurComplement
-import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
+module
+
+public import SquareMaximality.Inputs.MatrixTree
+public import Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
+public import Mathlib.LinearAlgebra.Matrix.Determinant.TotallyUnimodular
+public import Mathlib.LinearAlgebra.Matrix.SchurComplement
+public import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
+
+@[expose] public section
 
 set_option autoImplicit false
 

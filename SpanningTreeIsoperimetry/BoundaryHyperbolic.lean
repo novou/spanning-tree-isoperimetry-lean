@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.SmallCases
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Linarith
+module
+
+public import SpanningTreeIsoperimetry.SmallCases
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
+public import Mathlib.Analysis.SpecificLimits.Normed
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 /-! Hyperbolic evaluation of the actual path continuants, and the one-boundary
 resolvent loss before finite-y separation. -/

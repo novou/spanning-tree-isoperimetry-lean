@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryGreenCoefficients
-import SpanningTreeIsoperimetry.BoundaryWalkCount
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenCoefficients
+public import SpanningTreeIsoperimetry.BoundaryWalkCount
+
+@[expose] public section
 
 /-! Exact sums of actual half-plane boundary path coefficients. -/
 namespace SpanningTreeIsoperimetry.BoundaryGreen

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ConcentratedMaximizers
-import SpanningTreeIsoperimetry.LargeImbalanceExclusion
+module
+
+public import SpanningTreeIsoperimetry.ConcentratedMaximizers
+public import SpanningTreeIsoperimetry.LargeImbalanceExclusion
+
+@[expose] public section
 
 /-! Full large-selector classification from actual count comparisons.
 The remaining positive-selector classification cases have selector at most three. -/

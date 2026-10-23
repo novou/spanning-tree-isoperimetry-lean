@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.PolarizationTrace
+module
+
+public import SpanningTreeIsoperimetry.PolarizationTrace
+
+@[expose] public section
 
 /-! Ordinary trace polarization for every translated diagonal used by the paper. -/
 namespace SpanningTreeIsoperimetry.Polarization

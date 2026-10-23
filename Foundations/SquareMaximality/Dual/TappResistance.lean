@@ -1,7 +1,13 @@
-import SquareMaximality.Dual.InteriorTapp
-import SquareMaximality.Rectangle.Entropy
-import Mathlib.Data.Finset.Sort
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+module
+
+public import SquareMaximality.Dual.InteriorTapp
+public import SquareMaximality.Rectangle.Entropy
+public import Mathlib.Data.Finset.Sort
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-!
 # Tapp's bound reduced to one half-plane resistance estimate

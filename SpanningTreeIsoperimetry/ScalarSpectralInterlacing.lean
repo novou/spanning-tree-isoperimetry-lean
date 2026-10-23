@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.ScalarSpectralResidues
-import SpanningTreeIsoperimetry.PositiveResidueInterlacing
+module
+
+public import SpanningTreeIsoperimetry.ScalarSpectralResidues
+public import SpanningTreeIsoperimetry.PositiveResidueInterlacing
+
+@[expose] public section
 
 /-! Strict zero interlacing for the actual rational q/P of Section 7,
 separate from the previously closed signed-Euclidean product proof. -/

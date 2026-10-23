@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.Targets
-import SpanningTreeIsoperimetry.ConcreteCounts
+module
+
+public import SpanningTreeIsoperimetry.Targets
+public import SpanningTreeIsoperimetry.ConcreteCounts
+
+@[expose] public section
 
 /-! Exact checks against the manuscript's actual canonical selector. -/
 namespace SpanningTreeIsoperimetry

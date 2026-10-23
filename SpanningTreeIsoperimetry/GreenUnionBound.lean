@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundaryGreenBounds
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenBounds
+
+@[expose] public section
 
 /-! A union bound for actual finite Green matrices, proved at each walk length.
 It supplies the two-boundary loss comparison before taking infinite limits. -/

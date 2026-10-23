@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.BoundaryGreenError
-import SpanningTreeIsoperimetry.FiniteStripError
-import SpanningTreeIsoperimetry.FluxDefinition
+module
+
+public import SpanningTreeIsoperimetry.BoundaryGreenError
+public import SpanningTreeIsoperimetry.FiniteStripError
+public import SpanningTreeIsoperimetry.FluxDefinition
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual finite long-side strip correction has the manuscript's exact
 fourth-order bound. Side lengths R,S below count faces (vertices: R+1,S+1). -/

@@ -1,9 +1,13 @@
-import SquareMaximality.Boundary.Completion
-import SquareMaximality.Dual.ForestEventsConstruction
-import SquareMaximality.Dual.PlanarComplement
-import SquareMaximality.Dual.CanonicalVacancyDeletion
-import SquareMaximality.Dual.TappRayleigh
-import SquareMaximality.ClosedWalk.EntropySeries
+module
+
+public import SquareMaximality.Boundary.Completion
+public import SquareMaximality.Dual.ForestEventsConstruction
+public import SquareMaximality.Dual.PlanarComplement
+public import SquareMaximality.Dual.CanonicalVacancyDeletion
+public import SquareMaximality.Dual.TappRayleigh
+public import SquareMaximality.ClosedWalk.EntropySeries
+
+@[expose] public section
 
 /-!
 # Hull completion from Matrix--Tree and planar deletion

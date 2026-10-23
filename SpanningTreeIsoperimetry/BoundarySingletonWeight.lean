@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryKernelMajorant
-import SpanningTreeIsoperimetry.BoundaryBoseMoments
+module
+
+public import SpanningTreeIsoperimetry.BoundaryKernelMajorant
+public import SpanningTreeIsoperimetry.BoundaryBoseMoments
+
+@[expose] public section
 
 /-! The transformed singleton boundary density dominates the cubic Bose
 weight up to the explicit cutoff 5/4. -/

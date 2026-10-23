@@ -1,6 +1,12 @@
-import SpanningTreeIsoperimetry.BoundaryStripKernel
-import SpanningTreeIsoperimetry.BoundaryKernelContinuity
-import SpanningTreeIsoperimetry.BoundaryRiemann
+module
+
+public import SpanningTreeIsoperimetry.BoundaryStripKernel
+public import SpanningTreeIsoperimetry.BoundaryKernelContinuity
+public import SpanningTreeIsoperimetry.BoundaryRiemann
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The actual quadrant-to-strip Green loss is the separated continuum
 integral, obtained as a limit of exact finite inverse formulas. -/

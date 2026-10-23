@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.HalfPlaneWords
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.FieldSimp
-import SquareMaximality.ClosedWalk.PlaneFirstHit
+module
+
+public import SpanningTreeIsoperimetry.HalfPlaneWords
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.FieldSimp
+public import SquareMaximality.ClosedWalk.PlaneFirstHit
+
+@[expose] public section
 
 namespace SpanningTreeIsoperimetry.BoundaryGreen
 open SquareMaximality.ClosedWalk

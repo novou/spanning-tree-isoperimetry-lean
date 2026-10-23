@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.GreenLogDetComparison
-import SquareMaximality.Multigraph.HadamardFischer
+module
+
+public import SpanningTreeIsoperimetry.GreenLogDetComparison
+public import SquareMaximality.Multigraph.HadamardFischer
+
+@[expose] public section
 
 /-! Actual finite Green-minor products and superadditivity of deletion energy
 for disjoint face sets. -/

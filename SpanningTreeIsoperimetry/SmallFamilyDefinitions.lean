@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.AspectCost
+module
+
+public import SpanningTreeIsoperimetry.AspectCost
+
+@[expose] public section
 
 /-! Light definitions for the small-family cost and derivative certificates. -/
 namespace SpanningTreeIsoperimetry.SmallFamilyMonotonicity

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.SummableKernelProduct
-import Mathlib.LinearAlgebra.Matrix.Trace
+module
+
+public import SpanningTreeIsoperimetry.SummableKernelProduct
+public import Mathlib.LinearAlgebra.Matrix.Trace
+
+@[expose] public section
 
 /-! Actual diagonal traces and cyclicity with one summable factor. A bounded
 multiplier need not itself have summable entries. No claim is made that an

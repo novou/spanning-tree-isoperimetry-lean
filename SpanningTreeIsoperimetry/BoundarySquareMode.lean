@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.FiniteSingletonSquares
-import SpanningTreeIsoperimetry.AngularKernelTaylor
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+module
+
+public import SpanningTreeIsoperimetry.FiniteSingletonSquares
+public import SpanningTreeIsoperimetry.AngularKernelTaylor
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+
+@[expose] public section
 
 /-! A quantitative first-mode lower bound for the second boundary of a square. -/
 namespace SpanningTreeIsoperimetry.BoundarySquareMode

@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.SmallFamilyPatternData
+module
+
+public import SpanningTreeIsoperimetry.SmallFamilyPatternData
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Two-corner source bounds when at least the larger corner is not a strip.
 Only the corner square requires a separate finite-correction estimate. -/

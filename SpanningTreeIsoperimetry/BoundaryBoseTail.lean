@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundaryBoseMoments
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import SpanningTreeIsoperimetry.BoundaryBoseMoments
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 
 /-! Explicit positive polynomial tails for the Bose moments. -/
 namespace SpanningTreeIsoperimetry.BoundaryBoseTail

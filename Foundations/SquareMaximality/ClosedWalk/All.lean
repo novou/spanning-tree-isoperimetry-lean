@@ -1,6 +1,10 @@
-import SquareMaximality.ClosedWalk.PlaneMarked
-import SquareMaximality.ClosedWalk.Symmetry
-import SquareMaximality.ClosedWalk.Series
+module
+
+public import SquareMaximality.ClosedWalk.PlaneMarked
+public import SquareMaximality.ClosedWalk.Symmetry
+public import SquareMaximality.ClosedWalk.Series
+
+@[expose] public section
 
 /-!
 Complete import for the closed-walk development, including the finite

@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.PotentialKernelHarmonic
+module
+
+public import SpanningTreeIsoperimetry.PotentialKernelHarmonic
+
+@[expose] public section
 
 /-! Finite evaluation of the one-dimensional diagonal integral. The identity
 is valid also where sin x=0, and introduces no unproved potential-kernel

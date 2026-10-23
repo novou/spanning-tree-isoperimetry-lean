@@ -1,6 +1,10 @@
-import SpanningTreeIsoperimetry.ScalarModular
-import Mathlib.Analysis.Matrix.Normed
-import Mathlib.Analysis.SpecificLimits.Normed
+module
+
+public import SpanningTreeIsoperimetry.ScalarModular
+public import Mathlib.Analysis.Matrix.Normed
+public import Mathlib.Analysis.SpecificLimits.Normed
+
+@[expose] public section
 
 /-! Convergent expansion at infinity for the actual Green resolvent. -/
 namespace SpanningTreeIsoperimetry.ScalarSeries

@@ -1,8 +1,12 @@
-import SpanningTreeIsoperimetry.MatrixTree
-import SpanningTreeIsoperimetry.SmallCases
-import SpanningTreeIsoperimetry.LocalBounds
-import Mathlib.Combinatorics.SimpleGraph.DeleteEdges
-import Mathlib.Tactic.NormDet
+module
+
+public import SpanningTreeIsoperimetry.MatrixTree
+public import SpanningTreeIsoperimetry.SmallCases
+public import SpanningTreeIsoperimetry.LocalBounds
+public import Mathlib.Combinatorics.SimpleGraph.DeleteEdges
+public import Mathlib.Tactic.NormDet
+
+@[expose] public section
 
 /-!
 # Graph-theoretic ingredients for the interior surcharge

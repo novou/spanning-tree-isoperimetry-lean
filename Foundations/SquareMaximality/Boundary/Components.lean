@@ -1,4 +1,8 @@
-import SquareMaximality.Boundary.King
+module
+
+public import SquareMaximality.Boundary.King
+
+@[expose] public section
 
 /-!
 # Finite enumeration of interior king components

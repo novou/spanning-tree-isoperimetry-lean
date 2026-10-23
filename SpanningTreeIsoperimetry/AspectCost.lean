@@ -1,4 +1,10 @@
-import SpanningTreeIsoperimetry.RectangularRemainder
+module
+
+public import SpanningTreeIsoperimetry.RectangularRemainder
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! The elementary aspect cost and its monotonicity for actual convergent
 rectangle profiles. No rectangular error estimate is assumed. -/

@@ -1,5 +1,11 @@
-import SquareMaximality.Rectangle.Kernel
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.RootsExtrema
+module
+
+public import SquareMaximality.Rectangle.Kernel
+public import Mathlib.Algebra.Polynomial.Splits
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.Basic
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.RootsExtrema
+
+@[expose] public section
 
 set_option autoImplicit false
 

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.BoundedKernelProductTail
-import Mathlib.LinearAlgebra.Matrix.SchurComplement
+module
+
+public import SpanningTreeIsoperimetry.BoundedKernelProductTail
+public import Mathlib.LinearAlgebra.Matrix.SchurComplement
+
+@[expose] public section
 
 /-! Sylvester's identity for actual finite-section determinant limits with
 one summable factor and one row/column-bounded multiplier. -/

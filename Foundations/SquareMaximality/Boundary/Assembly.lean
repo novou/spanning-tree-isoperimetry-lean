@@ -1,5 +1,9 @@
-import SquareMaximality.Boundary.Degenerate
-import SquareMaximality.Penalties
+module
+
+public import SquareMaximality.Boundary.Degenerate
+public import SquareMaximality.Penalties
+
+@[expose] public section
 
 set_option autoImplicit false
 

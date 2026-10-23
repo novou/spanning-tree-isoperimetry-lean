@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.HullArithmetic
+module
+
+public import SpanningTreeIsoperimetry.HullArithmetic
+
+@[expose] public section
 
 /-! Square-remainder arithmetic used by the all-cardinality hull comparison. -/
 namespace SpanningTreeIsoperimetry

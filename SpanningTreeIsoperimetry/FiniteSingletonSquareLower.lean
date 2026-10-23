@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.BoundarySquareMode
+module
+
+public import SpanningTreeIsoperimetry.BoundarySquareMode
+
+@[expose] public section
 
 /-! The stronger actual singleton correction for every nonempty square. -/
 namespace SpanningTreeIsoperimetry.FiniteSingletonSquareLower

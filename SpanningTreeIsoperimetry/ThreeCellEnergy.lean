@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.QuadrantGreenRelations
+module
+
+public import SpanningTreeIsoperimetry.QuadrantGreenRelations
+
+@[expose] public section
 
 /-! Exact three-cell quadrant energy and a strict uniform gap above strips. -/
 namespace SpanningTreeIsoperimetry.ThreeCellEnergy

@@ -1,5 +1,11 @@
-import SpanningTreeIsoperimetry.ScalarResolvent
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex
+module
+
+public import SpanningTreeIsoperimetry.ScalarResolvent
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex
+
+@[expose] public section
+
+set_option backward.privateInPublic true
 
 /-! Explicit finite Dirichlet sine modes for the one-coordinate Green
 separation. These concern the actual path operator used in the continuants. -/

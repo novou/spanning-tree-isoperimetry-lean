@@ -1,7 +1,11 @@
-import SpanningTreeIsoperimetry.FoundationsBridge
-import SpanningTreeIsoperimetry.ProjectionEquality
-import SquareMaximality.Normalization
-import Mathlib.Data.Set.Finite.Lemmas
+module
+
+public import SpanningTreeIsoperimetry.FoundationsBridge
+public import SpanningTreeIsoperimetry.ProjectionEquality
+public import SquareMaximality.Normalization
+public import Mathlib.Data.Set.Finite.Lemmas
+
+@[expose] public section
 
 /-! Translation invariance, projection sizes of minimal hulls, and existence
 of actual spanning-tree maximizers. -/

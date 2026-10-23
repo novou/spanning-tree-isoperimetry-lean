@@ -1,5 +1,9 @@
-import SquareMaximality.Infrastructure
-import SquareMaximality.Hull
+module
+
+public import SquareMaximality.Infrastructure
+public import SquareMaximality.Hull
+
+@[expose] public section
 
 set_option autoImplicit false
 

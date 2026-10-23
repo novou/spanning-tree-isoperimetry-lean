@@ -1,4 +1,8 @@
-import SpanningTreeIsoperimetry.Projection
+module
+
+public import SpanningTreeIsoperimetry.Projection
+
+@[expose] public section
 
 /-!
 # Equality in the edge projection bound

@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.EnhancedBoundary
-import SpanningTreeIsoperimetry.FoundationsBridge
+module
+
+public import SpanningTreeIsoperimetry.EnhancedBoundary
+public import SpanningTreeIsoperimetry.FoundationsBridge
+
+@[expose] public section
 
 /-! Vanishing vacancy-gap counts give actual row and column convexity.
 This is the geometric final step after the integer-defect comparison. -/

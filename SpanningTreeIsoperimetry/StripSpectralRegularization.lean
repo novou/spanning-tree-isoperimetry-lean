@@ -1,5 +1,9 @@
-import SpanningTreeIsoperimetry.UniformStripEnergy
-import Mathlib.Analysis.Normed.Group.Tannery
+module
+
+public import SpanningTreeIsoperimetry.UniformStripEnergy
+public import Mathlib.Analysis.Normed.Group.Tannery
+
+@[expose] public section
 
 /-! Spectral regularization of the actual nonnegative loop-energy series.
 The critical strip supremum is the supremum of the regularized suprema.

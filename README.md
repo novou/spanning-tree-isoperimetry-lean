@@ -19,6 +19,11 @@ declarations. The [proof correspondence](docs/proof-route-correspondence.md)
 explains the common definitions, notation, and differences between the paper's
 proofs and their formalization.
 
+## Palomar registration
+
+Registered as [PALOMAR-2026-10-23-000017, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-23-000017&version=1).
+The entry records the [verified source snapshot](https://github.com/novou/spanning-tree-isoperimetry-lean/tree/ab2ab3932cfad3eeac9a9f75d29c8982cffad54d).
+
 ## Main theorems
 
 The following names lie in the `SpanningTreeIsoperimetry` namespace:

@@ -25,8 +25,26 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Install and check the Comparator sandbox
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y bubblewrap apparmor
+          if [ "$(sysctl -n kernel.apparmor_restrict_unprivileged_userns 2>/dev/null || echo 0)" = 1 ]; then
+            printf '%s\n' \
+              'abi <abi/4.0>,' \
+              'include <tunables/global>' \
+              'profile bwrap /usr/bin/bwrap flags=(unconfined) {' \
+              '  userns,' \
+              '}' | sudo tee /etc/apparmor.d/bwrap >/dev/null
+            sudo apparmor_parser -r /etc/apparmor.d/bwrap
+          fi
+          bwrap --unshare-all --die-with-parent --new-session \
+            --ro-bind / / --proc /proc --dev /dev -- /bin/true
+
       - name: Restore Lean build cache
-        uses: actions/cache@v5
+        id: lean-cache
+        uses: actions/cache/restore@v5
         with:
           path: .lake
           key: lean-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.run_id }}
@@ -56,10 +74,11 @@ jobs:
       - name: Audit proof dependencies
         run: python3 scripts/audit.py
 
-      - name: Install the Comparator sandbox
-        run: |
-          sudo apt-get update
-          sudo apt-get install --no-install-recommends -y bubblewrap
+      - name: Save checked Lean build cache
+        uses: actions/cache/save@v5
+        with:
+          path: .lake
+          key: ${{ steps.lean-cache.outputs.cache-primary-key }}
 
       - name: Compare the independent Challenge and Solution statements
         id: comparator
